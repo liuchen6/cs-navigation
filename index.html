@@ -774,7 +774,12 @@ function bindEvents() {
 
   // Bookmark
   document.getElementById('bookmarkBtn').addEventListener('click', () => {
-    alert('收藏功能开发中，敬请期待！');
+    const u = window.location.href;
+    navigator.clipboard.writeText(u).then(() => {
+      const btn = document.getElementById('bookmarkBtn');
+      btn.textContent = '✅';
+      setTimeout(() => btn.textContent = '🔖', 2000);
+    }).catch(() => alert('复制失败，请手动复制地址栏链接'));
   });
 }
 
