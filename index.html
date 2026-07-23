@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>计算机突围 · CS全周期导航</title>
+<style>
+:root {
+  --bg: #f8f6f3; --card: #fff; --card2: #f1eeeb;
+  --text: #2d2a27; --text2: #8a8682; --text3: #b8b4b0;
+  --border: #e8e4e0; --accent: #e07c3c; --accent2: #f5a623;
+  --shadow: 0 2px 12px rgba(45,42,39,.06);
+  --radius: 14px;
+  --foundation: #4a90d9; --core: #3aa67a; --skill: #8b6ccf;
+  --competition: #e88a3a; --career: #d96a8a; --education: #3aa8c4;
+  --project: #d4a832; --softskill: #c8922a; --industry: #7a5ccf; --faq: #c95a8a;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); font-size: 15px; -webkit-font-smoothing: antialiased; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+input { font: inherit; }
+
+/* ===== APP SHELL ===== */
+.app { display: flex; flex-direction: column; height: 100%; max-width: 480px; margin: 0 auto; background: var(--bg); position: relative; }
+
+/* ===== HEADER ===== */
+.header { flex-shrink: 0; background: var(--card); padding: 12px 16px 8px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+.header h1 { font-size: 17px; font-weight: 700; flex: 1; }
+.header h1 span { color: var(--accent); }
+.header .subtitle { font-size: 11px; color: var(--text2); font-weight: 400; margin-left: 4px; }
+.header-btn { font-size: 12px; width: 36px; height: 36px; border-radius: 50%; background: var(--card2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+/* ===== TAB CONTENT ===== */
+.tab-panel { display: none; flex-direction: column; height: 100%; overflow: hidden; }
+.tab-panel.active { display: flex; }
+.scroll-area { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 12px 16px 80px; }
+
+/* ===== HOME ===== */
+.hero-prompt { text-align: center; padding: 24px 0 16px; }
+.hero-question { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+.hero-sub { font-size: 13px; color: var(--text2); line-height: 1.5; }
+.home-divider { height: 1px; background: var(--border); margin: 4px 0 16px; }
+.quick-section { margin-bottom: 16px; }
+.quick-section-title { font-size: 13px; font-weight: 600; color: var(--text2); margin-bottom: 8px; letter-spacing: .3px; }
+.stage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.stage-grid-btn { background: var(--card); border-radius: 12px; padding: 16px 6px; text-align: center; box-shadow: var(--shadow); transition: all .15s; cursor: pointer; border: 1.5px solid transparent; }
+.stage-grid-btn.active { border-color: var(--accent); background: #fdf6ee; }
+.stage-grid-btn:active { transform: scale(.95); }
+.stage-grid-btn .emoji { font-size: 26px; display: block; margin-bottom: 4px; }
+.stage-grid-btn .label { font-size: 13px; font-weight: 600; }
+.stage-grid-btn .sub { font-size: 10px; color: var(--text2); margin-top: 2px; }
+
+
+
+.identity-list { display: flex; flex-direction: column; gap: 6px; }
+.identity-btn { background: var(--card); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 10px; transition: all .15s; border: 1.5px solid transparent; }
+.identity-btn:active { transform: scale(.98); }
+.identity-btn.active { border-color: var(--accent); background: #fdf6ee; }
+.identity-btn .emoji { font-size: 20px; }
+.identity-btn .info { flex: 1; }
+.identity-btn .info .title { font-size: 13px; font-weight: 500; }
+.identity-btn .info .desc { font-size: 11px; color: var(--text2); margin-top: 1px; }
+.identity-btn .arrow { color: var(--text3); font-size: 14px; }
+
+.hot-list { display: flex; flex-direction: column; gap: 6px; }
+.hot-item { background: var(--card); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 10px; transition: all .15s; }
+.hot-item:active { transform: scale(.98); }
+.hot-item .num { width: 20px; height: 20px; border-radius: 6px; background: var(--card2); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--text2); flex-shrink: 0; }
+.hot-item .num.top3 { background: var(--accent); color: #fff; }
+.hot-item .text { flex: 1; font-size: 13px; }
+.hot-item .tag { font-size: 10px; color: var(--accent); background: rgba(224,124,60,.1); padding: 1px 6px; border-radius: 4px; }
+
+/* ===== STAGE TAB ===== */
+.stage-nav { flex-shrink: 0; background: var(--card); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; align-items: center; }
+.stage-nav::-webkit-scrollbar { display: none; }
+.stage-nav-btn { flex-shrink: 0; padding: 6px 16px; border-radius: 20px; font-size: 13px; background: var(--card2); color: var(--text2); white-space: nowrap; transition: all .2s; border: 1.5px solid transparent; }
+.stage-nav-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.stage-nav-btn .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
+.shuangfei-badge { flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px; background: #fdf6ee; border: 1.5px solid #e8d5b8; border-radius: 20px; padding: 4px 12px; font-size: 12px; color: #a07030; cursor: pointer; user-select: none; white-space: nowrap; }
+.shuangfei-badge:active { opacity: .7; }
+.stage-nav-btn .dot.active-dot { background: currentColor; }
+
+/* Stage content sections */
+.stage-section { margin-bottom: 14px; }
+.stage-section-header { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+.stage-section-header .icon { font-size: 16px; }
+.stage-section-header .stitle { font-size: 14px; font-weight: 600; }
+.stage-section-header .more { font-size: 11px; color: var(--accent); margin-left: auto; }
+
+.mission-card { background: linear-gradient(135deg, #fdf6ee, #fef9f3); border: 1px solid #f0e2d0; border-radius: var(--radius); padding: 14px; }
+.mission-card .mtext { font-size: 14px; line-height: 1.7; color: #5a4a3a; }
+
+.course-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.course-chip { background: var(--card); border-radius: 10px; padding: 10px 12px; box-shadow: var(--shadow); text-align: center; font-size: 12px; font-weight: 500; }
+.course-chip .sub { font-size: 10px; color: var(--text2); font-weight: 400; }
+
+.trap-card { background: var(--card); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); margin-bottom: 6px; border-left: 3px solid #e07c3c; }
+.trap-card .ttitle { font-size: 13px; font-weight: 500; }
+.trap-card .tdetail { font-size: 11px; color: var(--text2); line-height: 1.5; margin-top: 4px; }
+.trap-card .tarrow { font-size: 11px; color: var(--text2); display: inline-block; }
+
+.stage-faq-item { background: var(--card); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); margin-bottom: 6px; cursor: pointer; }
+.stage-faq-item:active { opacity: .7; }
+.stage-faq-item .q { font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+.stage-faq-item .q .arrow { margin-left: auto; transition: transform .2s; color: var(--text3); }
+.stage-faq-item.expanded .q .arrow { transform: rotate(180deg); }
+.stage-faq-item .a { max-height: 0; overflow: hidden; transition: max-height .25s; font-size: 12px; color: var(--text2); line-height: 1.7; }
+.stage-faq-item.expanded .a { max-height: 300px; padding-top: 8px; }
+
+/* ===== ROUTES TAB ===== */
+.route-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 10px; overflow: hidden; }
+.route-hd { padding: 14px; display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.route-hd:active { background: var(--card2); }
+.route-hd .remoji { font-size: 22px; }
+.route-hd .rname { flex: 1; font-size: 15px; font-weight: 600; }
+.route-hd .rarrow { transition: transform .2s; color: var(--text3); }
+.route-card.expanded .rarrow { transform: rotate(180deg); }
+.route-risk { padding: 0 14px 8px; font-size: 12px; color: #b85a2a; line-height: 1.5; }
+.route-body { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+.route-card.expanded .route-body { max-height: 600px; }
+.route-step { padding: 10px 14px; border-top: 1px solid var(--border); font-size: 13px; }
+.route-step .snum { color: var(--accent); font-weight: 600; margin-bottom: 2px; }
+.route-step .sbody { color: var(--text2); line-height: 1.6; }
+
+/* ===== SEARCH TAB ===== */
+.search-box { flex-shrink: 0; padding: 8px 16px; background: var(--card); border-bottom: 1px solid var(--border); }
+.search-box input { width: 100%; padding: 10px 14px; border-radius: 24px; border: 1.5px solid var(--border); background: var(--bg); font-size: 14px; outline: none; transition: border-color .2s; }
+.search-box input:focus { border-color: var(--accent); }
+.search-cats { flex-shrink: 0; display: flex; gap: 6px; padding: 8px 16px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.search-cats::-webkit-scrollbar { display: none; }
+.search-cat { flex-shrink: 0; padding: 4px 10px; border-radius: 12px; font-size: 11px; background: var(--card2); color: var(--text2); white-space: nowrap; border: 1px solid transparent; }
+.search-cat.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.search-results { flex: 1; overflow-y: auto; padding: 8px 16px 80px; }
+.search-empty { text-align: center; padding: 40px 0; color: var(--text2); font-size: 13px; }
+.search-empty .big { font-size: 40px; margin-bottom: 12px; }
+.search-result-item { background: var(--card); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); margin-bottom: 6px; cursor: pointer; }
+.search-result-item:active { transform: scale(.98); }
+.search-result-item .srl { font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+.search-result-item .srd { font-size: 12px; color: var(--text2); margin-top: 4px; line-height: 1.5; }
+.search-result-item .srt { font-size: 10px; color: var(--accent); margin-top: 4px; }
+
+/* ===== DETAIL MODAL ===== */
+.modal-overlay { position: fixed; inset: 0; z-index: 100; background: rgba(0,0,0,.3); display: none; align-items: flex-end; justify-content: center; }
+.modal-overlay.show { display: flex; }
+.modal { background: var(--card); border-radius: 18px 18px 0 0; width: 100%; max-width: 480px; max-height: 75vh; overflow-y: auto; padding: 0 0 20px; animation: slideUp .25s ease; }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.modal-handle { width: 36px; height: 4px; background: var(--border); border-radius: 2px; margin: 10px auto; }
+.modal-body { padding: 0 16px; }
+.modal-title { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+.modal-tag { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; margin-bottom: 10px; }
+.modal-desc { font-size: 13px; color: var(--text2); line-height: 1.8; margin-bottom: 14px; }
+.modal-children { margin-top: 10px; }
+.modal-children-title { font-size: 12px; font-weight: 600; color: var(--text2); margin-bottom: 6px; }
+.modal-child { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.modal-child:last-child { border-bottom: none; }
+.modal-child .mc-label { font-size: 12px; color: var(--text1); font-weight: 500; }
+.modal-child .mc-desc { font-size: 11px; color: var(--text2); margin-top: 2px; line-height: 1.5; }
+.modal-marker { background: #fdf6ee; border: 1px solid #f0e2d0; border-radius: 8px; padding: 8px 12px; font-size: 12px; color: #8a6a3a; margin-bottom: 12px; }
+
+/* ===== BOTTOM NAV ===== */
+.bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: var(--card); border-top: 1px solid var(--border); display: flex; z-index: 50; padding-bottom: env(safe-area-inset-bottom); }
+.bottom-nav button { flex: 1; padding: 6px 0 8px; font-size: 10px; color: var(--text3); text-align: center; transition: color .15s; }
+.bottom-nav button.active { color: var(--accent); }
+.bottom-nav .nicon { display: block; font-size: 20px; margin-bottom: 0; }
+
+/* ===== LOADING ===== */
+.loading { display: flex; align-items: center; justify-content: center; height: 60vh; color: var(--text2); font-size: 13px; flex-direction: column; gap: 10px; }
+.spinner { width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .6s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (min-width: 480px) {
+  .app { border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
+}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <!-- HEADER -->
+  <div class="header">
+    <h1>计算机突围 <span class="subtitle">CS全周期导航</span></h1>
+    <button class="header-btn" id="bookmarkBtn" title="收藏">🔖</button>
+  </div>
+
+  <!-- HOME TAB -->
+  <div class="tab-panel active" id="tabHome">
+    <div class="scroll-area">
+      <div class="hero-prompt">
+        <div class="hero-question">你处于哪个阶段？</div>
+        <div class="hero-sub">选一个，告诉你这个阶段该做什么、怎么选、怎么避坑</div>
+      </div>
+      <div class="stage-grid" id="homeStageGrid"></div>
+
+      <div class="home-divider"></div>
+
+      <div class="quick-section">
+        <div class="quick-section-title">👤 你的身份是？</div>
+        <div class="identity-list" id="identityList"></div>
+      </div>
+
+      <div class="quick-section">
+        <div class="quick-section-title">🔥 热门必看</div>
+        <div class="hot-list" id="hotList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAGE TAB -->
+  <div class="tab-panel" id="tabStage">
+    <div class="stage-nav" id="stageNav"></div>
+    <div class="scroll-area" id="stageContent"><div class="loading"><div class="spinner"></div></div></div>
+  </div>
+
+  <!-- ROUTES TAB -->
+  <div class="tab-panel" id="tabRoutes">
+    <div class="scroll-area" id="routesContent"><div class="loading"><div class="spinner"></div></div></div>
+  </div>
+
+  <!-- SEARCH TAB -->
+  <div class="tab-panel" id="tabSearch">
+    <div class="search-box"><input type="text" id="searchInput" placeholder="搜索课程、问题、路线..." autocomplete="off"></div>
+    <div class="search-cats" id="searchCats"></div>
+    <div class="search-results" id="searchResults">
+      <div class="search-empty"><div class="big">🔍</div>输入关键词搜索<br><span style="font-size:11px;color:var(--text3)">试试"考研还是就业"、"高数"、"双非"</span></div>
+    </div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav">
+    <button class="active" data-tab="tabHome"><span class="nicon">🏠</span>首页</button>
+    <button data-tab="tabStage"><span class="nicon">📅</span>阶段</button>
+    <button data-tab="tabRoutes"><span class="nicon">🗺️</span>路线</button>
+    <button data-tab="tabSearch"><span class="nicon">🔍</span>搜索</button>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+// ===== DATA =====
+let DATA = null;
+async function loadData() {
+  const r = await fetch('data.json');
+  DATA = await r.json();
+}
+
+const CAT = {
+  foundation:{l:'基础课程',c:'#4a90d9',e:'📚'}, core:{l:'专业核心',c:'#3aa67a',e:'🎓'},
+  skill:{l:'编程技能',c:'#8b6ccf',e:'💻'}, competition:{l:'竞赛科研',c:'#e88a3a',e:'🏆'},
+  career:{l:'实习就业',c:'#d96a8a',e:'💼'}, education:{l:'考研升学',c:'#3aa8c4',e:'📝'},
+  project:{l:'项目实战',c:'#d4a832',e:'🛠️'}, softskill:{l:'软技能',c:'#c8922a',e:'🧠'},
+  industry:{l:'行业认知',c:'#7a5ccf',e:'🔭'}, faq:{l:'常见问题',c:'#c95a8a',e:'❓'},
+};
+const STAGE = { pre:'大学前', y1:'大一', y2:'大二', y3:'大三', y4:'大四', m1:'研一', m2:'研二', m3:'研三', post:'毕业后' };
+const STAGES = ['pre','y1','y2','y3','y4','m1','m2','m3','post'];
+
+const TRAPS = {
+  y1:[
+    {t:'高数/线代挂科',d:'→ 失去保研资格 → 大厂简历关被卡 → 后续ML/AI学不动'},
+    {t:'以为C语言就是全部',d:'→ 数据结构跟不上 → 算法薄弱 → 面试发现基础有巨大缺口'},
+    {t:'躺平一年"先放松"',d:'→ GPA低 → 大三大四想追发现为时已晚 → 简历GPA<3.0直接筛掉'},
+    {t:'啥都想学啥都不精',d:'→ 今天Python明天Java后天前端 → 大二结束没一个能拿出手的技能'},
+  ],
+  y2:[
+    {t:'盲目跟风打ACM',d:'→ 投入大量时间没成绩 → 错过学框架/做项目的时间窗口'},
+    {t:'GPA崩了心态也崩了',d:'→ 破罐子破摔 → 大三想补救发现欠债太多'},
+    {t:'只学课内不拓展',d:'→ 大三发现课本内容在面试中完全不够用'},
+  ],
+  y3:[
+    {t:'暑期实习0 offer就放弃',d:'→ 秋招被有实习的人碾压 → 毕业即失业或被迫考研'},
+    {t:'考研/就业反复横跳',d:'→ 两边都准备不足 → 考研没上岸、秋招也没拿下'},
+    {t:'不投简历不敢面试',d:'→ 一直"再准备准备" → 毕业第一次面试缺乏经验被刷'},
+  ],
+  y4:[
+    {t:'考研失败后空窗半年',d:'→ 春招很多公司已招满 → 错过校招身份 → 走社招经验不够'},
+    {t:'毕设随便糊弄',d:'→ 答辩不过 → 延毕 → offer失效'},
+    {t:'跟风考研逃避就业',d:'→ 考上也读得很痛苦 → 毕业发现市场又变了'},
+  ],
+  m1:[
+    {t:'选了坑导师',d:'→ 放养/压榨/方向不喜欢 → 没有产出 → 毕业困难'},
+    {t:'研究生只做项目不思考',d:'→ 简历上是"高级执行者" → 面试没有深度思考可展示'},
+  ],
+};
+
+const ROUTES = [
+  {e:'🤖',n:'AI/机器学习',r:'AI算法岗学历门槛高（硕博起步），本科适合AI应用开发/工程岗',s:[
+      'Python → 高数/线代/概率论 → 数据结构与算法',
+      'ML基础(Scikit-learn) → 深度学习(PyTorch) → CV/NLP选一',
+      '大模型应用(RAG/Agent/微调) → ML系统设计 → 部署',
+      '算法题 → ML八股 → 项目深挖 → 实习/开源']},
+  {e:'⚙️',n:'后端/架构',r:'后端生态庞大，避免"框架焦虑"，聚焦1-2个技术栈',s:[
+      '一门语言(Java/Python/Go) → 数据结构 → SQL → 网络/OS',
+      'Web框架(Spring Boot/Django) → RESTful API → 数据库设计',
+      '缓存(Redis) → 消息队列 → Docker → 微服务',
+      '八股文 + 系统设计 + 项目深挖 + 算法题']},
+  {e:'🎨',n:'前端/全栈',r:'前端受AI冲击大，建议往全栈或前端工程化发展',s:[
+      'HTML/CSS → JavaScript(ES6+) → Git',
+      '框架(React/Vue) → 状态管理 → TypeScript → 工程化',
+      '全栈(Node.js/Next.js) → 性能优化 → 构建工具',
+      '算法题 + 项目亮点 + 前端八股 + 作品集']},
+  {e:'🏆',n:'竞赛/保研',r:'仅金字塔尖极少数人能走通，不适合作为唯一路径',s:[
+      'C/C++ → 数据结构 → 基础算法 → LeetCode',
+      '高级算法(DP/网络流) → ACM训练 → 模板积累',
+      '竞赛获奖 → 保研资格获取',
+      '研究型实习 → 论文 → 算法深化']},
+  {e:'📖',n:'考研/学术',r:'长跑，需要孤注一掷的决心和合理的目标院校',s:[
+      '数学一(高数/线代/概率) → 英语 → 408专业课',
+      '408二三轮 → 数学强化 → 英语真题 → 政治',
+      '全科模考 → 查漏补缺 → 政治背诵',
+      '机试 → 项目复盘 → 导师联系 → 面试']},
+  {e:'🔧',n:'系统/底层',r:'岗位少、培养周期长，但竞争者相对少',s:[
+      'C/C++深度 → 数据结构 → 组成原理 → OS',
+      'Linux编程 → 网络编程 → 多线程 → 数据库',
+      '编译原理 → 内核/驱动 → 分布式 → Rust/Go',
+      '系统设计 + 八股 + 开源贡献']},
+];
+
+// ===== STATE =====
+let state = { tab:'tabHome', stage:'y1', cat:null, search:'', shuangfeiMode:false, bookmarks:JSON.parse(localStorage.getItem('cs_bookmarks')||'[]') };
+
+// ===== HELPERS =====
+function catInfo(c) { return CAT[c]||{l:c,c:'#94a3b8',e:''}; }
+function stageName(s) { return STAGE[s]||s; }
+function getNode(id) { return DATA.nodes.find(n=>n.id===id); }
+function getChildren(id) { return DATA.nodes.filter(n=>n.parent===id); }
+
+// ===== RENDER HOME =====
+function renderHome() {
+  // Stage grid — main CTA
+  const sg = document.getElementById('homeStageGrid');
+  sg.innerHTML = DATA.stages.map(s => `
+    <button class="stage-grid-btn ${state.stage===s.code?'active':''}" data-stage="${s.code}">
+      <span class="emoji">${stageEmoji(s.code)}</span>
+      <span class="label">${s.label}</span>
+      <span class="sub">${s.code==='pre'?'入学前':s.code.startsWith('m')?'硕士':'本科'}</span>
+    </button>
+  `).join('');
+
+  // Identity cards
+  const il = document.getElementById('identityList');
+  const ids = [
+    {e:'🏫',t:'双非/二本学生',d:'资源少但有机会，这里有你的专属策略',f:'shuangfei',active:state.shuangfeiMode},
+    {e:'🔄',t:'跨专业想转CS',d:'不是科班也能做技术，告诉你最快路径',f:'transfer'},
+    {e:'🤷',t:'在纠结选方向',d:'前端vs后端vsAI，横向对比帮你做决定',f:'routes'},
+    {e:'💼',t:'在准备找工作',d:'实习→秋招→offer，每一步都有方法',f:'career'},
+    {e:'📚',t:'在备考考研',d:'408复习规划、院校选择、复试准备',f:'education'},
+  ];
+  il.innerHTML = ids.map(x => `
+    <button class="identity-btn ${x.active?'active':''}" data-focus="${x.f}">
+      <span class="emoji">${x.e}</span>
+      <span class="info"><span class="title">${x.t}</span><span class="desc">${x.d}</span></span>
+      <span class="arrow">${x.active ? '✓' : '›'}</span>
+    </button>
+  `).join('');
+
+  // Hot content
+  const hl = document.getElementById('hotList');
+  const hot = [
+    {t:'大一最容易踩的4个坑',tag:'⚠️必看',s:'y1'},
+    {t:'考研还是就业？怎么选',tag:'🔥热门',s:'y3'},
+    {t:'双非进大厂的3个真实通道',tag:'📌双非',s:'y3'},
+    {t:'前端vs后端vsAI，方向对比',tag:'🗺️路线',s:'routes'},
+    {t:'转专业学计算机来得及吗？',tag:'🔄转专业',s:'y1'},
+  ];
+  hl.innerHTML = hot.map((x,i) => `
+    <button class="hot-item" data-target="${x.s}">
+      <span class="num ${i<3?'top3':''}">${i+1}</span>
+      <span class="text">${x.t}</span>
+      <span class="tag">${x.tag}</span>
+    </button>
+  `).join('');
+}
+
+function stageEmoji(code) {
+  const m = { pre:'🎯', y1:'📚', y2:'💻', y3:'🚀', y4:'💼', m1:'🎓', m2:'🔬', m3:'🏁', post:'🌟' };
+  return m[code]||'📌';
+}
+
+// ===== RENDER STAGE =====
+function renderStageNav() {
+  const nav = document.getElementById('stageNav');
+  const badge = state.shuangfeiMode ? '<span class="shuangfei-badge" id="shuangfeiExit">📌双非模式 ✕</span>' : '';
+  nav.innerHTML = badge + DATA.stages.map(s => `
+    <button class="stage-nav-btn ${state.stage===s.code?'active':''}" data-stage="${s.code}">
+      ${state.shuangfeiMode && s.code==='y1' ? '📌 ' : ''}${stageEmoji(s.code)} ${s.label}
+      <span class="dot" style="background:${s.code===state.stage?'#fff':'var(--text3)'}"></span>
+    </button>
+  `).join('');
+}
+
+function renderStageContent() {
+  const el = document.getElementById('stageContent');
+  const stage = state.stage;
+  const sname = stageName(stage);
+
+  // Root nodes for this stage
+  let nodes = DATA.nodes.filter(n => !n.parent && n.category !== 'faq' && n.stage === stage);
+
+  // FAQ for this stage
+  let faqs = DATA.nodes.filter(n => n.category === 'faq' && !n.parent && n.stage === stage);
+
+  // Traps for this stage (if any)
+  const traps = TRAPS[stage] || [];
+
+  // 双非 mode: only show marker nodes
+  if (state.shuangfeiMode) {
+    nodes = nodes.filter(n => n.marker);
+    faqs = faqs.filter(n => n.marker);
+  }
+
+  // Build HTML
+  let html = '';
+
+  // Mission (only in 双非 mode if there are nodes to show)
+  html += `<div class="stage-section">
+    <div class="stage-section-header"><span class="icon">🎯</span><span class="stitle">${state.shuangfeiMode ? sname+'·双非专属' : sname+'的核心任务'}</span></div>
+    <div class="mission-card"><div class="mtext">${state.shuangfeiMode ? '双非学生重点关注以下📌标记内容，这些是竞争差异点：' : getMission(stage)}</div></div>
+  </div>`;
+
+  // Traps
+  if (traps.length) {
+    html += `<div class="stage-section">
+      <div class="stage-section-header"><span class="icon">⚠️</span><span class="stitle">致命陷阱（必看）</span></div>
+      ${traps.map(t => `
+        <div class="trap-card">
+          <div class="ttitle">🕳️ ${t.t}</div>
+          <div class="tdetail">${t.d}</div>
+        </div>
+      `).join('')}
+    </div>`;
+  }
+
+  // Courses (grouped by category)
+  const byCat = {};
+  nodes.forEach(n => {
+    if (!byCat[n.category]) byCat[n.category] = [];
+    byCat[n.category].push(n);
+  });
+
+  // Show categories that have courses
+  if (Object.keys(byCat).length) {
+    html += `<div class="stage-section">
+      <div class="stage-section-header"><span class="icon">📖</span><span class="stitle">${sname}课程与知识点</span></div>`;
+
+    for (const [cat, items] of Object.entries(byCat)) {
+      const ci = catInfo(cat);
+      html += `<div style="margin-bottom:8px">
+        <div style="font-size:12px;font-weight:600;color:${ci.c};margin-bottom:4px">${ci.e} ${ci.l}</div>
+        <div class="course-grid">
+          ${items.map(n => `
+            <button class="course-chip" data-node="${n.id}">
+              ${n.label}
+              ${n.marker ? '<span style="font-size:10px;color:#e07c3c;display:block">📌双非</span>' : ''}
+              <span class="sub">${n.description && n.description.length < 50 ? n.description : n.description.slice(0,40) + '…'}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // FAQ
+  if (faqs.length) {
+    html += `<div class="stage-section">
+      <div class="stage-section-header"><span class="icon">❓</span><span class="stitle">常见问题</span></div>
+      ${faqs.map(f => `
+        <div class="stage-faq-item" data-node="${f.id}">
+          <div class="q"><span>${f.label}</span>${f.marker?'<span style="font-size:10px;color:#e07c3c">📌</span>':''}<span class="arrow">▼</span></div>
+          <div class="a">${f.description}</div>
+        </div>
+      `).join('')}
+    </div>`;
+  }
+
+  // Empty state
+  if (!traps.length && !Object.keys(byCat).length && !faqs.length) {
+    html += `<div class="search-empty" style="padding:60px 0"><div class="big">📭</div><div>暂无数据</div></div>`;
+  }
+
+  el.innerHTML = html;
+}
+
+function getMission(stage) {
+  const m = {
+    pre:'了解计算机专业全貌，确认这是否是你真正想学的方向。浏览不同院校的课程设置和就业数据，为志愿填报做足功课。',
+    y1:'打好数学（高数/线代/离散）和编程基础（C语言/Python）。建立良好的学习习惯和自学能力。GPA是第一道门槛，别在这里摔跤。',
+    y2:'深入学习数据结构与算法、面向对象编程、计算机组成原理等核心课。开始刷LeetCode，探索技术方向（后端/前端/AI），尝试做第一个完整项目。',
+    y3:'确定主攻方向。准备暑期实习投递或考研复习。这是最关键的一年——实习经历或考研结果将直接影响毕业去向。',
+    y4:'完成毕业设计，全力冲刺秋招/春招或考研复试。如果考研失败，立刻转向校招，不要空窗。',
+    m1:'适应研究生节奏，选定研究方向，跟导师和实验室建立良好关系。明确自己是就业导向还是学术导向。',
+    m2:'积累论文成果或实习经历。如果是就业导向，研二暑假是关键的实习窗口。',
+    m3:'完成毕业论文，冲刺大厂校招或申博/留学申请。这是学生生涯的最后一关。',
+    post:'入职前3个月是适应期，快速融入团队、理解业务。职业早期注重技术积累，不必太在意薪资差距。',
+  };
+  return m[stage] || '探索适合自己的方向，打好基础。';
+}
+
+// ===== RENDER ROUTES =====
+function renderRoutes() {
+  document.getElementById('routesContent').innerHTML = ROUTES.map(r => `
+    <div class="route-card">
+      <div class="route-hd">
+        <span class="remoji">${r.e}</span>
+        <span class="rname">${r.n}路线</span>
+        <span class="rarrow">▼</span>
+      </div>
+      <div class="route-risk">⚠️ ${r.r}</div>
+      <div class="route-body">
+        ${r.s.map((s, i) => `<div class="route-step"><div class="snum">第${i+1}步</div><div class="sbody">${s}</div></div>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+// ===== SEARCH =====
+let searchData = [];
+
+function buildSearchIndex() {
+  searchData = [];
+  // Add all nodes
+  DATA.nodes.forEach(n => {
+    const ci = catInfo(n.category);
+    searchData.push({
+      id: n.id,
+      label: n.label,
+      desc: n.description,
+      category: n.category,
+      stage: n.stage,
+      catLabel: ci.l,
+      catEmoji: ci.e,
+      marker: n.marker,
+      type: 'node',
+    });
+  });
+  // Add traps
+  for (const [stage, items] of Object.entries(TRAPS)) {
+    items.forEach(t => {
+      searchData.push({
+        id: 'trap-'+stage+'-'+t.t,
+        label: '🕳️ '+t.t,
+        desc: t.d,
+        category: 'faq',
+        stage: stage,
+        catLabel: '致命陷阱',
+        catEmoji: '⚠️',
+        marker: false,
+        type: 'trap',
+      });
+    });
+  }
+  // Add routes
+  ROUTES.forEach(r => {
+    searchData.push({
+      id: 'route-'+r.n,
+      label: r.e+' '+r.n+'路线',
+      desc: r.r + ' · ' + r.s.join(' → '),
+      category: 'industry',
+      stage: 'y2',
+      catLabel: '学习路线',
+      catEmoji: '🗺️',
+      marker: false,
+      type: 'route',
+    });
+  });
+}
+
+function renderSearchCats() {
+  const el = document.getElementById('searchCats');
+  const all = [{c:null,l:'全部'}].concat(
+    Object.entries(CAT).map(([k,v]) => ({c:k,l:v.e+v.l}))
+  );
+  el.innerHTML = all.map(x => `
+    <button class="search-cat ${state.cat===x.c?'active':''}" data-cat="${x.c||''}">${x.l}</button>
+  `).join('');
+}
+
+function doSearch(q) {
+  q = q.toLowerCase().trim();
+  const results = document.getElementById('searchResults');
+  if (!q) {
+    results.innerHTML = '<div class="search-empty"><div class="big">🔍</div>输入关键词搜索</div>';
+    return;
+  }
+
+  let items = searchData.filter(d =>
+    d.label.toLowerCase().includes(q) ||
+    d.desc.toLowerCase().includes(q)
+  );
+
+  if (state.cat) items = items.filter(d => d.category === state.cat);
+
+  // Prioritize by relevance
+  items.sort((a, b) => {
+    const aExact = a.label.toLowerCase().includes(q) ? 2 : a.desc.toLowerCase().includes(q) ? 1 : 0;
+    const bExact = b.label.toLowerCase().includes(q) ? 2 : b.desc.toLowerCase().includes(q) ? 1 : 0;
+    return bExact - aExact;
+  });
+
+  if (!items.length) {
+    results.innerHTML = `<div class="search-empty"><div class="big">🔍</div>没有找到"${q}"相关的结果<br><span style="font-size:11px;color:var(--text3);">试试"考研"、"双非"、"高数"、"实习"</span></div>`;
+    return;
+  }
+
+  results.innerHTML = items.slice(0, 30).map(d => `
+    <div class="search-result-item" data-id="${d.id}" data-type="${d.type}" data-stage="${d.stage||''}">
+      <div class="srl"><span>${d.label}</span><span style="font-size:10px;color:var(--text2);margin-left:auto">${d.catEmoji}${d.catLabel}</span></div>
+      <div class="srd">${d.desc ? d.desc.slice(0, 80)+(d.desc.length>80?'...':'') : '点击查看详情'}</div>
+      ${d.marker ? '<div class="srt">📌 双非可关注</div>' : ''}
+      <div class="srt" style="color:var(--text3)">${stageName(d.stage)}</div>
+    </div>
+  `).join('');
+}
+
+// ===== MODAL =====
+function showNodeDetail(nodeId) {
+  const node = getNode(nodeId);
+  if (!node) return;
+  const ci = catInfo(node.category);
+  const children = getChildren(nodeId);
+
+  document.getElementById('modalBody').innerHTML = `
+    <div class="modal-title">${ci.e} ${node.label}</div>
+    <div class="modal-tag" style="background:${ci.c}15;color:${ci.c}">${ci.l} · ${stageName(node.stage)}</div>
+    ${node.marker ? '<div class="modal-marker">📌 双非学生在此节点有差异化策略</div>' : ''}
+    ${node.description ? `<div class="modal-desc">${node.description}</div>` : ''}
+    ${children.length ? `<div class="modal-children"><div class="modal-children-title">包含 ${children.length} 项内容</div>
+      ${children.map(c => `
+        <div class="modal-child">
+          <div class="mc-label">· ${c.label}${c.marker ? ' 📌' : ''}</div>
+          ${c.description && c.description.length > 10 ? `<div class="mc-desc">${c.description.length > 60 ? c.description.slice(0,60) + '…' : c.description}</div>` : ''}
+        </div>
+      `).join('')}
+    </div>` : ''}
+  `;
+  document.getElementById('modal').classList.add('show');
+}
+
+// ===== EVENTS =====
+function bindEvents() {
+  // Bottom nav
+  document.querySelector('.bottom-nav').addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    switchTab(btn.dataset.tab);
+  });
+
+  // Home: stage grid
+  document.getElementById('homeStageGrid').addEventListener('click', e => {
+    const btn = e.target.closest('.stage-grid-btn');
+    if (!btn) return;
+    state.stage = btn.dataset.stage;
+    switchTab('tabStage');
+  });
+
+  // Home: identity cards
+  document.getElementById('identityList').addEventListener('click', e => {
+    const btn = e.target.closest('.identity-btn');
+    if (!btn) return;
+    const focus = btn.dataset.focus;
+    if (focus === 'routes') { switchTab('tabRoutes'); return; }
+    if (focus === 'career') { state.stage = 'y3'; switchTab('tabStage'); return; }
+    if (focus === 'education') { state.stage = 'y3'; switchTab('tabStage'); return; }
+    if (focus === 'shuangfei') {
+      state.shuangfeiMode = !state.shuangfeiMode;
+      state.stage = state.shuangfeiMode ? 'y1' : 'y1';
+      renderHome();
+      if (state.shuangfeiMode) { switchTab('tabStage'); }
+      else if (state.tab === 'tabStage') { renderStageNav(); renderStageContent(); }
+    }
+    if (focus === 'transfer') {
+      state.stage = 'y1';
+      switchTab('tabStage');
+    }
+  });
+
+  // Home: hot items
+  document.getElementById('hotList').addEventListener('click', e => {
+    const item = e.target.closest('.hot-item');
+    if (!item) return;
+    const target = item.dataset.target;
+    if (target === 'routes') { switchTab('tabRoutes'); return; }
+    if (['y1','y2','y3','y4','m1'].includes(target)) {
+      state.stage = target;
+      switchTab('tabStage');
+    }
+  });
+
+  // Stage nav
+  document.getElementById('stageNav').addEventListener('click', e => {
+    const badge = e.target.closest('.shuangfei-badge');
+    if (badge) {
+      state.shuangfeiMode = false;
+      renderHome();
+      renderStageNav();
+      renderStageContent();
+      return;
+    }
+    const btn = e.target.closest('.stage-nav-btn');
+    if (!btn) return;
+    state.stage = btn.dataset.stage;
+    renderStageNav();
+    renderStageContent();
+  });
+
+  // Stage: course chips → modal
+  document.getElementById('stageContent').addEventListener('click', e => {
+    const chip = e.target.closest('.course-chip');
+    if (chip && chip.dataset.node) { showNodeDetail(chip.dataset.node); return; }
+    const faq = e.target.closest('.stage-faq-item');
+    if (faq) {
+      faq.classList.toggle('expanded');
+      if (faq.dataset.node) showNodeDetail(faq.dataset.node);
+    }
+  });
+
+  // Routes expand
+  document.getElementById('routesContent').addEventListener('click', e => {
+    const card = e.target.closest('.route-card');
+    if (card) card.classList.toggle('expanded');
+  });
+
+  // Search
+  let searchTimer;
+  document.getElementById('searchInput').addEventListener('input', e => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      state.search = e.target.value;
+      doSearch(state.search);
+    }, 150);
+  });
+
+  document.getElementById('searchCats').addEventListener('click', e => {
+    const btn = e.target.closest('.search-cat');
+    if (!btn) return;
+    state.cat = btn.dataset.cat || null;
+    renderSearchCats();
+    if (state.search) doSearch(state.search);
+  });
+
+  document.getElementById('searchResults').addEventListener('click', e => {
+    const item = e.target.closest('.search-result-item');
+    if (!item) return;
+    const id = item.dataset.id;
+    const type = item.dataset.type;
+    if (type === 'node' && id) showNodeDetail(id);
+    else if (type === 'route') switchTab('tabRoutes');
+    else if (type === 'trap') {
+      const s = item.dataset.stage;
+      if (s) { state.stage = s; switchTab('tabStage'); }
+    }
+  });
+
+  // Modal close
+  document.getElementById('modal').addEventListener('click', e => {
+    if (e.target === e.currentTarget) document.getElementById('modal').classList.remove('show');
+  });
+
+  // Bookmark
+  document.getElementById('bookmarkBtn').addEventListener('click', () => {
+    alert('收藏功能开发中，敬请期待！');
+  });
+}
+
+function switchTab(tab) {
+  state.tab = tab;
+  document.querySelectorAll('.tab-panel').forEach(el => el.classList.remove('active'));
+  document.getElementById(tab).classList.add('active');
+  document.querySelectorAll('.bottom-nav button').forEach(el => el.classList.toggle('active', el.dataset.tab === tab));
+
+  // Refresh content when switching to certain tabs
+  if (tab === 'tabStage') {
+    renderStageNav();
+    renderStageContent();
+  }
+}
+
+// ===== INIT =====
+async function init() {
+  await loadData();
+  buildSearchIndex();
+  renderHome();
+  renderStageNav();
+  renderStageContent();
+  renderRoutes();
+  renderSearchCats();
+  bindEvents();
+}
+
+init().catch(e => {
+  document.getElementById('stageContent').innerHTML = '<div class="search-empty"><div class="big">❌</div>数据加载失败</div>';
+  console.error(e);
+});
+</script>
+</body>
+</html>

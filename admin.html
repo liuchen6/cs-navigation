@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>知识图谱管理后台</title>
+<style>
+:root { --bg: #f1f5f9; --card: #fff; --text: #1e293b; --text2: #64748b; --border: #e2e8f0; --accent: #3b82f6; --danger: #ef4444; --success: #22c55e; --radius: 8px; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); font-size: 14px; padding: 0; }
+.header { background: var(--card); border-bottom: 1px solid var(--border); padding: 12px 20px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 10; }
+.header h1 { font-size: 16px; font-weight: 600; }
+.header .sub { font-size: 12px; color: var(--text2); }
+.btn { padding: 6px 14px; border-radius: var(--radius); font-size: 13px; cursor: pointer; border: 1px solid var(--border); background: var(--card); transition: all .15s; display: inline-flex; align-items: center; gap: 4px; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn-primary:hover { opacity: .9; color: #fff; }
+.btn-danger { border-color: var(--danger); color: var(--danger); }
+.btn-danger:hover { background: var(--danger); color: #fff; }
+.btn-sm { padding: 3px 8px; font-size: 12px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 16px 20px; }
+.tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--border); margin-bottom: 16px; }
+.tab { padding: 8px 16px; font-size: 13px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; color: var(--text2); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 500; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+th { background: var(--bg); font-weight: 600; position: sticky; top: 0; }
+tr:hover td { background: #f8fafc; }
+.form-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; align-items: end; }
+.form-group { display: flex; flex-direction: column; gap: 3px; }
+.form-group label { font-size: 11px; color: var(--text2); font-weight: 500; }
+.form-group input, .form-group select, .form-group textarea { padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; outline: none; }
+.form-group input:focus, .form-group select:focus { border-color: var(--accent); }
+.form-group textarea { min-width: 300px; min-height: 60px; resize: vertical; font-family: inherit; }
+.actions { display: flex; gap: 4px; }
+.toolbar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.alert { padding: 10px 14px; border-radius: var(--radius); margin-bottom: 12px; font-size: 13px; }
+.alert-success { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.alert-error { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.3); z-index: 100; display: none; align-items: center; justify-content: center; padding: 20px; }
+.modal-overlay.show { display: flex; }
+.modal { background: var(--card); border-radius: 12px; max-width: 600px; width: 100%; max-height: 80vh; overflow-y: auto; padding: 20px; }
+.modal h2 { font-size: 15px; margin-bottom: 14px; }
+.filter-input { padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 200px; }
+.stat { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>⚙️ 知识图谱管理后台</h1>
+  <span class="sub" id="headerStats"></span>
+  <div style="flex:1"></div>
+  <a href="index.html" class="btn" target="_blank">查看图谱</a>
+</div>
+
+<div class="container">
+  <div class="tabs">
+    <div class="tab active" data-tab="nodesTab">节点管理</div>
+    <div class="tab" data-tab="edgesTab">边管理</div>
+    <div class="tab" data-tab="dataTab">数据导入/导出</div>
+  </div>
+
+  <!-- NODES TAB -->
+  <div class="tab-content active" id="nodesTab">
+    <div class="toolbar">
+      <button class="btn btn-primary" id="addNodeBtn">＋ 新增节点</button>
+      <input class="filter-input" id="nodeFilter" placeholder="搜索节点...">
+      <select id="catFilter" style="padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px">
+        <option value="">全部分类</option>
+      </select>
+    </div>
+    <div style="overflow-x:auto;max-height:70vh;overflow-y:auto">
+      <table>
+        <thead><tr>
+          <th style="width:40px">#</th>
+          <th>ID</th>
+          <th>标签</th>
+          <th>分类</th>
+          <th>阶段</th>
+          <th>父节点</th>
+          <th style="width:60px">📌</th>
+          <th style="width:120px">操作</th>
+        </tr></thead>
+        <tbody id="nodeTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- EDGES TAB -->
+  <div class="tab-content" id="edgesTab">
+    <div class="toolbar">
+      <button class="btn btn-primary" id="addEdgeBtn">＋ 新增边</button>
+    </div>
+    <div style="overflow-x:auto;max-height:70vh;overflow-y:auto">
+      <table>
+        <thead><tr>
+          <th style="width:40px">#</th>
+          <th>源节点</th>
+          <th>目标节点</th>
+          <th>关系类型</th>
+          <th>标签</th>
+          <th style="width:100px">操作</th>
+        </tr></thead>
+        <tbody id="edgeTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- DATA TAB -->
+  <div class="tab-content" id="dataTab">
+    <div class="toolbar">
+      <button class="btn btn-primary" id="exportBtn">📥 导出 JSON</button>
+      <button class="btn" id="importBtn">📤 导入 JSON</button>
+      <button class="btn" id="resetBtn">🔄 重置数据</button>
+      <input type="file" id="fileInput" accept=".json" style="display:none">
+    </div>
+    <div id="importAlert"></div>
+    <p style="color:var(--text2);font-size:13px;line-height:1.8">
+      管理员可以修改节点和边的数据，修改后点击"导出 JSON"下载数据文件。<br>
+      将导出的 <code>data.json</code> 覆盖项目根目录的同名文件即可更新线上图谱。<br>
+      也可以通过"导入 JSON"的方式恢复之前备份的数据。<br>
+      <strong style="color:var(--text)">注意：所有修改仅保存在浏览器 localStorage 中，导出后才算持久化。</strong>
+    </p>
+  </div>
+</div>
+
+<!-- NODE EDIT MODAL -->
+<div class="modal-overlay" id="nodeModal">
+  <div class="modal">
+    <h2 id="nodeModalTitle">编辑节点</h2>
+    <div class="form-row">
+      <div class="form-group" style="flex:1"><label>标签 *</label><input id="nodeFormLabel" placeholder="节点显示名称"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group" style="flex:1"><label>分类</label><select id="nodeFormCat"></select></div>
+      <div class="form-group" style="flex:1"><label>阶段</label><select id="nodeFormStage"></select></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group" style="flex:1"><label>父节点ID（可选）</label><input id="nodeFormParent" placeholder="留空为根节点"></div>
+      <div class="form-group" style="width:80px"><label>📌 标记</label><select id="nodeFormMarker"><option value="false">否</option><option value="true">是</option></select></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group" style="flex:1"><label>描述</label><textarea id="nodeFormDesc" placeholder="节点描述文字"></textarea></div>
+    </div>
+    <div class="form-row" style="justify-content:flex-end;gap:8px">
+      <button class="btn" id="nodeModalCancel">取消</button>
+      <button class="btn btn-primary" id="nodeModalSave">保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- EDGE EDIT MODAL -->
+<div class="modal-overlay" id="edgeModal">
+  <div class="modal">
+    <h2 id="edgeModalTitle">编辑边</h2>
+    <div class="form-row">
+      <div class="form-group" style="flex:1"><label>源节点ID *</label><input id="edgeFormSource" placeholder="源节点ID"></div>
+      <div class="form-group" style="flex:1"><label>目标节点ID *</label><input id="edgeFormTarget" placeholder="目标节点ID"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group" style="flex:1"><label>关系类型</label><select id="edgeFormType">
+        <option value="prerequisite">先修</option>
+        <option value="advance">进阶</option>
+        <option value="application">应用</option>
+        <option value="flow">流程</option>
+        <option value="related">相关</option>
+        <option value="tool">工具</option>
+      </select></div>
+      <div class="form-group" style="flex:1"><label>标签（可选）</label><input id="edgeFormLabel" placeholder="如：先修/进阶/应用"></div>
+    </div>
+    <div class="form-row" style="justify-content:flex-end;gap:8px">
+      <button class="btn" id="edgeModalCancel">取消</button>
+      <button class="btn btn-primary" id="edgeModalSave">保存</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ================================================================
+// DATA MANAGEMENT
+// ================================================================
+const STORAGE_KEY = 'cs_kg_admin_data';
+let data = null;
+
+async function loadData() {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    try { data = JSON.parse(stored); return; } catch(e) {}
+  }
+
+  // Load from file
+  const res = await fetch('data.json');
+  data = await res.json();
+  saveToStorage();
+}
+
+function saveToStorage() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data, null, 2));
+}
+
+function getNode(id) {
+  return data.nodes.find(n => n.id === id);
+}
+
+function getNodeLabel(id) {
+  const n = getNode(id);
+  return n ? n.label : '(deleted)';
+}
+
+// ================================================================
+// RENDER
+// ================================================================
+function renderStats() {
+  document.getElementById('headerStats').textContent =
+    `${data.nodes.length} 节点 · ${data.edges.length} 边 · ${data.markerNodes.length} 📌标记`;
+}
+
+function renderNodes() {
+  const tbody = document.getElementById('nodeTableBody');
+  const filter = document.getElementById('nodeFilter').value.toLowerCase();
+  const catFilter = document.getElementById('catFilter').value;
+
+  let nodes = data.nodes;
+  if (filter) nodes = nodes.filter(n => n.label.toLowerCase().includes(filter) || n.id.toLowerCase().includes(filter));
+  if (catFilter) nodes = nodes.filter(n => n.category === catFilter);
+
+  tbody.innerHTML = nodes.map((n, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td style="font-family:monospace;font-size:11px;color:var(--text2)">${n.id}</td>
+      <td>${n.label}</td>
+      <td><span class="stat" style="background:${catColor(n.category)}20;color:${catColor(n.category)}">${n.category}</span></td>
+      <td>${n.stage}</td>
+      <td style="font-size:11px;color:var(--text2)">${n.parent ? n.parent : '—'}</td>
+      <td style="text-align:center">${n.marker ? '📌' : ''}</td>
+      <td>
+        <div class="actions">
+          <button class="btn btn-sm" onclick="editNode('${n.id}')">编辑</button>
+          <button class="btn btn-sm btn-danger" onclick="deleteNode('${n.id}')">删除</button>
+        </div>
+      </td>
+    </tr>
+  `).join('');
+}
+
+function renderEdges() {
+  const tbody = document.getElementById('edgeTableBody');
+  tbody.innerHTML = data.edges.map((e, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td style="font-size:12px"><span style="color:var(--text2)">${e.source}</span><br>${getNodeLabel(e.source)}</td>
+      <td style="font-size:12px"><span style="color:var(--text2)">${e.target}</span><br>${getNodeLabel(e.target)}</td>
+      <td><span class="stat" style="background:${edgeColor(e.type)}20;color:${edgeColor(e.type)}">${e.type}</span></td>
+      <td style="color:var(--text2)">${e.label || '—'}</td>
+      <td>
+        <div class="actions">
+          <button class="btn btn-sm btn-danger" onclick="deleteEdge(${i})">删除</button>
+        </div>
+      </td>
+    </tr>
+  `).join('');
+}
+
+function renderCatFilter() {
+  const sel = document.getElementById('catFilter');
+  data.categories.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c.code;
+    opt.textContent = c.emoji + ' ' + c.label;
+    sel.appendChild(opt);
+  });
+}
+
+function populateSelects() {
+  // Category select in form
+  const catSel = document.getElementById('nodeFormCat');
+  catSel.innerHTML = data.categories.map(c => `<option value="${c.code}">${c.emoji} ${c.label}</option>`).join('');
+  // Stage select
+  const stageSel = document.getElementById('nodeFormStage');
+  stageSel.innerHTML = data.stages.map(s => `<option value="${s.code}">${s.label}</option>`).join('');
+}
+
+function catColor(c) {
+  const m = { foundation:'#60a5fa', core:'#34d399', skill:'#a78bfa', competition:'#fb923c', career:'#f472b6', education:'#22d3ee', project:'#fbbf24', softskill:'#f59e0b', industry:'#8b5cf6', faq:'#ec4899' };
+  return m[c] || '#94a3b8';
+}
+function edgeColor(t) {
+  const m = { prerequisite:'#3b82f6', advance:'#f59e0b', application:'#10b981', flow:'#8b5cf6', related:'#94a3b8', tool:'#ec4899' };
+  return m[t] || '#94a3b8';
+}
+
+// ================================================================
+// CRUD: NODES
+// ================================================================
+let editingNodeId = null;
+
+function editNode(id) {
+  const n = getNode(id);
+  if (!n) return;
+  editingNodeId = id;
+  document.getElementById('nodeModalTitle').textContent = '编辑节点';
+  document.getElementById('nodeFormLabel').value = n.label;
+  document.getElementById('nodeFormCat').value = n.category;
+  document.getElementById('nodeFormStage').value = n.stage;
+  document.getElementById('nodeFormParent').value = n.parent || '';
+  document.getElementById('nodeFormMarker').value = n.marker ? 'true' : 'false';
+  document.getElementById('nodeFormDesc').value = n.description || '';
+  document.getElementById('nodeModal').classList.add('show');
+}
+
+function deleteNode(id) {
+  if (!confirm(`确定删除节点 "${getNodeLabel(id)}"?\n相关边也会被删除。`)) return;
+  data.nodes = data.nodes.filter(n => n.id !== id);
+  data.edges = data.edges.filter(e => e.source !== id && e.target !== id);
+  data.markerNodes = data.markerNodes.filter(n => n !== id);
+  saveToStorage();
+  renderAll();
+}
+
+document.getElementById('addNodeBtn').onclick = () => {
+  editingNodeId = null;
+  document.getElementById('nodeModalTitle').textContent = '新增节点';
+  document.getElementById('nodeFormLabel').value = '';
+  document.getElementById('nodeFormCat').value = 'foundation';
+  document.getElementById('nodeFormStage').value = 'y1';
+  document.getElementById('nodeFormParent').value = '';
+  document.getElementById('nodeFormMarker').value = 'false';
+  document.getElementById('nodeFormDesc').value = '';
+  document.getElementById('nodeModal').classList.add('show');
+};
+
+document.getElementById('nodeModalSave').onclick = () => {
+  const label = document.getElementById('nodeFormLabel').value.trim();
+  if (!label) { alert('节点标签不能为空'); return; }
+
+  if (editingNodeId) {
+    const n = getNode(editingNodeId);
+    if (n) {
+      n.label = label;
+      n.category = document.getElementById('nodeFormCat').value;
+      n.stage = document.getElementById('nodeFormStage').value;
+      n.parent = document.getElementById('nodeFormParent').value || null;
+      n.marker = document.getElementById('nodeFormMarker').value === 'true';
+      n.description = document.getElementById('nodeFormDesc').value;
+    }
+  } else {
+    // Generate new ID
+    const base = label.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
+    let id = base, n = 1;
+    while (getNode(id)) id = base + '-' + (n++);
+    data.nodes.push({
+      id,
+      label,
+      category: document.getElementById('nodeFormCat').value,
+      stage: document.getElementById('nodeFormStage').value,
+      parent: document.getElementById('nodeFormParent').value || null,
+      marker: document.getElementById('nodeFormMarker').value === 'true',
+      description: document.getElementById('nodeFormDesc').value,
+    });
+  }
+
+  data.markerNodes = data.nodes.filter(n => n.marker).map(n => n.id);
+  document.getElementById('nodeModal').classList.remove('show');
+  saveToStorage();
+  renderAll();
+};
+
+document.getElementById('nodeModalCancel').onclick = () => document.getElementById('nodeModal').classList.remove('show');
+document.getElementById('nodeModal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) document.getElementById('nodeModal').classList.remove('show');
+});
+
+// ================================================================
+// CRUD: EDGES
+// ================================================================
+document.getElementById('addEdgeBtn').onclick = () => {
+  document.getElementById('edgeModalTitle').textContent = '新增边';
+  document.getElementById('edgeFormSource').value = '';
+  document.getElementById('edgeFormTarget').value = '';
+  document.getElementById('edgeFormType').value = 'related';
+  document.getElementById('edgeFormLabel').value = '';
+  document.getElementById('edgeModal').classList.add('show');
+};
+
+document.getElementById('edgeModalSave').onclick = () => {
+  const source = document.getElementById('edgeFormSource').value.trim();
+  const target = document.getElementById('edgeFormTarget').value.trim();
+  if (!source || !target) { alert('源节点和目标节点不能为空'); return; }
+  if (!getNode(source)) { alert(`源节点 "${source}" 不存在`); return; }
+  if (!getNode(target)) { alert(`目标节点 "${target}" 不存在`); return; }
+
+  data.edges.push({
+    source,
+    target,
+    type: document.getElementById('edgeFormType').value,
+    label: document.getElementById('edgeFormLabel').value || '',
+  });
+
+  document.getElementById('edgeModal').classList.remove('show');
+  saveToStorage();
+  renderAll();
+};
+
+document.getElementById('edgeModalCancel').onclick = () => document.getElementById('edgeModal').classList.remove('show');
+document.getElementById('edgeModal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) document.getElementById('edgeModal').classList.remove('show');
+});
+
+function deleteEdge(idx) {
+  if (!confirm('确定删除这条边？')) return;
+  data.edges.splice(idx, 1);
+  saveToStorage();
+  renderAll();
+}
+
+// ================================================================
+// IMPORT / EXPORT
+// ================================================================
+document.getElementById('exportBtn').onclick = () => {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'data.json';
+  a.click();
+  URL.revokeObjectURL(url);
+};
+
+document.getElementById('importBtn').onclick = () => document.getElementById('fileInput').click();
+
+document.getElementById('fileInput').onchange = e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const imported = JSON.parse(ev.target.result);
+      if (!imported.nodes || !imported.edges) {
+        showImportAlert('JSON格式错误：缺少 nodes 或 edges 字段', 'error');
+        return;
+      }
+      data = imported;
+      saveToStorage();
+      renderAll();
+      showImportAlert(`导入成功！${data.nodes.length} 节点, ${data.edges.length} 边`, 'success');
+    } catch (err) {
+      showImportAlert('JSON解析失败：' + err.message, 'error');
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+};
+
+function showImportAlert(msg, type) {
+  const el = document.getElementById('importAlert');
+  el.innerHTML = `<div class="alert alert-${type}">${msg}</div>`;
+  setTimeout(() => el.innerHTML = '', 3000);
+}
+
+document.getElementById('resetBtn').onclick = async () => {
+  if (!confirm('重置将丢失所有本地修改，确认？')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  const res = await fetch('data.json');
+  data = await res.json();
+  saveToStorage();
+  renderAll();
+};
+
+// ================================================================
+// TABS
+// ================================================================
+document.querySelectorAll('.tab').forEach(el => {
+  el.onclick = () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById(el.dataset.tab).classList.add('active');
+  };
+});
+
+// ================================================================
+// FILTER
+// ================================================================
+document.getElementById('nodeFilter').addEventListener('input', renderNodes);
+document.getElementById('catFilter').addEventListener('change', renderNodes);
+
+// ================================================================
+// RENDER ALL
+// ================================================================
+function renderAll() {
+  renderStats();
+  renderNodes();
+  renderEdges();
+}
+
+// ================================================================
+// INIT
+// ================================================================
+async function init() {
+  await loadData();
+  renderCatFilter();
+  populateSelects();
+  renderAll();
+}
+
+init();
+</script>
+</body>
+</html>
