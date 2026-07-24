@@ -1,0 +1,15 @@
+﻿node_modules/
+.DS_Store
+*.log
+.gitignore
+build-data.js
+
+# Content production files (moved to 计算机突围-content project)
+*.preset.html
+wechat-preview-url.txt
+AGENTS.md
+
+# Source docs
+*全周期数据收集*
+*公众号文章_*
+*全周期导航上线_*
