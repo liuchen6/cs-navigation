@@ -495,7 +495,7 @@
       "id": "n43",
       "label": "数据库系统原理",
       "category": "core",
-      "stage": "y2",
+      "stage": "y3",
       "parent": null,
       "marker": false,
       "description": "大二核心课，SQL和数据库设计是后端开发的必备技能。事务、索引、查询优化是面试高频考点。主流教材：王珊《数据库系统概论》（高等教育出版社）。"
@@ -504,28 +504,28 @@
       "id": "n44",
       "label": "SQL语言与ER建模",
       "category": "core",
-      "stage": "y2",
+      "stage": "y3",
       "parent": "n43",
       "marker": false,
-      "description": "专业核心 · 大二阶段 · 属于「数据库系统原理」。点击查看详情。"
+      "description": "专业核心 · 大三阶段 · 属于「数据库系统原理」。点击查看详情。"
     },
     {
       "id": "n45",
       "label": "事务与并发控制",
       "category": "core",
-      "stage": "y2",
+      "stage": "y3",
       "parent": "n43",
       "marker": false,
-      "description": "专业核心 · 大二阶段 · 属于「数据库系统原理」。点击查看详情。"
+      "description": "专业核心 · 大三阶段 · 属于「数据库系统原理」。点击查看详情。"
     },
     {
       "id": "n46",
       "label": "查询优化与索引",
       "category": "core",
-      "stage": "y2",
+      "stage": "y3",
       "parent": "n43",
       "marker": false,
-      "description": "专业核心 · 大二阶段 · 属于「数据库系统原理」。点击查看详情。"
+      "description": "专业核心 · 大三阶段 · 属于「数据库系统原理」。点击查看详情。"
     },
     {
       "id": "n47",
@@ -612,7 +612,7 @@
       "id": "n56",
       "label": "算法设计与分析",
       "category": "core",
-      "stage": "y3",
+      "stage": "y2",
       "parent": null,
       "marker": false,
       "description": "大三核心课，面试算法题的进阶。分治、DP、贪心、回溯是高阶算法能力的关键。"
@@ -621,28 +621,28 @@
       "id": "n57",
       "label": "分治/动态规划/贪心",
       "category": "core",
-      "stage": "y3",
+      "stage": "y2",
       "parent": "n56",
       "marker": false,
-      "description": "专业核心 · 大三阶段 · 属于「算法设计与分析」。点击查看详情。"
+      "description": "专业核心 · 大二阶段 · 属于「算法设计与分析」。点击查看详情。"
     },
     {
       "id": "n58",
       "label": "回溯/分支限界",
       "category": "core",
-      "stage": "y3",
+      "stage": "y2",
       "parent": "n56",
       "marker": false,
-      "description": "专业核心 · 大三阶段 · 属于「算法设计与分析」。点击查看详情。"
+      "description": "专业核心 · 大二阶段 · 属于「算法设计与分析」。点击查看详情。"
     },
     {
       "id": "n59",
       "label": "NP完全问题",
       "category": "core",
-      "stage": "y3",
+      "stage": "y2",
       "parent": "n56",
       "marker": false,
-      "description": "专业核心 · 大三阶段 · 属于「算法设计与分析」。点击查看详情。"
+      "description": "专业核心 · 大二阶段 · 属于「算法设计与分析」。点击查看详情。"
     },
     {
       "id": "n60",
@@ -720,7 +720,7 @@
       "id": "n68",
       "label": "人工智能导论",
       "category": "core",
-      "stage": "y3",
+      "stage": "y2",
       "parent": null,
       "marker": false,
       "description": "大三课程，AI领域的全景概览。搜索、知识表示、机器学习基础概念。"
@@ -747,7 +747,7 @@
       "id": "n71",
       "label": "深度学习进阶",
       "category": "core",
-      "stage": "y4",
+      "stage": "y3",
       "parent": null,
       "marker": false,
       "description": "大四课程（多校大三下已开设），AI方向核心。CNN/RNN/Transformer架构，PyTorch框架实战。需机器学习基础前置。"
@@ -756,7 +756,7 @@
       "id": "n72",
       "label": "自然语言处理",
       "category": "core",
-      "stage": "y4",
+      "stage": "y3",
       "parent": null,
       "marker": false,
       "description": "AI热门方向，部分高校大三下已开设。Transformer/BERT/GPT系列是核心。需要深度学习基础前置。NLP工程师需求稳定但门槛高（硕士起步）。"
@@ -765,7 +765,7 @@
       "id": "n73",
       "label": "计算机视觉",
       "category": "core",
-      "stage": "y4",
+      "stage": "y3",
       "parent": null,
       "marker": false,
       "description": "AI热门方向，部分校大三下已开设。CNN/目标检测/图像分割是核心。CV竞争激烈，建议与具体场景结合（医疗影像、自动驾驶）降低竞争。"
