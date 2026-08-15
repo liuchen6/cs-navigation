@@ -269,10 +269,11 @@ const CAT = {
 };
 const STAGE = { pre:'大学前', y1:'大一', y2:'大二', y3:'大三', y4:'大四', m1:'研一', m2:'研二', m3:'研三', post:'毕业后' };
 const STAGES = ['pre','y1','y2','y3','y4','m1','m2','m3','post'];
+const STAGE_RANGE = { '深度学习进阶':'y3-y4', '自然语言处理':'y3-y4', '计算机视觉':'y3-y4', '计算机组成原理':'y2-y3', '操作系统':'y2-y3', '人工智能导论':'y2-y3' };
 
 const TRAPS = {
   y1:[
-    {t:'高数/线代挂科',d:'→ 失去保研资格 → 大厂简历关被卡 → 后续ML/AI学不动'},
+    {t:'高数/线代挂科',d:'→ 多数院校一票否决保研资格（部分近年已放宽为允许1门补考通过，以本校为准） → 大厂简历关被卡 → 后续ML/AI学不动'},
     {t:'以为C语言就是全部',d:'→ 数据结构跟不上 → 算法薄弱 → 面试发现基础有巨大缺口'},
     {t:'躺平一年"先放松"',d:'→ GPA低 → 大三大四想追发现为时已晚 → 简历GPA<3.0直接筛掉'},
     {t:'啥都想学啥都不精',d:'→ 今天Python明天Java后天前端 → 大二结束没一个能拿出手的技能'},
@@ -299,10 +300,10 @@ const TRAPS = {
 };
 
 const ROUTES = [
-  {e:'🤖',n:'AI/机器学习',r:'AI算法岗学历门槛高（硕博起步），本科适合AI应用开发/工程岗',s:[
+  {e:'🤖',n:'AI/机器学习',r:'区分两类岗：算法/研究岗学历门槛高（大厂硕博起步），AI应用开发岗（用模型做落地）对本科友好',s:[
       'Python → 高数/线代/概率论 → 数据结构与算法',
       'ML基础(Scikit-learn) → 深度学习(PyTorch) → CV/NLP选一',
-      '大模型应用(RAG/Agent/微调) → ML系统设计 → 部署',
+      '大模型应用(RAG/Agent/Prompt) → 模型部署(vLLM) → 应对产品任务',
       '算法题 → ML八股 → 项目深挖 → 实习/开源']},
   {e:'⚙️',n:'后端/架构',r:'后端生态庞大，避免"框架焦虑"，聚焦1-2个技术栈',s:[
       '一门语言(Java/Python/Go) → 数据结构 → SQL → 网络/OS',
@@ -337,6 +338,7 @@ let state = { tab:'tabHome', stage:'y1', cat:null, search:'', shuangfeiMode:fals
 // ===== HELPERS =====
 function catInfo(c) { return CAT[c]||{l:c,c:'#94a3b8',e:''}; }
 function stageName(s) { return STAGE[s]||s; }
+function stageNameOf(node) { return STAGE_RANGE[node.label] ? STAGE_RANGE[node.label] + '（各校有差异）' : stageName(node.stage); }
 function getNode(id) { return DATA.nodes.find(n=>n.id===id); }
 function getChildren(id) { return DATA.nodes.filter(n=>n.parent===id); }
 
@@ -623,7 +625,7 @@ function doSearch(q) {
       <div class="srl"><span>${d.label}</span><span style="font-size:10px;color:var(--text2);margin-left:auto">${d.catEmoji}${d.catLabel}</span></div>
       <div class="srd">${d.desc ? d.desc.slice(0, 80)+(d.desc.length>80?'...':'') : '点击查看详情'}</div>
       ${d.marker ? '<div class="srt">📌 双非可关注</div>' : ''}
-      <div class="srt" style="color:var(--text3)">${stageName(d.stage)}</div>
+      <div class="srt" style="color:var(--text3)">${d.type === 'node' && STAGE_RANGE[d.label] ? STAGE_RANGE[d.label] + '（各校有差异）' : stageName(d.stage)}</div>
     </div>
   `).join('');
 }
@@ -637,7 +639,7 @@ function showNodeDetail(nodeId) {
 
   document.getElementById('modalBody').innerHTML = `
     <div class="modal-title">${ci.e} ${node.label}</div>
-    <div class="modal-tag" style="background:${ci.c}15;color:${ci.c}">${ci.l} · ${stageName(node.stage)}</div>
+    <div class="modal-tag" style="background:${ci.c}15;color:${ci.c}">${ci.l} · ${stageNameOf(node)}</div>
     ${node.marker ? '<div class="modal-marker">📌 双非学生在此节点有差异化策略</div>' : ''}
     ${node.description ? `<div class="modal-desc">${node.description}</div>` : ''}
     ${children.length ? `<div class="modal-children"><div class="modal-children-title">包含 ${children.length} 项内容</div>
