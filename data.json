@@ -1640,7 +1640,7 @@
       "category": "career",
       "stage": "y4",
       "parent": null,
-      "marker": false,
+      "marker": true,
       "description": "大四最重要的招聘季。互联网大厂集中释放岗位，需要提前准备好简历、算法、八股、项目。"
     },
     {
@@ -1757,7 +1757,7 @@
       "category": "career",
       "stage": "post",
       "parent": null,
-      "marker": false,
+      "marker": true,
       "description": "实习就业 · 毕业后阶段。包含 3 项内容：技术评级与晋升、跳槽时机与准备、技术深度vs广度。"
     },
     {
@@ -2104,6 +2104,33 @@
     },
     {
       "id": "n222",
+      "label": "硕士秋招与春招",
+      "category": "career",
+      "stage": "m3",
+      "parent": null,
+      "marker": true,
+      "description": "研究生秋招在研三上学期、春招在研三下学期，与本科同一批招聘窗口（提前批/正式批/补录）。硕士优势在项目与论文深度：面试重点讲清科研中解决的实际问题与工程落地。秋招未果的方向，春招是捡漏与补救期。"
+    },
+    {
+      "id": "n223",
+      "label": "硕士学位论文盲审",
+      "category": "education",
+      "stage": "m3",
+      "parent": null,
+      "marker": false,
+      "description": "硕士论文盲审一般安排在校级窗口期内（各校时间不一，以本校安排为准）。送审前自查格式、逻辑与结论一致性，导师确认可送审后再提交，按教育部抽检与本校规定执行。"
+    },
+    {
+      "id": "n224",
+      "label": "毕业答辩与学位申请",
+      "category": "education",
+      "stage": "m3",
+      "parent": null,
+      "marker": false,
+      "description": "答辩在盲审通过后按校历安排（各校时间不一）。答辩通过后完成学位申请、材料归档与离校手续。PPT与演练至少提前一周准备，重点讲清创新点与实际工作量。"
+    },
+    {
+      "id": "n225",
       "label": "课程大作业",
       "category": "project",
       "stage": "y1",
@@ -2112,7 +2139,7 @@
       "description": "把课程大作业当作品来做。选有意思的题目，完成后放到GitHub上。面试时可以说这是你的第一个项目。"
     },
     {
-      "id": "n223",
+      "id": "n226",
       "label": "个人博客/网站",
       "category": "project",
       "stage": "y1",
@@ -2121,7 +2148,7 @@
       "description": "大一第一个项目。用GitHub Pages或Vercel免费部署。写技术博客是最好的学习方式。"
     },
     {
-      "id": "n224",
+      "id": "n227",
       "label": "简单全栈应用(Todo/记事本)",
       "category": "project",
       "stage": "y2",
@@ -2130,7 +2157,7 @@
       "description": "大二第一个完整Web项目。从前端（React/Vue）到后端（Node/Flask）到数据库全流程跑通。"
     },
     {
-      "id": "n225",
+      "id": "n228",
       "label": "在线商城系统",
       "category": "project",
       "stage": "y2",
@@ -2139,7 +2166,7 @@
       "description": "经典全栈练手项目。包含注册登录、商品管理、购物车、支付流程。适合写进简历。"
     },
     {
-      "id": "n226",
+      "id": "n229",
       "label": "实时聊天室",
       "category": "project",
       "stage": "y2",
@@ -2148,7 +2175,7 @@
       "description": "WebSocket实战项目。理解长连接、即时通讯、消息推送。后端面试常问。"
     },
     {
-      "id": "n227",
+      "id": "n230",
       "label": "数据分析可视化项目",
       "category": "project",
       "stage": "y2",
@@ -2157,7 +2184,7 @@
       "description": "数据科学入门的项目。爬虫+数据清洗+分析+可视化。适合大数据方向。"
     },
     {
-      "id": "n228",
+      "id": "n231",
       "label": "AI/ML实战项目",
       "category": "project",
       "stage": "y3",
@@ -2166,34 +2193,34 @@
       "description": "项目实战 · 大三阶段。包含 3 项内容：图像分类器、文本生成/对话系统、推荐系统实现。"
     },
     {
-      "id": "n229",
+      "id": "n232",
       "label": "图像分类器",
       "category": "project",
       "stage": "y3",
-      "parent": "n228",
+      "parent": "n231",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。点击查看详情。"
     },
     {
-      "id": "n230",
+      "id": "n233",
       "label": "文本生成/对话系统",
       "category": "project",
       "stage": "y3",
-      "parent": "n228",
+      "parent": "n231",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。点击查看详情。"
     },
     {
-      "id": "n231",
+      "id": "n234",
       "label": "推荐系统实现",
       "category": "project",
       "stage": "y3",
-      "parent": "n228",
+      "parent": "n231",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。点击查看详情。"
     },
     {
-      "id": "n232",
+      "id": "n235",
       "label": "开源项目贡献",
       "category": "project",
       "stage": "y3",
@@ -2202,34 +2229,34 @@
       "description": "大三~大四提升简历含金量的有效方式。从文档、小issue入手，理解开源协作流程，大厂面试加分项。"
     },
     {
-      "id": "n233",
+      "id": "n236",
       "label": "GitHub Issue响应",
       "category": "project",
       "stage": "y3",
-      "parent": "n232",
+      "parent": "n235",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。点击查看详情。"
     },
     {
-      "id": "n234",
+      "id": "n237",
       "label": "Pull Request提交流程",
       "category": "project",
       "stage": "y3",
-      "parent": "n232",
+      "parent": "n235",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。点击查看详情。"
     },
     {
-      "id": "n235",
+      "id": "n238",
       "label": "文档完善",
       "category": "project",
       "stage": "y3",
-      "parent": "n232",
+      "parent": "n235",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。点击查看详情。"
     },
     {
-      "id": "n236",
+      "id": "n239",
       "label": "独立产品开发",
       "category": "project",
       "stage": "y3",
@@ -2238,7 +2265,7 @@
       "description": "证明工程能力的最佳方式。从需求分析到上线运营的完整闭环，比课程作业更有说服力。"
     },
     {
-      "id": "n237",
+      "id": "n240",
       "label": "毕业设计",
       "category": "project",
       "stage": "y4",
@@ -2247,34 +2274,34 @@
       "description": "本科能做就跟求职方向一致，一举两得。答辩看工作量（功能+文档+演示），求职看技术深度。"
     },
     {
-      "id": "n238",
+      "id": "n241",
       "label": "开题报告",
       "category": "project",
       "stage": "y4",
-      "parent": "n237",
+      "parent": "n240",
       "marker": false,
       "description": "项目实战 · 大四阶段 · 属于「毕业设计」。点击查看详情。"
     },
     {
-      "id": "n239",
+      "id": "n242",
       "label": "系统设计与实现",
       "category": "project",
       "stage": "y4",
-      "parent": "n237",
+      "parent": "n240",
       "marker": false,
       "description": "项目实战 · 大四阶段 · 属于「毕业设计」。点击查看详情。"
     },
     {
-      "id": "n240",
+      "id": "n243",
       "label": "论文撰写",
       "category": "project",
       "stage": "y4",
-      "parent": "n237",
+      "parent": "n240",
       "marker": false,
       "description": "项目实战 · 大四阶段 · 属于「毕业设计」。点击查看详情。"
     },
     {
-      "id": "n241",
+      "id": "n244",
       "label": "实验室科研项目",
       "category": "project",
       "stage": "m1",
@@ -2283,7 +2310,7 @@
       "description": "项目实战 · 研一阶段。点击查看详情。"
     },
     {
-      "id": "n242",
+      "id": "n245",
       "label": "企业合作项目",
       "category": "project",
       "stage": "m1",
@@ -2292,7 +2319,7 @@
       "description": "项目实战 · 研一阶段。点击查看详情。"
     },
     {
-      "id": "n243",
+      "id": "n246",
       "label": "毕业设计(硕士论文)",
       "category": "project",
       "stage": "m1",
@@ -2301,7 +2328,7 @@
       "description": "项目实战 · 研一阶段。点击查看详情。"
     },
     {
-      "id": "n244",
+      "id": "n247",
       "label": "工作中的项目",
       "category": "project",
       "stage": "post",
@@ -2310,34 +2337,34 @@
       "description": "项目实战 · 毕业后阶段。包含 3 项内容：业务需求理解、技术方案设计、上线与运维。"
     },
     {
-      "id": "n245",
+      "id": "n248",
       "label": "业务需求理解",
       "category": "project",
       "stage": "post",
-      "parent": "n244",
+      "parent": "n247",
       "marker": false,
       "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。点击查看详情。"
     },
     {
-      "id": "n246",
+      "id": "n249",
       "label": "技术方案设计",
       "category": "project",
       "stage": "post",
-      "parent": "n244",
+      "parent": "n247",
       "marker": false,
       "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。点击查看详情。"
     },
     {
-      "id": "n247",
+      "id": "n250",
       "label": "上线与运维",
       "category": "project",
       "stage": "post",
-      "parent": "n244",
+      "parent": "n247",
       "marker": false,
       "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。点击查看详情。"
     },
     {
-      "id": "n248",
+      "id": "n251",
       "label": "时间管理",
       "category": "softskill",
       "stage": "y1",
@@ -2346,34 +2373,34 @@
       "description": "大学最关键的软技能。四象限法则区分重要紧急，番茄工作法提高专注力，GTD管理多任务。"
     },
     {
-      "id": "n249",
+      "id": "n252",
       "label": "四象限法则",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n248",
+      "parent": "n251",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「时间管理」。点击查看详情。"
     },
     {
-      "id": "n250",
+      "id": "n253",
       "label": "番茄工作法",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n248",
+      "parent": "n251",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「时间管理」。点击查看详情。"
     },
     {
-      "id": "n251",
+      "id": "n254",
       "label": "GTD工作流",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n248",
+      "parent": "n251",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「时间管理」。点击查看详情。"
     },
     {
-      "id": "n252",
+      "id": "n255",
       "label": "高效学习方法",
       "category": "softskill",
       "stage": "y1",
@@ -2382,34 +2409,34 @@
       "description": "软技能 · 大一阶段。包含 3 项内容：费曼学习法、主动回忆与间隔重复、思维导图与知识体系构建。"
     },
     {
-      "id": "n253",
+      "id": "n256",
       "label": "费曼学习法",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n252",
+      "parent": "n255",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「高效学习方法」。点击查看详情。"
     },
     {
-      "id": "n254",
+      "id": "n257",
       "label": "主动回忆与间隔重复",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n252",
+      "parent": "n255",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「高效学习方法」。点击查看详情。"
     },
     {
-      "id": "n255",
+      "id": "n258",
       "label": "思维导图与知识体系构建",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n252",
+      "parent": "n255",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「高效学习方法」。点击查看详情。"
     },
     {
-      "id": "n256",
+      "id": "n259",
       "label": "信息检索能力",
       "category": "softskill",
       "stage": "y1",
@@ -2418,34 +2445,34 @@
       "description": "自学能力的核心。Google高级搜索技巧、Stack Overflow提问方法、学术搜索引擎（Google Scholar/知网）使用。"
     },
     {
-      "id": "n257",
+      "id": "n260",
       "label": "Google高级搜索",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n256",
+      "parent": "n259",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「信息检索能力」。点击查看详情。"
     },
     {
-      "id": "n258",
+      "id": "n261",
       "label": "Stack Overflow/Official Docs",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n256",
+      "parent": "n259",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「信息检索能力」。点击查看详情。"
     },
     {
-      "id": "n259",
+      "id": "n262",
       "label": "学术搜索引擎",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n256",
+      "parent": "n259",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「信息检索能力」。点击查看详情。"
     },
     {
-      "id": "n260",
+      "id": "n263",
       "label": "英语听说读写进阶",
       "category": "softskill",
       "stage": "y2",
@@ -2454,7 +2481,7 @@
       "description": "六级通过后的进阶。读英文技术文档速度比口语重要。翻译官方文档是很好的学习方式。"
     },
     {
-      "id": "n261",
+      "id": "n264",
       "label": "演讲与技术汇报",
       "category": "softskill",
       "stage": "y2",
@@ -2463,25 +2490,25 @@
       "description": "大二大三开始练习。技术分享、答辩都是锻炼机会。建议用结构化的方式组织内容：问题-方案-结果。"
     },
     {
-      "id": "n262",
+      "id": "n265",
       "label": "PPT设计与表达",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n261",
+      "parent": "n264",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。点击查看详情。"
     },
     {
-      "id": "n263",
+      "id": "n266",
       "label": "技术分享技巧",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n261",
+      "parent": "n264",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。点击查看详情。"
     },
     {
-      "id": "n264",
+      "id": "n267",
       "label": "团队协作",
       "category": "softskill",
       "stage": "y2",
@@ -2490,34 +2517,34 @@
       "description": "软技能 · 大二阶段。包含 3 项内容：Git工作流(Feature Branch)、Code Review文化、Scrum敏捷协作。"
     },
     {
-      "id": "n265",
+      "id": "n268",
       "label": "Git工作流(Feature Branch)",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n264",
+      "parent": "n267",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「团队协作」。点击查看详情。"
     },
     {
-      "id": "n266",
+      "id": "n269",
       "label": "Code Review文化",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n264",
+      "parent": "n267",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「团队协作」。点击查看详情。"
     },
     {
-      "id": "n267",
+      "id": "n270",
       "label": "Scrum敏捷协作",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n264",
+      "parent": "n267",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「团队协作」。点击查看详情。"
     },
     {
-      "id": "n268",
+      "id": "n271",
       "label": "技术写作",
       "category": "softskill",
       "stage": "y2",
@@ -2526,25 +2553,25 @@
       "description": "写技术博客是最好的学习方式也是建立个人品牌的途径。从解决一个小问题开始写。"
     },
     {
-      "id": "n269",
+      "id": "n272",
       "label": "博客/技术文章",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n268",
+      "parent": "n271",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「技术写作」。点击查看详情。"
     },
     {
-      "id": "n270",
+      "id": "n273",
       "label": "API文档撰写",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n268",
+      "parent": "n271",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「技术写作」。点击查看详情。"
     },
     {
-      "id": "n271",
+      "id": "n274",
       "label": "简历撰写",
       "category": "softskill",
       "stage": "y4",
@@ -2553,7 +2580,7 @@
       "description": "STAR法则量化成果（Situation Task Action Result），一页纸原则，项目经验写2-3个每个带技术栈。简历命名：姓名_学校_岗位_2026届。"
     },
     {
-      "id": "n272",
+      "id": "n275",
       "label": "面试技巧",
       "category": "softskill",
       "stage": "y4",
@@ -2562,7 +2589,7 @@
       "description": "技术面考三维度：算法+八股+项目。行为面准备3-5个故事：最有成就感的事/最困难的事/团队冲突。每轮面试后复盘问题，持续迭代。"
     },
     {
-      "id": "n273",
+      "id": "n276",
       "label": "职业规划(短期vs长期)",
       "category": "softskill",
       "stage": "y4",
@@ -2571,7 +2598,7 @@
       "description": "短期1-2年选平台>选薪资；中期3-5年定方向（技术线vs管理线）；长期5年+考虑技术积累vs收入。建议应届生先去大厂，2-3年后决定深耕还是去小厂拿高薪。"
     },
     {
-      "id": "n274",
+      "id": "n277",
       "label": "心理调适与抗压",
       "category": "softskill",
       "stage": "y4",
@@ -2580,34 +2607,34 @@
       "description": "大学四年压力最大的时刻：考试周、秋招、考研。建议规律作息+运动+找朋友倾诉。不要一个人硬扛。"
     },
     {
-      "id": "n275",
+      "id": "n278",
       "label": "焦虑管理",
       "category": "softskill",
       "stage": "y4",
-      "parent": "n274",
+      "parent": "n277",
       "marker": false,
       "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。点击查看详情。"
     },
     {
-      "id": "n276",
+      "id": "n279",
       "label": "成长型思维",
       "category": "softskill",
       "stage": "y4",
-      "parent": "n274",
+      "parent": "n277",
       "marker": false,
       "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。点击查看详情。"
     },
     {
-      "id": "n277",
+      "id": "n280",
       "label": "工作生活平衡",
       "category": "softskill",
       "stage": "y4",
-      "parent": "n274",
+      "parent": "n277",
       "marker": false,
       "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。点击查看详情。"
     },
     {
-      "id": "n278",
+      "id": "n281",
       "label": "职场沟通",
       "category": "softskill",
       "stage": "post",
@@ -2616,34 +2643,34 @@
       "description": "主动汇报进度>等别人问。遇到问题先尝试解决再问。Code Review对事不对人。"
     },
     {
-      "id": "n279",
+      "id": "n282",
       "label": "向上汇报",
       "category": "softskill",
       "stage": "post",
-      "parent": "n278",
+      "parent": "n281",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。点击查看详情。"
     },
     {
-      "id": "n280",
+      "id": "n283",
       "label": "跨团队协作",
       "category": "softskill",
       "stage": "post",
-      "parent": "n278",
+      "parent": "n281",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。点击查看详情。"
     },
     {
-      "id": "n281",
+      "id": "n284",
       "label": "冲突处理",
       "category": "softskill",
       "stage": "post",
-      "parent": "n278",
+      "parent": "n281",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。点击查看详情。"
     },
     {
-      "id": "n282",
+      "id": "n285",
       "label": "领导力培养",
       "category": "softskill",
       "stage": "post",
@@ -2652,7 +2679,7 @@
       "description": "从带1-2个实习生开始，逐步主导模块再到主导项目。技术是基础，项目管理+团队协调是核心。"
     },
     {
-      "id": "n283",
+      "id": "n286",
       "label": "个人品牌建设",
       "category": "softskill",
       "stage": "post",
@@ -2661,34 +2688,34 @@
       "description": "软技能 · 毕业后阶段。包含 3 项内容：GitHub活跃度、技术社区影响力、自媒体运营。"
     },
     {
-      "id": "n284",
+      "id": "n287",
       "label": "GitHub活跃度",
       "category": "softskill",
       "stage": "post",
-      "parent": "n283",
+      "parent": "n286",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。点击查看详情。"
     },
     {
-      "id": "n285",
+      "id": "n288",
       "label": "技术社区影响力",
       "category": "softskill",
       "stage": "post",
-      "parent": "n283",
+      "parent": "n286",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。点击查看详情。"
     },
     {
-      "id": "n286",
+      "id": "n289",
       "label": "自媒体运营",
       "category": "softskill",
       "stage": "post",
-      "parent": "n283",
+      "parent": "n286",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。点击查看详情。"
     },
     {
-      "id": "n287",
+      "id": "n290",
       "label": "技术方向全景认知",
       "category": "industry",
       "stage": "y2",
@@ -2697,25 +2724,25 @@
       "description": "大二~大三需要了解的行业全貌。后端/前端/AI/客户端/测试/数据/游戏开发等方向的特点、薪资天花板、发展路径。"
     },
     {
-      "id": "n288",
+      "id": "n291",
       "label": "后端/前端/AI/客户端/测试/数据/游戏开发",
       "category": "industry",
       "stage": "y2",
-      "parent": "n287",
+      "parent": "n290",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。点击查看详情。"
     },
     {
-      "id": "n289",
+      "id": "n292",
       "label": "技术趋势判断",
       "category": "industry",
       "stage": "y2",
-      "parent": "n287",
+      "parent": "n290",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。点击查看详情。"
     },
     {
-      "id": "n290",
+      "id": "n293",
       "label": "互联网行业格局",
       "category": "industry",
       "stage": "y2",
@@ -2724,34 +2751,34 @@
       "description": "行业认知 · 大二阶段。包含 3 项内容：BAT字节美团拼多多等、外企微软Google亚马逊、独角兽与初创公司。"
     },
     {
-      "id": "n291",
+      "id": "n294",
       "label": "BAT字节美团拼多多等",
       "category": "industry",
       "stage": "y2",
-      "parent": "n290",
+      "parent": "n293",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。点击查看详情。"
     },
     {
-      "id": "n292",
+      "id": "n295",
       "label": "外企微软Google亚马逊",
       "category": "industry",
       "stage": "y2",
-      "parent": "n290",
+      "parent": "n293",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。点击查看详情。"
     },
     {
-      "id": "n293",
+      "id": "n296",
       "label": "独角兽与初创公司",
       "category": "industry",
       "stage": "y2",
-      "parent": "n290",
+      "parent": "n293",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。点击查看详情。"
     },
     {
-      "id": "n294",
+      "id": "n297",
       "label": "游戏行业格局",
       "category": "industry",
       "stage": "y2",
@@ -2760,34 +2787,34 @@
       "description": "行业认知 · 大二阶段。包含 3 项内容：腾讯游戏/网易/米哈游、中型厂商(莉莉丝/叠纸/鹰角/完美世界)、游戏引擎(Unity中国/Epic Games)。"
     },
     {
-      "id": "n295",
+      "id": "n298",
       "label": "腾讯游戏/网易/米哈游",
       "category": "industry",
       "stage": "y2",
-      "parent": "n294",
+      "parent": "n297",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。点击查看详情。"
     },
     {
-      "id": "n296",
+      "id": "n299",
       "label": "中型厂商(莉莉丝/叠纸/鹰角/完美世界)",
       "category": "industry",
       "stage": "y2",
-      "parent": "n294",
+      "parent": "n297",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。点击查看详情。"
     },
     {
-      "id": "n297",
+      "id": "n300",
       "label": "游戏引擎(Unity中国/Epic Games)",
       "category": "industry",
       "stage": "y2",
-      "parent": "n294",
+      "parent": "n297",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。点击查看详情。"
     },
     {
-      "id": "n298",
+      "id": "n301",
       "label": "金融科技与量化",
       "category": "industry",
       "stage": "y4",
@@ -2796,7 +2823,7 @@
       "description": "高薪赛道。大厂FinTech+量化私募+Hedge Fund。需要编程好（C++/Python）+统计能力强+竞赛背景加分。"
     },
     {
-      "id": "n299",
+      "id": "n302",
       "label": "大厂vs中厂vs创业公司",
       "category": "industry",
       "stage": "y4",
@@ -2805,7 +2832,7 @@
       "description": "应届生首选大厂（平台+培训+背书）。大厂2-3年后：去中厂拿title或去创业公司赌期权。不要应届直接去创业公司。"
     },
     {
-      "id": "n300",
+      "id": "n303",
       "label": "外企vs国内企业",
       "category": "industry",
       "stage": "y4",
@@ -2814,7 +2841,7 @@
       "description": "外企：WLB好+年假多+英语环境；国内：晋升快+核心业务+期权。看个人生活目标选择。"
     },
     {
-      "id": "n301",
+      "id": "n304",
       "label": "国企/银行/选调生",
       "category": "industry",
       "stage": "y4",
@@ -2823,7 +2850,7 @@
       "description": "稳定性最高但技术成长慢。建议大厂干2-3年攒资本再考虑。应届生进国企薪资涨幅有限。"
     },
     {
-      "id": "n302",
+      "id": "n305",
       "label": "城市选择分析",
       "category": "industry",
       "stage": "y4",
@@ -2832,34 +2859,34 @@
       "description": "行业认知 · 大四阶段。包含 3 项内容：北京/上海/深圳/杭州、成都/武汉/南京/广州、户口政策与生活成本。"
     },
     {
-      "id": "n303",
+      "id": "n306",
       "label": "北京/上海/深圳/杭州",
       "category": "industry",
       "stage": "y4",
-      "parent": "n302",
+      "parent": "n305",
       "marker": false,
       "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。点击查看详情。"
     },
     {
-      "id": "n304",
+      "id": "n307",
       "label": "成都/武汉/南京/广州",
       "category": "industry",
       "stage": "y4",
-      "parent": "n302",
+      "parent": "n305",
       "marker": false,
       "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。点击查看详情。"
     },
     {
-      "id": "n305",
+      "id": "n308",
       "label": "户口政策与生活成本",
       "category": "industry",
       "stage": "y4",
-      "parent": "n302",
+      "parent": "n305",
       "marker": false,
       "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。点击查看详情。"
     },
     {
-      "id": "n306",
+      "id": "n309",
       "label": "IC技术路线vs技术管理",
       "category": "industry",
       "stage": "m1",
@@ -2868,7 +2895,7 @@
       "description": "P线（技术）深耕某个方向成为专家。M线（管理）协调团队+推进项目。大厂P线天花板更高（P8/P9薪资超M线）。"
     },
     {
-      "id": "n307",
+      "id": "n310",
       "label": "远程办公与数字游民",
       "category": "industry",
       "stage": "m1",
@@ -2877,7 +2904,7 @@
       "description": "国内远程岗位少但趋势增长。需要极强自驱力和沟通能力。适合资深开发者，不适合应届生。"
     },
     {
-      "id": "n308",
+      "id": "n311",
       "label": "独立开发者与创业",
       "category": "industry",
       "stage": "m1",
@@ -2886,25 +2913,52 @@
       "description": "有想法+有技术+能抗压。从side project开始验证需求。不鼓励应届生直接创业。"
     },
     {
-      "id": "n309",
+      "id": "n312",
       "label": "技术咨询/Tech Lead",
       "category": "industry",
-      "stage": "m2",
+      "stage": "post",
       "parent": null,
       "marker": false,
       "description": "5年以上经验后的职业方向。需要技术深度+沟通能力+商业意识。"
     },
     {
-      "id": "n310",
+      "id": "n313",
       "label": "技术社区KOL/自媒体",
       "category": "industry",
-      "stage": "m2",
+      "stage": "post",
       "parent": null,
       "marker": false,
       "description": "程序员的副业路径。写博客/做视频/开源项目积累影响力。你的计算机突围正是这个方向。"
     },
     {
-      "id": "n311",
+      "id": "n314",
+      "label": "论文开题与中期考核",
+      "category": "education",
+      "stage": "m2",
+      "parent": null,
+      "marker": false,
+      "description": "学硕一般研二上学期完成开题、研二末中期考核（各校时间不一，以本校培养方案为准）；专硕学制短（多为2年），节奏需提前。开题前确定稳定的小方向、精读本组最新论文；中期考核被预警会直接影响后续进展，务必按节点推进。"
+    },
+    {
+      "id": "n315",
+      "label": "硕士实习与科研的取舍",
+      "category": "career",
+      "stage": "m2",
+      "parent": null,
+      "marker": false,
+      "description": "研二暑假实习是多数硕士就业的黄金窗口，但导师是否放实习、科研压力多大各不相同。原则：以顺利毕业为前提排优先级；科研型实习（企业研究院/大模型实验室等）可同时服务论文与求职；科研任务重时，先完成小论文关键实验再出去实习。"
+    },
+    {
+      "id": "n316",
+      "label": "秋招备战启动(研究生)",
+      "category": "career",
+      "stage": "m2",
+      "parent": null,
+      "marker": true,
+      "description": "硕士应届秋招在研三上学期（与本科秋招同时段）。备战线建议从研二暑假前启动：暑期刷题、整理项目与实习经历；研二暑假的实习最好能争取转正，或作为秋招面试谈资。"
+    },
+    {
+      "id": "n317",
       "label": "计科和软工有什么区别？",
       "category": "faq",
       "stage": "y1",
@@ -2913,7 +2967,7 @@
       "description": "计科偏理论与底层（操作系统、编译原理），软工偏工程实践（敏捷开发）。就业差距不大，计科在算法岗有优势，软工在开发岗直接对口。选哪个不用纠结。"
     },
     {
-      "id": "n312",
+      "id": "n318",
       "label": "转专业学计算机来得及吗？",
       "category": "faq",
       "stage": "y1",
@@ -2922,7 +2976,7 @@
       "description": "大量成功案例。大二结束前转都来得及，关键是把高数和C语言基础打扎实。大一一学期自学编程+保持GPA，大二转专业成功概率很高。"
     },
     {
-      "id": "n313",
+      "id": "n319",
       "label": "要不要大一就买电脑？",
       "category": "faq",
       "stage": "y1",
@@ -2931,7 +2985,7 @@
       "description": "要。计算机专业大一就需要编程。建议买性能足够的Windows笔记本（i5/R5+16GB+512GB），部分教学软件不兼容Mac。"
     },
     {
-      "id": "n314",
+      "id": "n320",
       "label": "数学不好能学计算机吗？",
       "category": "faq",
       "stage": "y1",
@@ -2940,16 +2994,16 @@
       "description": "能，但要区分方向。前端、Web开发、产品经理对数学要求不高；AI方向必须数学好。数学在及格线附近，建议避开算法岗。"
     },
     {
-      "id": "n315",
+      "id": "n321",
       "label": "双非院校有出路吗？",
       "category": "faq",
       "stage": "y1",
       "parent": null,
-      "marker": false,
+      "marker": true,
       "description": "有，但需要早规划。双非进大厂的核心路径：大二进实验室做项目→大三暑期实习→秋招拿offer。简历靠项目和实习，不是靠学校。这个产品正是为双非学生设计。"
     },
     {
-      "id": "n316",
+      "id": "n322",
       "label": "GPA重要还是项目重要？",
       "category": "faq",
       "stage": "y2",
@@ -2958,7 +3012,7 @@
       "description": "保研GPA>项目，就业项目>=GPA。保研看排名必须刷GPA。就业看面试表现，项目决定你能不能过面试。GPA目标参考值（因校而异）：保研导向3.5+，就业导向3.0+，剩余时间做项目。"
     },
     {
-      "id": "n317",
+      "id": "n323",
       "label": "ACM要不要打？",
       "category": "faq",
       "stage": "y2",
@@ -2967,7 +3021,7 @@
       "description": "ACM适合两种人：高考数学140+有竞赛底子，或真心热爱算法。ACM获奖是简历核武器，但投入极大（冲击区域赛金牌/总决赛级别的强队通常每天数小时长期集训）。区域赛奖项按参赛队伍比例设置：金约10%、银约20%、铜约30%（合计获奖约60%），奖项能否加分以各校保研/综测政策为准；能拿到银牌以上才是简历亮点，打不出来也不必强求，一个扎实项目同样有竞争力。"
     },
     {
-      "id": "n318",
+      "id": "n324",
       "label": "LeetCode刷多少够面试？",
       "category": "faq",
       "stage": "y2",
@@ -2976,7 +3030,7 @@
       "description": "网上经验口径（非官方标准，仅供参考）：小厂100道左右简单+中等题；中厂250道左右（含高频题）；大厂400-500道（含hard专题）。质量>数量，每道题复盘最优解。"
     },
     {
-      "id": "n319",
+      "id": "n325",
       "label": "Java和C++选哪个？",
       "category": "faq",
       "stage": "y2",
@@ -2985,16 +3039,16 @@
       "description": "Java就业面广（后端+大数据），C++性能强（引擎+量化+系统）。Java入门曲线平缓；C++面试难度更高但竞争者质量也高。不确定选Java，有余力学C++。"
     },
     {
-      "id": "n320",
+      "id": "n326",
       "label": "要不要参与开源？",
       "category": "faq",
       "stage": "y2",
       "parent": null,
-      "marker": false,
+      "marker": true,
       "description": "建议大三再参与。大一打好基础，大二做完项目，大三有余力再参与。从文档、issue回复、小bug入手。开源贡献是亮点不是必需品。"
     },
     {
-      "id": "n321",
+      "id": "n327",
       "label": "考研还是就业？",
       "category": "faq",
       "stage": "y3",
@@ -3003,7 +3057,7 @@
       "description": "决策公式：能保研→保；家庭支持读研且数学不差→考；目标大厂算法岗→需要硕博；目标开发岗→本科够用；已经在焦虑时间不够→就业更适合。建议大三上学期初就要做出决定，两线作战大概率两头空。"
     },
     {
-      "id": "n322",
+      "id": "n328",
       "label": "学前端还是后端？",
       "category": "faq",
       "stage": "y3",
@@ -3012,7 +3066,7 @@
       "description": "前端入门快（3个月出东西）但天花板低；后端入门慢（6-9个月）但薪资更高、岗位更多。建议学后端为主+前端为辅，全栈是最好选择。"
     },
     {
-      "id": "n323",
+      "id": "n329",
       "label": "没有实习怎么办？",
       "category": "faq",
       "stage": "y3",
@@ -3021,7 +3075,7 @@
       "description": "做项目填补。一个完整的独立项目（上线可访问）是重要加分项，通常认为一个高质量开源项目/独立产品胜过几份课程设计，但仍建议优先补一段真实实习（实习经历通常是拿到大厂offer的第一要素）。"
     },
     {
-      "id": "n324",
+      "id": "n330",
       "label": "要不要报培训班？",
       "category": "faq",
       "stage": "y3",
@@ -3030,7 +3084,7 @@
       "description": "培训班适合自控力极差或完全零基础且时间紧迫的人。线上资源（B站+MDN+官方文档）足够学会，培训班是捷径不是唯一路径。"
     },
     {
-      "id": "n325",
+      "id": "n331",
       "label": "暑期实习找不到怎么办？",
       "category": "faq",
       "stage": "y3",
@@ -3039,16 +3093,16 @@
       "description": "找不到大厂实习可以去中厂/小厂，或跟老师做项目、参加字节青训营。关键是暑假别闲着。面试官看重你暑假做了什么，不是在哪做。"
     },
     {
-      "id": "n326",
+      "id": "n332",
       "label": "考研失败怎么办？",
       "category": "faq",
       "stage": "y4",
       "parent": null,
-      "marker": false,
+      "marker": true,
       "description": "四条路：春招找工作（还有机会）；二战（需家庭支持+复盘原因）；留学（有经济条件+已有语言成绩）；考公/选调（符合条件者）。不要同时准备二战和春招，选一条全力以赴。"
     },
     {
-      "id": "n327",
+      "id": "n333",
       "label": "保研边缘人怎么办？",
       "category": "faq",
       "stage": "y4",
@@ -3057,7 +3111,7 @@
       "description": "保研+考研双线作战。暑假参营+同步复习408和数学。9月确认能保就全力联系导师，9月被告知没名额立即转考研。6-8月不能浪费。"
     },
     {
-      "id": "n328",
+      "id": "n334",
       "label": "大厂SP/SSP怎么拿？",
       "category": "faq",
       "stage": "y4",
@@ -3066,7 +3120,7 @@
       "description": "SP需要：项目有深度+LeetCode400+八股文背熟+实习经历。SSP还需要：顶会论文或ACM区域赛奖+两面strong hire。SP是实力，SSP是天时地利。"
     },
     {
-      "id": "n329",
+      "id": "n335",
       "label": "毕业设计做什么好？",
       "category": "faq",
       "stage": "y4",
@@ -3075,16 +3129,16 @@
       "description": "优先做能写在简历上的项目：后端做Web系统+高并发、AI做应用落地+数据展示、前端做交互复杂的产品。毕设答辩看工作量，求职看技术深度。"
     },
     {
-      "id": "n330",
+      "id": "n336",
       "label": "选导师要注意什么？",
       "category": "faq",
       "stage": "m1",
       "parent": null,
-      "marker": false,
+      "marker": true,
       "description": "三个匹配度：研究方向 > 导师风格（放养vsPush）> 实验室氛围。找师兄师姐了解真实情况。选了Push型要能抗压，选放养型要自律。"
     },
     {
-      "id": "n331",
+      "id": "n337",
       "label": "硕士学硕还是专硕？",
       "category": "faq",
       "stage": "m1",
@@ -3093,7 +3147,7 @@
       "description": "想读博→学硕；想就业→专硕。企业招聘时HR普遍不区分学硕专硕，但公务员/选调生/事业编部分岗位按专业代码仅限学硕，报考前须逐岗核对专业目录。"
     },
     {
-      "id": "n332",
+      "id": "n338",
       "label": "要不要读博？",
       "category": "faq",
       "stage": "m1",
@@ -3102,16 +3156,34 @@
       "description": "读博适合真心热爱研究、或需要博士学位进行业门槛、或家里不急着等你赚钱。国内直博/硕博连读学制一般5年（以各校规定为准），硕士+博士全程约6-7年，是长期承诺。犹豫说明还没准备好，建议先读硕再决定。"
     },
     {
-      "id": "n333",
+      "id": "n339",
       "label": "小论文发不出来怎么办？",
       "category": "faq",
       "stage": "m2",
       "parent": null,
-      "marker": false,
+      "marker": true,
       "description": "先降低预期：中文核心>EI会议>SCI四区>SCI三区（此为普遍经验排序，非官方标准，且\"破五唯\"后多所高校已取消毕业小论文硬性要求，以本校培养方案为准）。跟导师商量换方向或换实验方法。同时准备Plan B：达到毕业最低要求即可，不要因完美主义延毕。"
     },
     {
-      "id": "n334",
+      "id": "n340",
+      "label": "科研和就业两手抓不过来怎么办？",
+      "category": "faq",
+      "stage": "m2",
+      "parent": null,
+      "marker": true,
+      "description": "常见困境：想发好论文又想进大厂。建议分主次：以毕业为底线，论文达到毕业要求后把余力投给求职；优先选能兼顾两者的路径（科研型实习、产业界研究岗）。无法两全时先保毕业，求职窗口每年都有。"
+    },
+    {
+      "id": "n341",
+      "label": "盲审不过怎么办？",
+      "category": "faq",
+      "stage": "m3",
+      "parent": null,
+      "marker": true,
+      "description": "盲审未过一般按学校规定进入复审或延期环节。拿到评阅意见后逐条修改并与导师确认，按流程申请复审；若涉及数据可信度等重大问题，以学校学位管理规定为准。预防：送审前自查格式、逻辑、结论一致性，别赌运气。"
+    },
+    {
+      "id": "n342",
       "label": "AI/机器学习路线",
       "category": "industry",
       "stage": "y2",
@@ -3120,7 +3192,7 @@
       "description": "门槛最高的方向之一：大厂算法/研究岗以硕博为主，本科适合AI应用开发/工程岗（大模型应用、RAG/Agent、模型部署）而非算法研究。"
     },
     {
-      "id": "n335",
+      "id": "n343",
       "label": "后端/架构路线",
       "category": "industry",
       "stage": "y2",
@@ -3129,7 +3201,7 @@
       "description": "就业面最广、需求最稳定的方向。Java/Go生态成熟，适用于互联网、金融科技、传统企业等多个行业。"
     },
     {
-      "id": "n336",
+      "id": "n344",
       "label": "前端/全栈路线",
       "category": "industry",
       "stage": "y2",
@@ -3138,7 +3210,7 @@
       "description": "入门门槛最低的方向。适合快速看到开发成果，AI时代建议往全栈或前端工程化发展。"
     },
     {
-      "id": "n337",
+      "id": "n345",
       "label": "竞赛/保研路线",
       "category": "industry",
       "stage": "y2",
@@ -3147,7 +3219,7 @@
       "description": "金字塔尖的竞技场。适合算法天赋强的学生，不适合作为唯一路径。ACM区域赛奖项是保研/大厂SP的有力筹码。"
     },
     {
-      "id": "n338",
+      "id": "n346",
       "label": "考研/学术路线",
       "category": "industry",
       "stage": "y2",
@@ -3156,7 +3228,7 @@
       "description": "改变学历出身的有效路径。需要6-12个月高强度备考，408四门课+数学一是核心挑战。"
     },
     {
-      "id": "n339",
+      "id": "n347",
       "label": "系统/底层路线",
       "category": "industry",
       "stage": "y2",
@@ -3444,79 +3516,79 @@
     },
     {
       "source": "n88",
-      "target": "n232",
+      "target": "n235",
       "type": "tool",
       "label": "工具"
     },
     {
-      "source": "n222",
-      "target": "n223",
-      "type": "advance",
-      "label": "进阶"
-    },
-    {
-      "source": "n223",
-      "target": "n224",
-      "type": "advance",
-      "label": "进阶"
-    },
-    {
-      "source": "n224",
-      "target": "n225",
-      "type": "advance",
-      "label": "进阶"
-    },
-    {
       "source": "n225",
+      "target": "n226",
+      "type": "advance",
+      "label": "进阶"
+    },
+    {
+      "source": "n226",
+      "target": "n227",
+      "type": "advance",
+      "label": "进阶"
+    },
+    {
+      "source": "n227",
       "target": "n228",
       "type": "advance",
       "label": "进阶"
     },
     {
       "source": "n228",
-      "target": "n236",
+      "target": "n231",
       "type": "advance",
       "label": "进阶"
     },
     {
-      "source": "n236",
-      "target": "n232",
+      "source": "n231",
+      "target": "n239",
       "type": "advance",
       "label": "进阶"
     },
     {
-      "source": "n287",
-      "target": "n335",
+      "source": "n239",
+      "target": "n235",
+      "type": "advance",
+      "label": "进阶"
+    },
+    {
+      "source": "n290",
+      "target": "n343",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n287",
-      "target": "n336",
+      "source": "n290",
+      "target": "n344",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n287",
-      "target": "n334",
+      "source": "n290",
+      "target": "n342",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n287",
-      "target": "n337",
+      "source": "n290",
+      "target": "n345",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n287",
-      "target": "n338",
+      "source": "n290",
+      "target": "n346",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n287",
-      "target": "n339",
+      "source": "n290",
+      "target": "n347",
       "type": "related",
       "label": "路径"
     }
@@ -3526,12 +3598,23 @@
     "n133",
     "n157",
     "n162",
+    "n170",
+    "n183",
     "n191",
     "n194",
-    "n232",
-    "n236",
+    "n222",
+    "n235",
+    "n239",
+    "n316",
     "n321",
-    "n323",
-    "n324"
+    "n326",
+    "n327",
+    "n329",
+    "n330",
+    "n332",
+    "n336",
+    "n339",
+    "n340",
+    "n341"
   ]
 }
