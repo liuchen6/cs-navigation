@@ -111,7 +111,8 @@
       "stage": "pre",
       "parent": null,
       "marker": true,
-      "description": "计算机专业：计科=基础最广，软工=贴近就业，AI=门槛最高（建议硕博）。选校优先级：城市>学科评估>学校名字。一线城市实习机会比偏远985重要得多。"
+      "description": "计算机专业：计科=基础最广，软工=贴近就业，AI=门槛最高（建议硕博）。选校优先级：城市>学科评估>学校名字。一线城市实习机会比偏远985重要得多。",
+      "tpl": false
     },
     {
       "id": "n1",
@@ -120,7 +121,8 @@
       "stage": "pre",
       "parent": "n0",
       "marker": false,
-      "description": "基础课程 · 大学前阶段 · 属于「高考志愿填报与院校选择」。。"
+      "description": "基础课程 · 大学前阶段 · 属于「高考志愿填报与院校选择」。。",
+      "tpl": true
     },
     {
       "id": "n2",
@@ -129,7 +131,8 @@
       "stage": "pre",
       "parent": "n0",
       "marker": false,
-      "description": "基础课程 · 大学前阶段 · 属于「高考志愿填报与院校选择」。。"
+      "description": "基础课程 · 大学前阶段 · 属于「高考志愿填报与院校选择」。。",
+      "tpl": true
     },
     {
       "id": "n3",
@@ -138,7 +141,8 @@
       "stage": "pre",
       "parent": "n0",
       "marker": false,
-      "description": "基础课程 · 大学前阶段 · 属于「高考志愿填报与院校选择」。。"
+      "description": "基础课程 · 大学前阶段 · 属于「高考志愿填报与院校选择」。。",
+      "tpl": true
     },
     {
       "id": "n4",
@@ -147,7 +151,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "大一最重要基础课，后续所有数学课和ML/AI课程的基石。包含极限与连续、微积分、级数与微分方程。建议每周至少6-8小时学习时间，多做习题。多数院校将必修挂科列为保研资格红线（部分院校近年来已放宽为允许1门补考/重修通过，需以本校最新规定为准）。"
+      "description": "大一最重要基础课，后续所有数学课和ML/AI课程的基石。包含极限与连续、微积分、级数与微分方程。建议每周至少6-8小时学习时间，多做习题。多数院校将必修挂科列为保研资格红线（部分院校近年来已放宽为允许1门补考/重修通过，需以本校最新规定为准）。",
+      "tpl": false
     },
     {
       "id": "n5",
@@ -156,7 +161,8 @@
       "stage": "y1",
       "parent": "n4",
       "marker": false,
-      "description": "极限的定义与性质、等价无穷小替换、洛必达法则求极限、函数的连续性与间断点分类。考研数学一的基础章节，学习方法以大量练习为主。"
+      "description": "极限的定义与性质、等价无穷小替换、洛必达法则求极限、函数的连续性与间断点分类。考研数学一的基础章节，学习方法以大量练习为主。",
+      "tpl": false
     },
     {
       "id": "n6",
@@ -165,7 +171,8 @@
       "stage": "y1",
       "parent": "n4",
       "marker": false,
-      "description": "导数与微分、微分中值定理、不定积分与定积分及其几何应用。考研数学一占比最高的部分之一，也是后续多元微积分的基础。"
+      "description": "导数与微分、微分中值定理、不定积分与定积分及其几何应用。考研数学一占比最高的部分之一，也是后续多元微积分的基础。",
+      "tpl": false
     },
     {
       "id": "n7",
@@ -174,7 +181,8 @@
       "stage": "y1",
       "parent": "n4",
       "marker": false,
-      "description": "偏导数与全微分、二重积分、无条件极值与条件极值（拉格朗日乘数法）。机器学习中梯度优化、约束优化的数学背景。"
+      "description": "偏导数与全微分、二重积分、无条件极值与条件极值（拉格朗日乘数法）。机器学习中梯度优化、约束优化的数学背景。",
+      "tpl": false
     },
     {
       "id": "n8",
@@ -183,7 +191,8 @@
       "stage": "y1",
       "parent": "n4",
       "marker": false,
-      "description": "级数收敛性判据（比较/比值/根值）、幂级数与泰勒展开、常见类型常微分方程求解。AI论文中数学推导常见工具。"
+      "description": "级数收敛性判据（比较/比值/根值）、幂级数与泰勒展开、常见类型常微分方程求解。AI论文中数学推导常见工具。",
+      "tpl": false
     },
     {
       "id": "n9",
@@ -192,7 +201,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "大一下核心数学课，机器学习/深度学习/数据科学的数学基础。矩阵运算、向量空间、特征值分解是AI方向的必备工具。"
+      "description": "大一下核心数学课，机器学习/深度学习/数据科学的数学基础。矩阵运算、向量空间、特征值分解是AI方向的必备工具。",
+      "tpl": false
     },
     {
       "id": "n10",
@@ -201,7 +211,8 @@
       "stage": "y1",
       "parent": "n9",
       "marker": false,
-      "description": "矩阵乘法与初等变换、逆矩阵、行列式、线性方程组解的判定（秩的关系）。向量化计算的数学基础。"
+      "description": "矩阵乘法与初等变换、逆矩阵、行列式、线性方程组解的判定（秩的关系）。向量化计算的数学基础。",
+      "tpl": false
     },
     {
       "id": "n11",
@@ -210,7 +221,8 @@
       "stage": "y1",
       "parent": "n9",
       "marker": false,
-      "description": "线性相关与无关、向量组与矩阵的秩、基与维数、线性变换的矩阵表示。理解矩阵乘法的几何意义。"
+      "description": "线性相关与无关、向量组与矩阵的秩、基与维数、线性变换的矩阵表示。理解矩阵乘法的几何意义。",
+      "tpl": false
     },
     {
       "id": "n12",
@@ -219,7 +231,8 @@
       "stage": "y1",
       "parent": "n9",
       "marker": false,
-      "description": "特征值特征向量的求解、相似对角化、二次型标准化。PCA 降维、PageRank、谱聚类等算法的数学基础。"
+      "description": "特征值特征向量的求解、相似对角化、二次型标准化。PCA 降维、PageRank、谱聚类等算法的数学基础。",
+      "tpl": false
     },
     {
       "id": "n13",
@@ -228,7 +241,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "计算机专业核心数学课，培养抽象思维和逻辑推理能力。数理逻辑、集合论、图论是数据结构、算法、编译原理的理论基础。多校在大一或大二开设（常与高数并行）。主流教材：Kenneth Rosen《离散数学及其应用》（机械工业出版社）。"
+      "description": "计算机专业核心数学课，培养抽象思维和逻辑推理能力。数理逻辑、集合论、图论是数据结构、算法、编译原理的理论基础。多校在大一或大二开设（常与高数并行）。主流教材：Kenneth Rosen《离散数学及其应用》（机械工业出版社）。",
+      "tpl": false
     },
     {
       "id": "n14",
@@ -237,7 +251,8 @@
       "stage": "y1",
       "parent": "n13",
       "marker": false,
-      "description": "命题逻辑、谓词逻辑、推理规则与范式；集合运算、关系及其性质、函数。培养严谨的数学推理习惯，是编译原理的前置。"
+      "description": "命题逻辑、谓词逻辑、推理规则与范式；集合运算、关系及其性质、函数。培养严谨的数学推理习惯，是编译原理的前置。",
+      "tpl": false
     },
     {
       "id": "n15",
@@ -246,7 +261,8 @@
       "stage": "y1",
       "parent": "n13",
       "marker": false,
-      "description": "图的基本概念、欧拉图与哈密顿图、树的性质；群/环/域的基本概念。图算法与代数结构的入门。"
+      "description": "图的基本概念、欧拉图与哈密顿图、树的性质；群/环/域的基本概念。图算法与代数结构的入门。",
+      "tpl": false
     },
     {
       "id": "n16",
@@ -255,7 +271,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "保研和求职硬门槛。大一一次过四级（有高考底子），大二过六级。六级500+在部分院校保研/综测有加分（以本校细则为准）。英文文档阅读能力比口语对就业帮助更大。"
+      "description": "保研和求职硬门槛。大一一次过四级（有高考底子），大二过六级。六级500+在部分院校保研/综测有加分（以本校细则为准）。英文文档阅读能力比口语对就业帮助更大。",
+      "tpl": false
     },
     {
       "id": "n17",
@@ -264,7 +281,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "第一学期入门课，建立计算机学科认知框架。涵盖信息编码、网络基础、算法概论。内容不深但范围广，认真听建立全局观。"
+      "description": "第一学期入门课，建立计算机学科认知框架。涵盖信息编码、网络基础、算法概论。内容不深但范围广，认真听建立全局观。",
+      "tpl": false
     },
     {
       "id": "n18",
@@ -273,7 +291,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "考研必考科目，保研必修。平时上课不挂科即可，考研时系统复习。"
+      "description": "考研必考科目，保研必修。平时上课不挂科即可，考研时系统复习。",
+      "tpl": false
     },
     {
       "id": "n19",
@@ -282,7 +301,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "保持GPA的保底科目。选课之前问学长哪些课给分高。通识课是刷GPA的好机会。"
+      "description": "保持GPA的保底科目。选课之前问学长哪些课给分高。通识课是刷GPA的好机会。",
+      "tpl": false
     },
     {
       "id": "n20",
@@ -291,7 +311,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大二数学课，AI/ML方向的必修前置课。贝叶斯、分布、假设检验在机器学习中大量使用。"
+      "description": "大二数学课，AI/ML方向的必修前置课。贝叶斯、分布、假设检验在机器学习中大量使用。",
+      "tpl": false
     },
     {
       "id": "n21",
@@ -300,7 +321,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "对计算机就业帮助有限。AI方向需要一定物理思维，系统方向需了解硬件原理。不挂科即可不必花太多精力。"
+      "description": "对计算机就业帮助有限。AI方向需要一定物理思维，系统方向需了解硬件原理。不挂科即可不必花太多精力。",
+      "tpl": false
     },
     {
       "id": "n22",
@@ -309,7 +331,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "AI/ML方向的需要。数值稳定性、误差分析、迭代法收敛性在模型训练中有用。非AI方向可忽略。"
+      "description": "AI/ML方向的需要。数值稳定性、误差分析、迭代法收敛性在模型训练中有用。非AI方向可忽略。",
+      "tpl": false
     },
     {
       "id": "n23",
@@ -318,7 +341,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "AI/ML方向的重要数学课。梯度下降、凸优化、约束优化是机器学习的理论基础。做算法岗必须掌握。"
+      "description": "AI/ML方向的重要数学课。梯度下降、凸优化、约束优化是机器学习的理论基础。做算法岗必须掌握。",
+      "tpl": false
     },
     {
       "id": "n24",
@@ -327,7 +351,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "读研和AI方向需要。科技文献阅读能力决定你能否跟上技术前沿。多读ArXiv论文，从abstract+introduction开始。"
+      "description": "读研和AI方向需要。科技文献阅读能力决定你能否跟上技术前沿。多读ArXiv论文，从abstract+introduction开始。",
+      "tpl": false
     },
     {
       "id": "n25",
@@ -336,7 +361,8 @@
       "stage": "y1",
       "parent": null,
       "marker": true,
-      "description": "大一入门编程课，指针和内存管理是理解计算机系统运作的关键。数据结构与算法的最佳伴生语言。双非学生利用好这门课：不求高分，但务必把指针/内存/调试能力练扎实，大二进实验室、做项目的敲门砖都靠它。"
+      "description": "大一入门编程课，指针和内存管理是理解计算机系统运作的关键。数据结构与算法的最佳伴生语言。双非学生利用好这门课：不求高分，但务必把指针/内存/调试能力练扎实，大二进实验室、做项目的敲门砖都靠它。",
+      "tpl": false
     },
     {
       "id": "n26",
@@ -345,7 +371,8 @@
       "stage": "y1",
       "parent": "n25",
       "marker": false,
-      "description": "基本数据类型与运算、if/switch 分支、for/while 循环。大一第一节编程课的落点。"
+      "description": "基本数据类型与运算、if/switch 分支、for/while 循环。大一第一节编程课的落点。",
+      "tpl": false
     },
     {
       "id": "n27",
@@ -354,7 +381,8 @@
       "stage": "y1",
       "parent": "n25",
       "marker": false,
-      "description": "指针与地址、指针与数组的关系、动态内存分配（malloc/free）、常见内存错误。C 语言的核心与难点，也是理解计算机系统（缓存、栈）的钥匙。"
+      "description": "指针与地址、指针与数组的关系、动态内存分配（malloc/free）、常见内存错误。C 语言的核心与难点，也是理解计算机系统（缓存、栈）的钥匙。",
+      "tpl": false
     },
     {
       "id": "n28",
@@ -363,7 +391,8 @@
       "stage": "y1",
       "parent": "n25",
       "marker": false,
-      "description": "struct 与 typedef、链表实现与操作、文本/二进制文件读写。课程设计与小型项目的常用技能。"
+      "description": "struct 与 typedef、链表实现与操作、文本/二进制文件读写。课程设计与小型项目的常用技能。",
+      "tpl": false
     },
     {
       "id": "n29",
@@ -372,7 +401,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "入门友好，AI/ML生态语言。数据分析、自动化脚本、Web开发均有广泛应用。"
+      "description": "入门友好，AI/ML生态语言。数据分析、自动化脚本、Web开发均有广泛应用。",
+      "tpl": false
     },
     {
       "id": "n30",
@@ -381,7 +411,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "计算机专业最核心课程，后端/算法岗面试几乎必考（测试、运维及部分前端岗笔试通常不考算法题）。线性表、树、图、排序查找构成算法能力的基础。建议配合LeetCode同步练习。主流教材：严蔚敏《数据结构（C语言版）》（清华大学出版社）。"
+      "description": "计算机专业最核心课程，后端/算法岗面试几乎必考（测试、运维及部分前端岗笔试通常不考算法题）。线性表、树、图、排序查找构成算法能力的基础。建议配合LeetCode同步练习。主流教材：严蔚敏《数据结构（C语言版）》（清华大学出版社）。",
+      "tpl": false
     },
     {
       "id": "n31",
@@ -390,7 +421,8 @@
       "stage": "y2",
       "parent": "n30",
       "marker": false,
-      "description": "顺序表与链表的存储结构与插入删除复杂度对比；栈在表达式求值、函数递归中的应用；队列在 BFS、任务调度中的应用。408 与面试手写题高频章节。"
+      "description": "顺序表与链表的存储结构与插入删除复杂度对比；栈在表达式求值、函数递归中的应用；队列在 BFS、任务调度中的应用。408 与面试手写题高频章节。",
+      "tpl": false
     },
     {
       "id": "n32",
@@ -399,7 +431,8 @@
       "stage": "y2",
       "parent": "n30",
       "marker": false,
-      "description": "二叉树性质与遍历（前/中/后序、层次）、二叉搜索树、AVL 树与堆、树与森林的转换。面试手写题最高频的数据结构。"
+      "description": "二叉树性质与遍历（前/中/后序、层次）、二叉搜索树、AVL 树与堆、树与森林的转换。面试手写题最高频的数据结构。",
+      "tpl": false
     },
     {
       "id": "n33",
@@ -408,7 +441,8 @@
       "stage": "y2",
       "parent": "n30",
       "marker": false,
-      "description": "邻接矩阵与邻接表存储、DFS/BFS、最短路径（Dijkstra/Floyd）、最小生成树（Prim/Kruskal）、拓扑排序。笔试常考。"
+      "description": "邻接矩阵与邻接表存储、DFS/BFS、最短路径（Dijkstra/Floyd）、最小生成树（Prim/Kruskal）、拓扑排序。笔试常考。",
+      "tpl": false
     },
     {
       "id": "n34",
@@ -417,7 +451,8 @@
       "stage": "y2",
       "parent": "n30",
       "marker": false,
-      "description": "八大排序的复杂度与稳定性对比（冒泡/选择/插入/快排/归并/堆排等）、二分查找、哈希表与冲突处理。面手写必考。"
+      "description": "八大排序的复杂度与稳定性对比（冒泡/选择/插入/快排/归并/堆排等）、二分查找、哈希表与冲突处理。面手写必考。",
+      "tpl": false
     },
     {
       "id": "n35",
@@ -426,7 +461,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大二编程课，企业级开发的主流语言。封装继承多态、集合框架、IO流是后端开发的基础。"
+      "description": "大二编程课，企业级开发的主流语言。封装继承多态、集合框架、IO流是后端开发的基础。",
+      "tpl": false
     },
     {
       "id": "n36",
@@ -435,7 +471,8 @@
       "stage": "y2",
       "parent": "n35",
       "marker": false,
-      "description": "面向对象三大特性、访问控制符、抽象类与接口的区别、重载与重写。Java 面试必问。"
+      "description": "面向对象三大特性、访问控制符、抽象类与接口的区别、重载与重写。Java 面试必问。",
+      "tpl": false
     },
     {
       "id": "n37",
@@ -444,7 +481,8 @@
       "stage": "y2",
       "parent": "n35",
       "marker": false,
-      "description": "异常体系（检查型/非检查型）、try-catch-finally；泛型与类型擦除。工程代码健壮性的基础。"
+      "description": "异常体系（检查型/非检查型）、try-catch-finally；泛型与类型擦除。工程代码健壮性的基础。",
+      "tpl": false
     },
     {
       "id": "n38",
@@ -453,7 +491,8 @@
       "stage": "y2",
       "parent": "n35",
       "marker": false,
-      "description": "List/Set/Map 实现类对比（ArrayList 与 LinkedList、HashMap 原理与扩容）、IO/NIO。面试高频。"
+      "description": "List/Set/Map 实现类对比（ArrayList 与 LinkedList、HashMap 原理与扩容）、IO/NIO。面试高频。",
+      "tpl": false
     },
     {
       "id": "n39",
@@ -462,7 +501,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大二核心课，理解CPU、存储层次、I/O系统。对系统/底层方向和嵌入式开发尤为重要。主流教材：唐朔飞《计算机组成原理》（高等教育出版社）或袁春风《计算机组成与系统结构》（清华大学出版社）。"
+      "description": "大二核心课，理解CPU、存储层次、I/O系统。对系统/底层方向和嵌入式开发尤为重要。主流教材：唐朔飞《计算机组成原理》（高等教育出版社）或袁春风《计算机组成与系统结构》（清华大学出版社）。",
+      "tpl": false
     },
     {
       "id": "n40",
@@ -471,7 +511,8 @@
       "stage": "y2",
       "parent": "n39",
       "marker": false,
-      "description": "指令格式与寻址方式、运算器与控制器、数据通路与指令周期。408 重点章节。"
+      "description": "指令格式与寻址方式、运算器与控制器、数据通路与指令周期。408 重点章节。",
+      "tpl": false
     },
     {
       "id": "n41",
@@ -480,7 +521,8 @@
       "stage": "y2",
       "parent": "n39",
       "marker": false,
-      "description": "Cache 直接/组相联/全相联映射与替换算法、主存扩展、虚拟存储。408 高频考点。"
+      "description": "Cache 直接/组相联/全相联映射与替换算法、主存扩展、虚拟存储。408 高频考点。",
+      "tpl": false
     },
     {
       "id": "n42",
@@ -489,7 +531,8 @@
       "stage": "y2",
       "parent": "n39",
       "marker": false,
-      "description": "程序查询/中断/DMA 三种 I/O 控制方式对比、总线结构与仲裁。408 考点。"
+      "description": "程序查询/中断/DMA 三种 I/O 控制方式对比、总线结构与仲裁。408 考点。",
+      "tpl": false
     },
     {
       "id": "n43",
@@ -498,7 +541,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大二核心课，SQL和数据库设计是后端开发的必备技能。事务、索引、查询优化是面试高频考点。主流教材：王珊《数据库系统概论》（高等教育出版社）。"
+      "description": "大二核心课，SQL和数据库设计是后端开发的必备技能。事务、索引、查询优化是面试高频考点。主流教材：王珊《数据库系统概论》（高等教育出版社）。",
+      "tpl": false
     },
     {
       "id": "n44",
@@ -507,7 +551,8 @@
       "stage": "y3",
       "parent": "n43",
       "marker": false,
-      "description": "DDL/DML、聚合与分组、多表连接与子查询、ER 图与关系模式转换。后端岗必会技能。"
+      "description": "DDL/DML、聚合与分组、多表连接与子查询、ER 图与关系模式转换。后端岗必会技能。",
+      "tpl": false
     },
     {
       "id": "n45",
@@ -516,7 +561,8 @@
       "stage": "y3",
       "parent": "n43",
       "marker": false,
-      "description": "ACID 特性、隔离级别、锁机制、MVCC 原理。数据库面试高频。"
+      "description": "ACID 特性、隔离级别、锁机制、MVCC 原理。数据库面试高频。",
+      "tpl": false
     },
     {
       "id": "n46",
@@ -525,7 +571,8 @@
       "stage": "y3",
       "parent": "n43",
       "marker": false,
-      "description": "B+ 树索引原理、最左前缀、执行计划分析、慢查询优化。性能调优基础。"
+      "description": "B+ 树索引原理、最左前缀、执行计划分析、慢查询优化。性能调优基础。",
+      "tpl": false
     },
     {
       "id": "n47",
@@ -534,7 +581,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "计算机硬件基础。对系统方向、FPGA、嵌入式有帮助。其他方向不挂科即可。"
+      "description": "计算机硬件基础。对系统方向、FPGA、嵌入式有帮助。其他方向不挂科即可。",
+      "tpl": false
     },
     {
       "id": "n48",
@@ -543,7 +591,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大三核心课，理解计算机系统运作的关键。进程线程、内存管理、文件系统是后端开发和系统方向面试重点。主流教材：汤子瀛《计算机操作系统》（西安电子科技大学出版社）。"
+      "description": "大三核心课，理解计算机系统运作的关键。进程线程、内存管理、文件系统是后端开发和系统方向面试重点。主流教材：汤子瀛《计算机操作系统》（西安电子科技大学出版社）。",
+      "tpl": false
     },
     {
       "id": "n49",
@@ -552,7 +601,8 @@
       "stage": "y3",
       "parent": "n48",
       "marker": false,
-      "description": "进程状态转换、调度算法（先来先服务/时间片轮转/多级反馈队列）、信号量与 PV 操作、死锁的四个必要条件。408 重点+面试必考。"
+      "description": "进程状态转换、调度算法（先来先服务/时间片轮转/多级反馈队列）、信号量与 PV 操作、死锁的四个必要条件。408 重点+面试必考。",
+      "tpl": false
     },
     {
       "id": "n50",
@@ -561,7 +611,8 @@
       "stage": "y3",
       "parent": "n48",
       "marker": false,
-      "description": "分页/分段/段页式管理、页面置换算法（LRU/时钟）、虚拟内存。408 重点。"
+      "description": "分页/分段/段页式管理、页面置换算法（LRU/时钟）、虚拟内存。408 重点。",
+      "tpl": false
     },
     {
       "id": "n51",
@@ -570,7 +621,8 @@
       "stage": "y3",
       "parent": "n48",
       "marker": false,
-      "description": "文件目录结构、空闲空间管理、磁盘调度算法、I/O 软件层次结构。408 考点。"
+      "description": "文件目录结构、空闲空间管理、磁盘调度算法、I/O 软件层次结构。408 考点。",
+      "tpl": false
     },
     {
       "id": "n52",
@@ -579,7 +631,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大三核心课，后端开发和面试必考。TCP/IP协议栈、HTTP/DNS是Web开发的基础知识。主流教材：谢希仁《计算机网络》（电子工业出版社）。"
+      "description": "大三核心课，后端开发和面试必考。TCP/IP协议栈、HTTP/DNS是Web开发的基础知识。主流教材：谢希仁《计算机网络》（电子工业出版社）。",
+      "tpl": false
     },
     {
       "id": "n53",
@@ -588,7 +641,8 @@
       "stage": "y3",
       "parent": "n52",
       "marker": false,
-      "description": "TCP 三次握手与四次挥手、可靠传输与流量控制、拥塞控制；IP 分片与路由、UDP 特点。网络面试必考。"
+      "description": "TCP 三次握手与四次挥手、可靠传输与流量控制、拥塞控制；IP 分片与路由、UDP 特点。网络面试必考。",
+      "tpl": false
     },
     {
       "id": "n54",
@@ -597,7 +651,8 @@
       "stage": "y3",
       "parent": "n52",
       "marker": false,
-      "description": "HTTP 报文与状态码、Cookie/Session、HTTPS 加密握手流程、DNS 解析过程。Web 开发与面试高频。"
+      "description": "HTTP 报文与状态码、Cookie/Session、HTTPS 加密握手流程、DNS 解析过程。Web 开发与面试高频。",
+      "tpl": false
     },
     {
       "id": "n55",
@@ -606,7 +661,8 @@
       "stage": "y3",
       "parent": "n52",
       "marker": false,
-      "description": "对称/非对称加密对比、数字签名与证书体系、常见攻击（DDoS/中间人/SQL注入）与防护思路。安全意识入门。"
+      "description": "对称/非对称加密对比、数字签名与证书体系、常见攻击（DDoS/中间人/SQL注入）与防护思路。安全意识入门。",
+      "tpl": false
     },
     {
       "id": "n56",
@@ -615,7 +671,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大三核心课，面试算法题的进阶。分治、DP、贪心、回溯是高阶算法能力的关键。"
+      "description": "大三核心课，面试算法题的进阶。分治、DP、贪心、回溯是高阶算法能力的关键。",
+      "tpl": false
     },
     {
       "id": "n57",
@@ -624,7 +681,8 @@
       "stage": "y2",
       "parent": "n56",
       "marker": false,
-      "description": "三大算法范式：分治（归并排序、快排思想）、动态规划（最优子结构、状态转移方程）、贪心（局部最优）。面试算法核心。"
+      "description": "三大算法范式：分治（归并排序、快排思想）、动态规划（最优子结构、状态转移方程）、贪心（局部最优）。面试算法核心。",
+      "tpl": false
     },
     {
       "id": "n58",
@@ -633,7 +691,8 @@
       "stage": "y2",
       "parent": "n56",
       "marker": false,
-      "description": "回溯模板（排列/组合/子集/N皇后）、剪枝策略。暴力搜索问题的通用解法。"
+      "description": "回溯模板（排列/组合/子集/N皇后）、剪枝策略。暴力搜索问题的通用解法。",
+      "tpl": false
     },
     {
       "id": "n59",
@@ -642,7 +701,8 @@
       "stage": "y2",
       "parent": "n56",
       "marker": false,
-      "description": "P 与 NP 概念、NP 完全问题的判定思路（归约）、常见 NPC 问题（旅行商、背包）。理解理论复杂度边界。"
+      "description": "P 与 NP 概念、NP 完全问题的判定思路（归约）、常见 NPC 问题（旅行商、背包）。理解理论复杂度边界。",
+      "tpl": false
     },
     {
       "id": "n60",
@@ -651,7 +711,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大三课程，理解软件开发流程。需求分析、敏捷开发、CI/CD是团队协作的基础。"
+      "description": "大三课程，理解软件开发流程。需求分析、敏捷开发、CI/CD是团队协作的基础。",
+      "tpl": false
     },
     {
       "id": "n61",
@@ -660,7 +721,8 @@
       "stage": "y3",
       "parent": "n60",
       "marker": false,
-      "description": "用例图/类图/时序图、需求规格说明的编写。课程设计与团队项目文档基础。"
+      "description": "用例图/类图/时序图、需求规格说明的编写。课程设计与团队项目文档基础。",
+      "tpl": false
     },
     {
       "id": "n62",
@@ -669,7 +731,8 @@
       "stage": "y3",
       "parent": "n60",
       "marker": false,
-      "description": "迭代与冲刺、Scrum 角色（PO/Scrum Master/开发团队）、站立会与回顾会。团队协作实践。"
+      "description": "迭代与冲刺、Scrum 角色（PO/Scrum Master/开发团队）、站立会与回顾会。团队协作实践。",
+      "tpl": false
     },
     {
       "id": "n63",
@@ -678,7 +741,8 @@
       "stage": "y3",
       "parent": "n60",
       "marker": false,
-      "description": "单元/集成/端到端测试分层、Jest/pytest 基础、GitHub Actions 持续集成流水线。工程化能力加分项。"
+      "description": "单元/集成/端到端测试分层、Jest/pytest 基础、GitHub Actions 持续集成流水线。工程化能力加分项。",
+      "tpl": false
     },
     {
       "id": "n64",
@@ -687,7 +751,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大三课程，计算机科学的顶峰课程之一。理解高级语言如何被计算机执行，对编程语言设计和系统开发有深远价值。直接前置：数据结构。参考书：《编译原理》（龙书，机械工业出版社）。"
+      "description": "大三课程，计算机科学的顶峰课程之一。理解高级语言如何被计算机执行，对编程语言设计和系统开发有深远价值。直接前置：数据结构。参考书：《编译原理》（龙书，机械工业出版社）。",
+      "tpl": false
     },
     {
       "id": "n65",
@@ -696,7 +761,8 @@
       "stage": "y3",
       "parent": "n64",
       "marker": false,
-      "description": "专业核心 · 大三阶段 · 属于「编译原理」。。"
+      "description": "专业核心 · 大三阶段 · 属于「编译原理」。。",
+      "tpl": true
     },
     {
       "id": "n66",
@@ -705,7 +771,8 @@
       "stage": "y3",
       "parent": "n64",
       "marker": false,
-      "description": "专业核心 · 大三阶段 · 属于「编译原理」。。"
+      "description": "专业核心 · 大三阶段 · 属于「编译原理」。。",
+      "tpl": true
     },
     {
       "id": "n67",
@@ -714,7 +781,8 @@
       "stage": "y3",
       "parent": "n64",
       "marker": false,
-      "description": "专业核心 · 大三阶段 · 属于「编译原理」。。"
+      "description": "专业核心 · 大三阶段 · 属于「编译原理」。。",
+      "tpl": true
     },
     {
       "id": "n68",
@@ -723,7 +791,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大三课程，AI领域的全景概览。搜索、知识表示、机器学习基础概念。"
+      "description": "大三课程，AI领域的全景概览。搜索、知识表示、机器学习基础概念。",
+      "tpl": false
     },
     {
       "id": "n69",
@@ -732,7 +801,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大三课程，AI方向的入口。监督学习/无监督学习理论基础，Scikit-learn实战。需线代+概率论前置。国内最常推荐的参考书：周志华《机器学习》（西瓜书，清华大学出版社）。"
+      "description": "大三课程，AI方向的入口。监督学习/无监督学习理论基础，Scikit-learn实战。需线代+概率论前置。国内最常推荐的参考书：周志华《机器学习》（西瓜书，清华大学出版社）。",
+      "tpl": false
     },
     {
       "id": "n70",
@@ -741,7 +811,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "系统方向核心课。理解CPU流水线、缓存层次、多核架构。对编译器、OS、底层优化有价值。"
+      "description": "系统方向核心课。理解CPU流水线、缓存层次、多核架构。对编译器、OS、底层优化有价值。",
+      "tpl": false
     },
     {
       "id": "n71",
@@ -750,7 +821,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大四课程（多校大三下已开设），AI方向核心。CNN/RNN/Transformer架构，PyTorch框架实战。需机器学习基础前置。"
+      "description": "大四课程（多校大三下已开设），AI方向核心。CNN/RNN/Transformer架构，PyTorch框架实战。需机器学习基础前置。",
+      "tpl": false
     },
     {
       "id": "n72",
@@ -759,7 +831,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "AI热门方向，部分高校大三下已开设。Transformer/BERT/GPT系列是核心。需要深度学习基础前置。NLP工程师需求稳定但门槛高（硕士起步）。"
+      "description": "AI热门方向，部分高校大三下已开设。Transformer/BERT/GPT系列是核心。需要深度学习基础前置。NLP工程师需求稳定但门槛高（硕士起步）。",
+      "tpl": false
     },
     {
       "id": "n73",
@@ -768,7 +841,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "AI热门方向，部分校大三下已开设。CNN/目标检测/图像分割是核心。CV竞争激烈，建议与具体场景结合（医疗影像、自动驾驶）降低竞争。"
+      "description": "AI热门方向，部分校大三下已开设。CNN/目标检测/图像分割是核心。CV竞争激烈，建议与具体场景结合（医疗影像、自动驾驶）降低竞争。",
+      "tpl": false
     },
     {
       "id": "n74",
@@ -777,7 +851,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "后端进阶必修。CAP理论、一致性协议、分布式事务、RPC是高频面试点。配合MIT 6.824课程效果最佳。"
+      "description": "后端进阶必修。CAP理论、一致性协议、分布式事务、RPC是高频面试点。配合MIT 6.824课程效果最佳。",
+      "tpl": false
     },
     {
       "id": "n75",
@@ -786,7 +861,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "专业方向。CTF竞赛入坑门槛不高。就业面窄但薪资高，分攻防、逆向、密码学子方向。"
+      "description": "专业方向。CTF竞赛入坑门槛不高。就业面窄但薪资高，分攻防、逆向、密码学子方向。",
+      "tpl": false
     },
     {
       "id": "n76",
@@ -795,7 +871,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "Hadoop/Spark/Flink生态。大数据工程师需求稳定，适合后端+大数据复合方向。"
+      "description": "Hadoop/Spark/Flink生态。大数据工程师需求稳定，适合后端+大数据复合方向。",
+      "tpl": false
     },
     {
       "id": "n77",
@@ -804,7 +881,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "Python入门实践。掌握变量类型、控制流、函数、面向对象、常用标准库。配合LeetCode Python题单练习。"
+      "description": "Python入门实践。掌握变量类型、控制流、函数、面向对象、常用标准库。配合LeetCode Python题单练习。",
+      "tpl": false
     },
     {
       "id": "n78",
@@ -813,7 +891,8 @@
       "stage": "y2",
       "parent": "n77",
       "marker": false,
-      "description": "编程技能 · 大二阶段 · 属于「Python编程」。。"
+      "description": "编程技能 · 大二阶段 · 属于「Python编程」。。",
+      "tpl": true
     },
     {
       "id": "n79",
@@ -831,7 +910,8 @@
       "stage": "y2",
       "parent": "n79",
       "marker": false,
-      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。"
+      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。",
+      "tpl": true
     },
     {
       "id": "n81",
@@ -840,7 +920,8 @@
       "stage": "y2",
       "parent": "n79",
       "marker": false,
-      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。"
+      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。",
+      "tpl": true
     },
     {
       "id": "n82",
@@ -849,7 +930,8 @@
       "stage": "y2",
       "parent": "n79",
       "marker": false,
-      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。"
+      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。",
+      "tpl": true
     },
     {
       "id": "n83",
@@ -867,7 +949,8 @@
       "stage": "y3",
       "parent": "n83",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n85",
@@ -876,7 +959,8 @@
       "stage": "y3",
       "parent": "n83",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n86",
@@ -885,7 +969,8 @@
       "stage": "y3",
       "parent": "n83",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n87",
@@ -894,7 +979,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "前端核心语言。先学JS基础（ES6+），再学TS类型系统。Node.js让你能用JS写后端。"
+      "description": "前端核心语言。先学JS基础（ES6+），再学TS类型系统。Node.js让你能用JS写后端。",
+      "tpl": false
     },
     {
       "id": "n88",
@@ -903,7 +989,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "程序员必备工具。Git：add/commit/push/branch/merge。Linux：文件操作+权限+进程+shell脚本。建议大二上学期集中一周学。"
+      "description": "程序员必备工具。Git：add/commit/push/branch/merge。Linux：文件操作+权限+进程+shell脚本。建议大二上学期集中一周学。",
+      "tpl": false
     },
     {
       "id": "n89",
@@ -912,7 +999,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "数据存储核心技能。增删改查+JOIN+子查询+索引+事务。面试必考题，刷LeetCode SQL题库。"
+      "description": "数据存储核心技能。增删改查+JOIN+子查询+索引+事务。面试必考题，刷LeetCode SQL题库。",
+      "tpl": false
     },
     {
       "id": "n90",
@@ -930,7 +1018,8 @@
       "stage": "y3",
       "parent": "n90",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n92",
@@ -939,7 +1028,8 @@
       "stage": "y3",
       "parent": "n90",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n93",
@@ -948,7 +1038,8 @@
       "stage": "y3",
       "parent": "n90",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n94",
@@ -957,7 +1048,8 @@
       "stage": "y3",
       "parent": "n90",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n95",
@@ -975,7 +1067,8 @@
       "stage": "y3",
       "parent": "n95",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n97",
@@ -984,7 +1077,8 @@
       "stage": "y3",
       "parent": "n95",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n98",
@@ -993,7 +1087,8 @@
       "stage": "y3",
       "parent": "n95",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n99",
@@ -1002,7 +1097,8 @@
       "stage": "y3",
       "parent": "n95",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n100",
@@ -1011,7 +1107,8 @@
       "stage": "y3",
       "parent": "n95",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。"
+      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n101",
@@ -1029,7 +1126,8 @@
       "stage": "y3",
       "parent": "n101",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。"
+      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
+      "tpl": true
     },
     {
       "id": "n103",
@@ -1038,7 +1136,8 @@
       "stage": "y3",
       "parent": "n101",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。"
+      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
+      "tpl": true
     },
     {
       "id": "n104",
@@ -1047,7 +1146,8 @@
       "stage": "y3",
       "parent": "n101",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。"
+      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
+      "tpl": true
     },
     {
       "id": "n105",
@@ -1056,7 +1156,8 @@
       "stage": "y3",
       "parent": "n101",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。"
+      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
+      "tpl": true
     },
     {
       "id": "n106",
@@ -1065,7 +1166,8 @@
       "stage": "y3",
       "parent": "n101",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。"
+      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
+      "tpl": true
     },
     {
       "id": "n107",
@@ -1074,7 +1176,8 @@
       "stage": "y3",
       "parent": "n101",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。"
+      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
+      "tpl": true
     },
     {
       "id": "n108",
@@ -1092,7 +1195,8 @@
       "stage": "y3",
       "parent": "n108",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。"
+      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
+      "tpl": true
     },
     {
       "id": "n110",
@@ -1101,7 +1205,8 @@
       "stage": "y3",
       "parent": "n108",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。"
+      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
+      "tpl": true
     },
     {
       "id": "n111",
@@ -1110,7 +1215,8 @@
       "stage": "y3",
       "parent": "n108",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。"
+      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
+      "tpl": true
     },
     {
       "id": "n112",
@@ -1119,7 +1225,8 @@
       "stage": "y3",
       "parent": "n108",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。"
+      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
+      "tpl": true
     },
     {
       "id": "n113",
@@ -1128,7 +1235,8 @@
       "stage": "y3",
       "parent": "n108",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。"
+      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
+      "tpl": true
     },
     {
       "id": "n114",
@@ -1146,7 +1254,8 @@
       "stage": "y3",
       "parent": "n114",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
+      "tpl": true
     },
     {
       "id": "n116",
@@ -1155,7 +1264,8 @@
       "stage": "y3",
       "parent": "n114",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
+      "tpl": true
     },
     {
       "id": "n117",
@@ -1164,7 +1274,8 @@
       "stage": "y3",
       "parent": "n114",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
+      "tpl": true
     },
     {
       "id": "n118",
@@ -1173,7 +1284,8 @@
       "stage": "y3",
       "parent": "n114",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
+      "tpl": true
     },
     {
       "id": "n119",
@@ -1182,7 +1294,8 @@
       "stage": "y3",
       "parent": "n114",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
+      "tpl": true
     },
     {
       "id": "n120",
@@ -1200,7 +1313,8 @@
       "stage": "y3",
       "parent": "n120",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
+      "tpl": true
     },
     {
       "id": "n122",
@@ -1209,7 +1323,8 @@
       "stage": "y3",
       "parent": "n120",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
+      "tpl": true
     },
     {
       "id": "n123",
@@ -1218,7 +1333,8 @@
       "stage": "y3",
       "parent": "n120",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
+      "tpl": true
     },
     {
       "id": "n124",
@@ -1227,7 +1343,8 @@
       "stage": "y3",
       "parent": "n120",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
+      "tpl": true
     },
     {
       "id": "n125",
@@ -1236,7 +1353,8 @@
       "stage": "y3",
       "parent": "n120",
       "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。"
+      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
+      "tpl": true
     },
     {
       "id": "n126",
@@ -1245,7 +1363,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "大厂后端新宠（字节/腾讯/美团）。goroutine+channel是并发最佳实践。有Java或C++基础后再学更高效。"
+      "description": "大厂后端新宠（字节/腾讯/美团）。goroutine+channel是并发最佳实践。有Java或C++基础后再学更高效。",
+      "tpl": false
     },
     {
       "id": "n127",
@@ -1254,7 +1373,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "最安全的系统编程语言。学习曲线陡峭但性能极高。适合系统工具、WebAssembly、区块链。建议有C++基础再入门。"
+      "description": "最安全的系统编程语言。学习曲线陡峭但性能极高。适合系统工具、WebAssembly、区块链。建议有C++基础再入门。",
+      "tpl": false
     },
     {
       "id": "n128",
@@ -1272,7 +1392,8 @@
       "stage": "m1",
       "parent": "n128",
       "marker": false,
-      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。"
+      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n130",
@@ -1281,7 +1402,8 @@
       "stage": "m1",
       "parent": "n128",
       "marker": false,
-      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。"
+      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n131",
@@ -1290,7 +1412,8 @@
       "stage": "m1",
       "parent": "n128",
       "marker": false,
-      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。"
+      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
+      "tpl": true
     },
     {
       "id": "n132",
@@ -1299,7 +1422,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "入门门槛最低的竞赛。三人组队：建模+编程+写作。国赛9月美赛2月。拿奖对保研加分，对就业帮助有限。"
+      "description": "入门门槛最低的竞赛。三人组队：建模+编程+写作。国赛9月美赛2月。拿奖对保研加分，对就业帮助有限。",
+      "tpl": false
     },
     {
       "id": "n133",
@@ -1308,7 +1432,8 @@
       "stage": "y2",
       "parent": null,
       "marker": true,
-      "description": "难度在算法竞赛中相对较低，但并非\"有手就行\"：当前省赛奖项比例约为一等奖10%/二等奖15%/三等奖25%（以当年官方章程为准），且大学A组（重本组）含金量更高、B/C组相对容易。省一及以上对保研加分、简历有一定含金量，对就业帮助有限。"
+      "description": "难度在算法竞赛中相对较低，但并非\"有手就行\"：当前省赛奖项比例约为一等奖10%/二等奖15%/三等奖25%（以当年官方章程为准），且大学A组（重本组）含金量更高、B/C组相对容易。省一及以上对保研加分、简历有一定含金量，对就业帮助有限。",
+      "tpl": false
     },
     {
       "id": "n134",
@@ -1317,7 +1442,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "竞赛科研 · 大二阶段。。"
+      "description": "竞赛科研 · 大二阶段。。",
+      "tpl": true
     },
     {
       "id": "n135",
@@ -1326,7 +1452,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "中国大学生程序设计竞赛（主办方为中国大学生程序设计竞赛组委会，并非CCF）。赛季分网络赛、多站分站赛、CCPC总决赛，难度与ACM相当、以国内高校为主。区域奖牌可作为保研加分项。"
+      "description": "中国大学生程序设计竞赛（主办方为中国大学生程序设计竞赛组委会，并非CCF）。赛季分网络赛、多站分站赛、CCPC总决赛，难度与ACM相当、以国内高校为主。区域奖牌可作为保研加分项。",
+      "tpl": false
     },
     {
       "id": "n136",
@@ -1335,7 +1462,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "百度官方编程竞赛（赛程每年浮动：初赛一般6-8月，决赛一般11-12月，以当届官方公告为准）。得奖可作为面试加分项，入围决赛可获得百度校招/实习绿色通道。"
+      "description": "百度官方编程竞赛（赛程每年浮动：初赛一般6-8月，决赛一般11-12月，以当届官方公告为准）。得奖可作为面试加分项，入围决赛可获得百度校招/实习绿色通道。",
+      "tpl": false
     },
     {
       "id": "n137",
@@ -1353,7 +1481,8 @@
       "stage": "y3",
       "parent": "n137",
       "marker": false,
-      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。"
+      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
+      "tpl": true
     },
     {
       "id": "n139",
@@ -1362,7 +1491,8 @@
       "stage": "y3",
       "parent": "n137",
       "marker": false,
-      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。"
+      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
+      "tpl": true
     },
     {
       "id": "n140",
@@ -1371,7 +1501,8 @@
       "stage": "y3",
       "parent": "n137",
       "marker": false,
-      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。"
+      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
+      "tpl": true
     },
     {
       "id": "n141",
@@ -1380,7 +1511,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "数据科学全球竞赛平台。全球排名是AI方向简历亮点。建议先学ML基础再参赛。完成一个完整项目比追求名次更重要。"
+      "description": "数据科学全球竞赛平台。全球排名是AI方向简历亮点。建议先学ML基础再参赛。完成一个完整项目比追求名次更重要。",
+      "tpl": false
     },
     {
       "id": "n142",
@@ -1389,7 +1521,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "阿里系数据竞赛平台。国内AI圈认可度高。优胜方案可直接写入简历。"
+      "description": "阿里系数据竞赛平台。国内AI圈认可度高。优胜方案可直接写入简历。",
+      "tpl": false
     },
     {
       "id": "n143",
@@ -1398,7 +1531,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "华为举办的编程竞赛（CodeCraft，一般3-4月启动，以当届官方公告为准）。赛题偏算法+系统设计。优胜者可获机考绿卡/面试绿卡（校招绿色通道），总决赛另有高额奖金。"
+      "description": "华为举办的编程竞赛（CodeCraft，一般3-4月启动，以当届官方公告为准）。赛题偏算法+系统设计。优胜者可获机考绿卡/面试绿卡（校招绿色通道），总决赛另有高额奖金。",
+      "tpl": false
     },
     {
       "id": "n144",
@@ -1407,7 +1541,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "安全方向最高水平竞赛。分线上解题+线下攻防对抗。获奖进入安全大厂的捷径。"
+      "description": "安全方向最高水平竞赛。分线上解题+线下攻防对抗。获奖进入安全大厂的捷径。",
+      "tpl": false
     },
     {
       "id": "n145",
@@ -1416,7 +1551,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "偏项目展示的竞赛。适合拿课程作品去参赛，获奖率相对高。"
+      "description": "偏项目展示的竞赛。适合拿课程作品去参赛，获奖率相对高。",
+      "tpl": false
     },
     {
       "id": "n146",
@@ -1425,7 +1561,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "偏商业计划的竞赛。适合有创业想法的团队，拿奖对保研有较大加分。"
+      "description": "偏商业计划的竞赛。适合有创业想法的团队，拿奖对保研有较大加分。",
+      "tpl": false
     },
     {
       "id": "n147",
@@ -1434,7 +1571,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "字节跳动官方线上训练营（ByteTech发起，免费，寒暑假各一期）。mentor带项目，方向含前端/客户端/后端/AI等，结营有证书，表现优秀可获得内推/绿色通道机会。适合大三没有实习的同学。"
+      "description": "字节跳动官方线上训练营（ByteTech发起，免费，寒暑假各一期）。mentor带项目，方向含前端/客户端/后端/AI等，结营有证书，表现优秀可获得内推/绿色通道机会。适合大三没有实习的同学。",
+      "tpl": false
     },
     {
       "id": "n148",
@@ -1452,7 +1590,8 @@
       "stage": "m1",
       "parent": "n148",
       "marker": false,
-      "description": "竞赛科研 · 研一阶段 · 属于「确定研究方向」。。"
+      "description": "竞赛科研 · 研一阶段 · 属于「确定研究方向」。。",
+      "tpl": true
     },
     {
       "id": "n150",
@@ -1461,7 +1600,8 @@
       "stage": "m1",
       "parent": "n148",
       "marker": false,
-      "description": "竞赛科研 · 研一阶段 · 属于「确定研究方向」。。"
+      "description": "竞赛科研 · 研一阶段 · 属于「确定研究方向」。。",
+      "tpl": true
     },
     {
       "id": "n151",
@@ -1470,7 +1610,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "竞赛科研 · 研一阶段。。"
+      "description": "竞赛科研 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n152",
@@ -1479,7 +1620,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "竞赛科研 · 研一阶段。。"
+      "description": "竞赛科研 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n153",
@@ -1488,7 +1630,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "竞赛科研 · 研一阶段。。"
+      "description": "竞赛科研 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n154",
@@ -1497,7 +1640,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "竞赛科研 · 研一阶段。。"
+      "description": "竞赛科研 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n155",
@@ -1506,7 +1650,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "竞赛科研 · 研一阶段。。"
+      "description": "竞赛科研 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n156",
@@ -1515,7 +1660,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "竞赛科研 · 研一阶段。。"
+      "description": "竞赛科研 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n157",
@@ -1524,7 +1670,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "大三上学期启动，包括简历撰写（STAR法则）、LeetCode刷题规划、八股文整理、项目复盘。建议提前6个月开始。"
+      "description": "大三上学期启动，包括简历撰写（STAR法则）、LeetCode刷题规划、八股文整理、项目复盘。建议提前6个月开始。",
+      "tpl": false
     },
     {
       "id": "n158",
@@ -1533,7 +1680,8 @@
       "stage": "y3",
       "parent": "n157",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。"
+      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
+      "tpl": true
     },
     {
       "id": "n159",
@@ -1542,7 +1690,8 @@
       "stage": "y3",
       "parent": "n157",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。"
+      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
+      "tpl": true
     },
     {
       "id": "n160",
@@ -1551,7 +1700,8 @@
       "stage": "y3",
       "parent": "n157",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。"
+      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
+      "tpl": true
     },
     {
       "id": "n161",
@@ -1560,7 +1710,8 @@
       "stage": "y3",
       "parent": "n157",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。"
+      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
+      "tpl": true
     },
     {
       "id": "n162",
@@ -1569,7 +1720,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "大三3-5月是关键窗口。实习经历是秋招最大的加分项，比项目经验更有说服力。建议海投50-100家（经验值，视个人精力），先拿到offer再挑。"
+      "description": "大三3-5月是关键窗口。实习经历是秋招最大的加分项，比项目经验更有说服力。建议海投50-100家（经验值，视个人精力），先拿到offer再挑。",
+      "tpl": false
     },
     {
       "id": "n163",
@@ -1578,7 +1730,8 @@
       "stage": "y3",
       "parent": "n162",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。"
+      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
+      "tpl": true
     },
     {
       "id": "n164",
@@ -1587,7 +1740,8 @@
       "stage": "y3",
       "parent": "n162",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。"
+      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
+      "tpl": true
     },
     {
       "id": "n165",
@@ -1596,7 +1750,8 @@
       "stage": "y3",
       "parent": "n162",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。"
+      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
+      "tpl": true
     },
     {
       "id": "n166",
@@ -1605,7 +1760,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "大三下学期（3-5月）投递，6-8月实习。实习是秋招最大加分项，比项目更有说服力。建议海投50-100家（经验值，视个人精力），先拿到offer再挑。转正率各公司部门差异大、无官方统计，对外口径通常在五到九成之间，大厂实习对秋招的价值不止于转正本身。"
+      "description": "大三下学期（3-5月）投递，6-8月实习。实习是秋招最大加分项，比项目更有说服力。建议海投50-100家（经验值，视个人精力），先拿到offer再挑。转正率各公司部门差异大、无官方统计，对外口径通常在五到九成之间，大厂实习对秋招的价值不止于转正本身。",
+      "tpl": false
     },
     {
       "id": "n167",
@@ -1614,7 +1770,8 @@
       "stage": "y3",
       "parent": "n166",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「暑期实习」。。"
+      "description": "实习就业 · 大三阶段 · 属于「暑期实习」。。",
+      "tpl": true
     },
     {
       "id": "n168",
@@ -1623,7 +1780,8 @@
       "stage": "y3",
       "parent": "n166",
       "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「暑期实习」。。"
+      "description": "实习就业 · 大三阶段 · 属于「暑期实习」。。",
+      "tpl": true
     },
     {
       "id": "n169",
@@ -1632,7 +1790,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "免笔试直接面试，部分大厂在提前批就发出大量offer，且流程更短。建议不晚于6月下旬启动投递，不要等到9月正式批才动手，可多投几个部门互不冲突。"
+      "description": "免笔试直接面试，部分大厂在提前批就发出大量offer，且流程更短。建议不晚于6月下旬启动投递，不要等到9月正式批才动手，可多投几个部门互不冲突。",
+      "tpl": false
     },
     {
       "id": "n170",
@@ -1641,7 +1800,8 @@
       "stage": "y4",
       "parent": null,
       "marker": true,
-      "description": "大四最重要的招聘季。互联网大厂集中释放岗位，需要提前准备好简历、算法、八股、项目。"
+      "description": "大四最重要的招聘季。互联网大厂集中释放岗位，需要提前准备好简历、算法、八股、项目。",
+      "tpl": false
     },
     {
       "id": "n171",
@@ -1650,7 +1810,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "捡漏机会。部分同学拒offer后释放名额，要求比正式批略低。11月后继续刷题投递，补录流程快，面试后一般1-2周出结果（各公司不同）。"
+      "description": "捡漏机会。部分同学拒offer后释放名额，要求比正式批略低。11月后继续刷题投递，补录流程快，面试后一般1-2周出结果（各公司不同）。",
+      "tpl": false
     },
     {
       "id": "n172",
@@ -1659,7 +1820,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "考研结束后首批招聘，主要面向考研失败转找工作的同学。考完研立即开始准备简历和刷题。"
+      "description": "考研结束后首批招聘，主要面向考研失败转找工作的同学。考完研立即开始准备简历和刷题。",
+      "tpl": false
     },
     {
       "id": "n173",
@@ -1668,7 +1830,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "应届生最后一次大规模招聘。整体岗位通常少于秋招，但竞争也小一些。重点是快速拿offer不要挑三拣四。"
+      "description": "应届生最后一次大规模招聘。整体岗位通常少于秋招，但竞争也小一些。重点是快速拿offer不要挑三拣四。",
+      "tpl": false
     },
     {
       "id": "n174",
@@ -1677,7 +1840,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "硕士阶段的实习更重要，论文+实习双线并行。大厂研究型实习需要发过论文，是进入核心算法团队的敲门砖。"
+      "description": "硕士阶段的实习更重要，论文+实习双线并行。大厂研究型实习需要发过论文，是进入核心算法团队的敲门砖。",
+      "tpl": false
     },
     {
       "id": "n175",
@@ -1695,7 +1859,8 @@
       "stage": "m1",
       "parent": "n175",
       "marker": false,
-      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。"
+      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
+      "tpl": true
     },
     {
       "id": "n177",
@@ -1704,7 +1869,8 @@
       "stage": "m1",
       "parent": "n175",
       "marker": false,
-      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。"
+      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
+      "tpl": true
     },
     {
       "id": "n178",
@@ -1713,7 +1879,8 @@
       "stage": "m1",
       "parent": "n175",
       "marker": false,
-      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。"
+      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
+      "tpl": true
     },
     {
       "id": "n179",
@@ -1731,7 +1898,8 @@
       "stage": "post",
       "parent": "n179",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
+      "tpl": true
     },
     {
       "id": "n181",
@@ -1740,7 +1908,8 @@
       "stage": "post",
       "parent": "n179",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
+      "tpl": true
     },
     {
       "id": "n182",
@@ -1749,7 +1918,8 @@
       "stage": "post",
       "parent": "n179",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
+      "tpl": true
     },
     {
       "id": "n183",
@@ -1767,7 +1937,8 @@
       "stage": "post",
       "parent": "n183",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
+      "tpl": true
     },
     {
       "id": "n185",
@@ -1776,7 +1947,8 @@
       "stage": "post",
       "parent": "n183",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
+      "tpl": true
     },
     {
       "id": "n186",
@@ -1785,7 +1957,8 @@
       "stage": "post",
       "parent": "n183",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
+      "tpl": true
     },
     {
       "id": "n187",
@@ -1803,7 +1976,8 @@
       "stage": "post",
       "parent": "n187",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
+      "tpl": true
     },
     {
       "id": "n189",
@@ -1812,7 +1986,8 @@
       "stage": "post",
       "parent": "n187",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
+      "tpl": true
     },
     {
       "id": "n190",
@@ -1821,7 +1996,8 @@
       "stage": "post",
       "parent": "n187",
       "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。"
+      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
+      "tpl": true
     },
     {
       "id": "n191",
@@ -1830,7 +2006,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "大三最重要的决策节点。考研适合学术导向或需要学历突破的学生；就业适合动手能力强、想积累工作经验的学生。建议不晚于大三上学期初做出决定，避免两边同时准备都不到位。"
+      "description": "大三最重要的决策节点。考研适合学术导向或需要学历突破的学生；就业适合动手能力强、想积累工作经验的学生。建议不晚于大三上学期初做出决定，避免两边同时准备都不到位。",
+      "tpl": false
     },
     {
       "id": "n192",
@@ -1839,7 +2016,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "数学一满分150分，内容分布：高等数学约60%、线性代数约20%、概率论与数理统计约20%。难度最大，建议跟主流老师系统学习。每天至少4小时数学，按高数→线代→概率论顺序。6月底要完成第一轮全覆盖。"
+      "description": "数学一满分150分，内容分布：高等数学约60%、线性代数约20%、概率论与数理统计约20%。难度最大，建议跟主流老师系统学习。每天至少4小时数学，按高数→线代→概率论顺序。6月底要完成第一轮全覆盖。",
+      "tpl": false
     },
     {
       "id": "n193",
@@ -1848,7 +2026,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "单词是基础，用墨墨背单词每天200个。长难句跟田静，阅读跟唐迟。真题6月开始做，早年真题先练手，近年真题留到最后模考。"
+      "description": "单词是基础，用墨墨背单词每天200个。长难句跟田静，阅读跟唐迟。真题6月开始做，早年真题先练手，近年真题留到最后模考。",
+      "tpl": false
     },
     {
       "id": "n194",
@@ -1857,7 +2036,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "大三暑假，保研的关键通道。需要准备成绩单、排名证明、个人陈述、推荐信。优秀营员通常获得预录取/免复试资格，但各校政策不一。夏令营发放预录取资格。"
+      "description": "大三暑假，保研的关键通道。需要准备成绩单、排名证明、个人陈述、推荐信。优秀营员通常获得预录取/免复试资格，但各校政策不一。夏令营发放预录取资格。",
+      "tpl": false
     },
     {
       "id": "n195",
@@ -1866,7 +2046,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "数学进入强化，刷880题+660题。专业课408四门同步推进：数据结构→组成原理→操作系统→网络。政治开始看徐涛视频。"
+      "description": "数学进入强化，刷880题+660题。专业课408四门同步推进：数据结构→组成原理→操作系统→网络。政治开始看徐涛视频。",
+      "tpl": false
     },
     {
       "id": "n196",
@@ -1875,7 +2056,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "数学真题按年份刷，408真题开始做。英语开始作文模板+新题型。政治刷1000题+背诵手册（肖八一般在11月上中旬上市后再刷，冲刺期刷肖四）。这是弃考高峰期，坚持就是胜利。"
+      "description": "数学真题按年份刷，408真题开始做。英语开始作文模板+新题型。政治刷1000题+背诵手册（肖八一般在11月上中旬上市后再刷，冲刺期刷肖四）。这是弃考高峰期，坚持就是胜利。",
+      "tpl": false
     },
     {
       "id": "n197",
@@ -1884,7 +2066,8 @@
       "stage": "y4",
       "parent": "n196",
       "marker": false,
-      "description": "408计算机学科专业基础综合，教育部统一命题。考四门：数据结构、计算机组成原理、操作系统、计算机网络。满分150分/180分钟：数据结构45分、组成原理45分、操作系统35分、计算机网络25分，题型为40道单选（80分）+综合应用题（70分）。四门分值近年稳定，是复习时间分配的重要依据。"
+      "description": "408计算机学科专业基础综合，教育部统一命题。考四门：数据结构、计算机组成原理、操作系统、计算机网络。满分150分/180分钟：数据结构45分、组成原理45分、操作系统35分、计算机网络25分，题型为40道单选（80分）+综合应用题（70分）。四门分值近年稳定，是复习时间分配的重要依据。",
+      "tpl": false
     },
     {
       "id": "n198",
@@ -1893,7 +2076,8 @@
       "stage": "y4",
       "parent": "n196",
       "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「考研冲刺(9-10月)」。。"
+      "description": "考研升学 · 大四阶段 · 属于「考研冲刺(9-10月)」。。",
+      "tpl": true
     },
     {
       "id": "n199",
@@ -1902,7 +2086,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "数学回归基础+查漏补缺，408回归考纲。政治肖四背诵（灵魂）。调整作息，不要熬夜。考研是一场马拉松，最后两个月比的是心态。"
+      "description": "数学回归基础+查漏补缺，408回归考纲。政治肖四背诵（灵魂）。调整作息，不要熬夜。考研是一场马拉松，最后两个月比的是心态。",
+      "tpl": false
     },
     {
       "id": "n200",
@@ -1911,7 +2096,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "很多应届生忽略的一环。预报名一般在9月下旬开放，正式报名在10月上旬开始、中下旬截止（日期每年微调，以当年研招网通知为准）。报名时确认报考点与考试科目代码。错过报名=失去当年考试资格，务必设置提醒。"
+      "description": "很多应届生忽略的一环。预报名一般在9月下旬开放，正式报名在10月上旬开始、中下旬截止（日期每年微调，以当年研招网通知为准）。报名时确认报考点与考试科目代码。错过报名=失去当年考试资格，务必设置提醒。",
+      "tpl": false
     },
     {
       "id": "n201",
@@ -1920,7 +2106,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "考前一周熟悉考场+准备文具。两天考四门：政治、英语、数学、专业课。考完一门丢一门不要对答案。"
+      "description": "考前一周熟悉考场+准备文具。两天考四门：政治、英语、数学、专业课。考完一门丢一门不要对答案。",
+      "tpl": false
     },
     {
       "id": "n202",
@@ -1929,7 +2116,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "成绩一般2月下旬公布（各年略有浮动，以当年研招网通知为准），国家线近年2月底至3月中旬陆续公布（以当年教育部通知为准）。成绩出来即联系导师。复试形式（是否有机试、面试几个环节，英语口语占比）因校而异，多数计算机院系含机试+面试。初试排名靠后要靠机试翻盘。"
+      "description": "成绩一般2月下旬公布（各年略有浮动，以当年研招网通知为准），国家线近年2月底至3月中旬陆续公布（以当年教育部通知为准）。成绩出来即联系导师。复试形式（是否有机试、面试几个环节，英语口语占比）因校而异，多数计算机院系含机试+面试。初试排名靠后要靠机试翻盘。",
+      "tpl": false
     },
     {
       "id": "n203",
@@ -1938,7 +2126,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "调剂意向采集系统一般在3月底开通、正式调剂服务系统4月上旬开放，4月中下旬至5月关闭，具体以当年研招网通知为准。调剂需通过研招网调剂服务系统进行，不接受系统外调剂。提前联系B区院校作为保底。调剂不丢人，有学上比没学上好。"
+      "description": "调剂意向采集系统一般在3月底开通、正式调剂服务系统4月上旬开放，4月中下旬至5月关闭，具体以当年研招网通知为准。调剂需通过研招网调剂服务系统进行，不接受系统外调剂。提前联系B区院校作为保底。调剂不丢人，有学上比没学上好。",
+      "tpl": false
     },
     {
       "id": "n204",
@@ -1947,7 +2136,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "夏令营没拿到offer的二次机会。预推免集中在8月底-9月中下旬，九推（国家推免服务系统填报）近年一般在9月下旬（22-28日之间浮动，以当年研招网通知为准）。推免规则：可同时填报三个平行志愿，志愿提交后48小时内不可修改，只能确认一个待录取通知。提前联系导师，确认有名额。"
+      "description": "夏令营没拿到offer的二次机会。预推免集中在8月底-9月中下旬，九推（国家推免服务系统填报）近年一般在9月下旬（22-28日之间浮动，以当年研招网通知为准）。推免规则：可同时填报三个平行志愿，志愿提交后48小时内不可修改，只能确认一个待录取通知。提前联系导师，确认有名额。",
+      "tpl": false
     },
     {
       "id": "n205",
@@ -1965,7 +2155,8 @@
       "stage": "y4",
       "parent": "n205",
       "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。"
+      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
+      "tpl": true
     },
     {
       "id": "n207",
@@ -1974,7 +2165,8 @@
       "stage": "y4",
       "parent": "n205",
       "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。"
+      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
+      "tpl": true
     },
     {
       "id": "n208",
@@ -1983,7 +2175,8 @@
       "stage": "y4",
       "parent": "n205",
       "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。"
+      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
+      "tpl": true
     },
     {
       "id": "n209",
@@ -1992,7 +2185,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "研一最重要的决策。研究方向匹配度 > 导师职称 > 实验室氛围。建议联系在读师兄师姐了解真实情况。"
+      "description": "研一最重要的决策。研究方向匹配度 > 导师职称 > 实验室氛围。建议联系在读师兄师姐了解真实情况。",
+      "tpl": false
     },
     {
       "id": "n210",
@@ -2001,7 +2195,8 @@
       "stage": "m1",
       "parent": "n209",
       "marker": false,
-      "description": "考研升学 · 研一阶段 · 属于「导师选择与实验室融入」。。"
+      "description": "考研升学 · 研一阶段 · 属于「导师选择与实验室融入」。。",
+      "tpl": true
     },
     {
       "id": "n211",
@@ -2010,7 +2205,8 @@
       "stage": "m1",
       "parent": "n209",
       "marker": false,
-      "description": "考研升学 · 研一阶段 · 属于「导师选择与实验室融入」。。"
+      "description": "考研升学 · 研一阶段 · 属于「导师选择与实验室融入」。。",
+      "tpl": true
     },
     {
       "id": "n212",
@@ -2019,7 +2215,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "想读博→学硕（发论文要求）；想就业→专硕（实践导向）。企业招聘普遍不分学硕专硕，但公务员/选调生/事业编按专业代码限定，部分岗位仅限学硕（0812），专硕归属电子信息大类（0854），报考前须逐岗核对专业目录。"
+      "description": "想读博→学硕（发论文要求）；想就业→专硕（实践导向）。企业招聘普遍不分学硕专硕，但公务员/选调生/事业编按专业代码限定，部分岗位仅限学硕（0812），专硕归属电子信息大类（0854），报考前须逐岗核对专业目录。",
+      "tpl": false
     },
     {
       "id": "n213",
@@ -2028,7 +2225,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "一般情况下，硕士研究生入学满一年后可申请硕博连读/转博，各校在春季（3-6月）或秋季（9-10月）组织申请，具体以本校通知为准。转博适合：研究方向有前景+导师支持+家庭经济无压力。硕博连读学制自硕士入学起算一般5年；转为博士学籍后不发硕士毕业证和学位证。"
+      "description": "一般情况下，硕士研究生入学满一年后可申请硕博连读/转博，各校在春季（3-6月）或秋季（9-10月）组织申请，具体以本校通知为准。转博适合：研究方向有前景+导师支持+家庭经济无压力。硕博连读学制自硕士入学起算一般5年；转为博士学籍后不发硕士毕业证和学位证。",
+      "tpl": false
     },
     {
       "id": "n214",
@@ -2046,7 +2244,8 @@
       "stage": "m3",
       "parent": "n214",
       "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。"
+      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
+      "tpl": true
     },
     {
       "id": "n216",
@@ -2055,7 +2254,8 @@
       "stage": "m3",
       "parent": "n214",
       "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。"
+      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
+      "tpl": true
     },
     {
       "id": "n217",
@@ -2064,7 +2264,8 @@
       "stage": "m3",
       "parent": "n214",
       "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。"
+      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
+      "tpl": true
     },
     {
       "id": "n218",
@@ -2073,7 +2274,8 @@
       "stage": "m3",
       "parent": null,
       "marker": false,
-      "description": "若为本科出国留学者：大三开始备考语言（托福或雅思，有效期2年）+GRE（学术能力测试，有效期5年），大四上学期（秋季）提交申请。若为硕士毕业后申海外博士：研二备考语言、研三上学期提交申请。选校分冲刺/主申/保底三档。文书重点讲研究方向+为什么选这个学校。录取权重通常GPA、科研、推荐信并重，全奖博士竞争极激烈。"
+      "description": "若为本科出国留学者：大三开始备考语言（托福或雅思，有效期2年）+GRE（学术能力测试，有效期5年），大四上学期（秋季）提交申请。若为硕士毕业后申海外博士：研二备考语言、研三上学期提交申请。选校分冲刺/主申/保底三档。文书重点讲研究方向+为什么选这个学校。录取权重通常GPA、科研、推荐信并重，全奖博士竞争极激烈。",
+      "tpl": false
     },
     {
       "id": "n219",
@@ -2082,7 +2284,8 @@
       "stage": "m3",
       "parent": "n218",
       "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「留学申请」。。"
+      "description": "考研升学 · 研三阶段 · 属于「留学申请」。。",
+      "tpl": true
     },
     {
       "id": "n220",
@@ -2091,7 +2294,8 @@
       "stage": "m3",
       "parent": "n218",
       "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「留学申请」。。"
+      "description": "考研升学 · 研三阶段 · 属于「留学申请」。。",
+      "tpl": true
     },
     {
       "id": "n221",
@@ -2100,7 +2304,8 @@
       "stage": "m3",
       "parent": "n218",
       "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「留学申请」。。"
+      "description": "考研升学 · 研三阶段 · 属于「留学申请」。。",
+      "tpl": true
     },
     {
       "id": "n222",
@@ -2109,7 +2314,8 @@
       "stage": "m3",
       "parent": null,
       "marker": true,
-      "description": "研究生秋招在研三上学期、春招在研三下学期，与本科同一批招聘窗口（提前批/正式批/补录）。硕士优势在项目与论文深度：面试重点讲清科研中解决的实际问题与工程落地。秋招未果的方向，春招是捡漏与补救期。"
+      "description": "研究生秋招在研三上学期、春招在研三下学期，与本科同一批招聘窗口（提前批/正式批/补录）。硕士优势在项目与论文深度：面试重点讲清科研中解决的实际问题与工程落地。秋招未果的方向，春招是捡漏与补救期。",
+      "tpl": false
     },
     {
       "id": "n223",
@@ -2118,7 +2324,8 @@
       "stage": "m3",
       "parent": null,
       "marker": false,
-      "description": "硕士论文盲审一般安排在校级窗口期内（各校时间不一，以本校安排为准）。送审前自查格式、逻辑与结论一致性，导师确认可送审后再提交，按教育部抽检与本校规定执行。"
+      "description": "硕士论文盲审一般安排在校级窗口期内（各校时间不一，以本校安排为准）。送审前自查格式、逻辑与结论一致性，导师确认可送审后再提交，按教育部抽检与本校规定执行。",
+      "tpl": false
     },
     {
       "id": "n224",
@@ -2127,7 +2334,8 @@
       "stage": "m3",
       "parent": null,
       "marker": false,
-      "description": "答辩在盲审通过后按校历安排（各校时间不一）。答辩通过后完成学位申请、材料归档与离校手续。PPT与演练至少提前一周准备，重点讲清创新点与实际工作量。"
+      "description": "答辩在盲审通过后按校历安排（各校时间不一）。答辩通过后完成学位申请、材料归档与离校手续。PPT与演练至少提前一周准备，重点讲清创新点与实际工作量。",
+      "tpl": false
     },
     {
       "id": "n225",
@@ -2136,7 +2344,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "把课程大作业当作品来做。选有意思的题目，完成后放到GitHub上。面试时可以说这是你的第一个项目。"
+      "description": "把课程大作业当作品来做。选有意思的题目，完成后放到GitHub上。面试时可以说这是你的第一个项目。",
+      "tpl": false
     },
     {
       "id": "n226",
@@ -2145,7 +2354,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "大一第一个项目。用GitHub Pages或Vercel免费部署。写技术博客是最好的学习方式。"
+      "description": "大一第一个项目。用GitHub Pages或Vercel免费部署。写技术博客是最好的学习方式。",
+      "tpl": false
     },
     {
       "id": "n227",
@@ -2154,7 +2364,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大二第一个完整Web项目。从前端（React/Vue）到后端（Node/Flask）到数据库全流程跑通。"
+      "description": "大二第一个完整Web项目。从前端（React/Vue）到后端（Node/Flask）到数据库全流程跑通。",
+      "tpl": false
     },
     {
       "id": "n228",
@@ -2163,7 +2374,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "经典全栈练手项目。包含注册登录、商品管理、购物车、支付流程。适合写进简历。"
+      "description": "经典全栈练手项目。包含注册登录、商品管理、购物车、支付流程。适合写进简历。",
+      "tpl": false
     },
     {
       "id": "n229",
@@ -2172,7 +2384,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "WebSocket实战项目。理解长连接、即时通讯、消息推送。后端面试常问。"
+      "description": "WebSocket实战项目。理解长连接、即时通讯、消息推送。后端面试常问。",
+      "tpl": false
     },
     {
       "id": "n230",
@@ -2181,7 +2394,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "数据科学入门的项目。爬虫+数据清洗+分析+可视化。适合大数据方向。"
+      "description": "数据科学入门的项目。爬虫+数据清洗+分析+可视化。适合大数据方向。",
+      "tpl": false
     },
     {
       "id": "n231",
@@ -2199,7 +2413,8 @@
       "stage": "y3",
       "parent": "n231",
       "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。"
+      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
+      "tpl": true
     },
     {
       "id": "n233",
@@ -2208,7 +2423,8 @@
       "stage": "y3",
       "parent": "n231",
       "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。"
+      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
+      "tpl": true
     },
     {
       "id": "n234",
@@ -2217,7 +2433,8 @@
       "stage": "y3",
       "parent": "n231",
       "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。"
+      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
+      "tpl": true
     },
     {
       "id": "n235",
@@ -2226,7 +2443,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "大三~大四提升简历含金量的有效方式。从文档、小issue入手，理解开源协作流程，大厂面试加分项。"
+      "description": "大三~大四提升简历含金量的有效方式。从文档、小issue入手，理解开源协作流程，大厂面试加分项。",
+      "tpl": false
     },
     {
       "id": "n236",
@@ -2235,7 +2453,8 @@
       "stage": "y3",
       "parent": "n235",
       "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。"
+      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
+      "tpl": true
     },
     {
       "id": "n237",
@@ -2244,7 +2463,8 @@
       "stage": "y3",
       "parent": "n235",
       "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。"
+      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
+      "tpl": true
     },
     {
       "id": "n238",
@@ -2253,7 +2473,8 @@
       "stage": "y3",
       "parent": "n235",
       "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。"
+      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
+      "tpl": true
     },
     {
       "id": "n239",
@@ -2262,7 +2483,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "证明工程能力的最佳方式。从需求分析到上线运营的完整闭环，比课程作业更有说服力。"
+      "description": "证明工程能力的最佳方式。从需求分析到上线运营的完整闭环，比课程作业更有说服力。",
+      "tpl": false
     },
     {
       "id": "n240",
@@ -2271,7 +2493,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "本科能做就跟求职方向一致，一举两得。答辩看工作量（功能+文档+演示），求职看技术深度。"
+      "description": "本科能做就跟求职方向一致，一举两得。答辩看工作量（功能+文档+演示），求职看技术深度。",
+      "tpl": false
     },
     {
       "id": "n241",
@@ -2280,7 +2503,8 @@
       "stage": "y4",
       "parent": "n240",
       "marker": false,
-      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。"
+      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
+      "tpl": true
     },
     {
       "id": "n242",
@@ -2289,7 +2513,8 @@
       "stage": "y4",
       "parent": "n240",
       "marker": false,
-      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。"
+      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
+      "tpl": true
     },
     {
       "id": "n243",
@@ -2298,7 +2523,8 @@
       "stage": "y4",
       "parent": "n240",
       "marker": false,
-      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。"
+      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
+      "tpl": true
     },
     {
       "id": "n244",
@@ -2307,7 +2533,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "项目实战 · 研一阶段。。"
+      "description": "项目实战 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n245",
@@ -2316,7 +2543,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "项目实战 · 研一阶段。。"
+      "description": "项目实战 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n246",
@@ -2325,7 +2553,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "项目实战 · 研一阶段。。"
+      "description": "项目实战 · 研一阶段。。",
+      "tpl": true
     },
     {
       "id": "n247",
@@ -2343,7 +2572,8 @@
       "stage": "post",
       "parent": "n247",
       "marker": false,
-      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。"
+      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
+      "tpl": true
     },
     {
       "id": "n249",
@@ -2352,7 +2582,8 @@
       "stage": "post",
       "parent": "n247",
       "marker": false,
-      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。"
+      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
+      "tpl": true
     },
     {
       "id": "n250",
@@ -2361,7 +2592,8 @@
       "stage": "post",
       "parent": "n247",
       "marker": false,
-      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。"
+      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
+      "tpl": true
     },
     {
       "id": "n251",
@@ -2370,7 +2602,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "大学最关键的软技能。四象限法则区分重要紧急，番茄工作法提高专注力，GTD管理多任务。"
+      "description": "大学最关键的软技能。四象限法则区分重要紧急，番茄工作法提高专注力，GTD管理多任务。",
+      "tpl": false
     },
     {
       "id": "n252",
@@ -2379,7 +2612,8 @@
       "stage": "y1",
       "parent": "n251",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「时间管理」。。"
+      "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
+      "tpl": true
     },
     {
       "id": "n253",
@@ -2388,7 +2622,8 @@
       "stage": "y1",
       "parent": "n251",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「时间管理」。。"
+      "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
+      "tpl": true
     },
     {
       "id": "n254",
@@ -2397,7 +2632,8 @@
       "stage": "y1",
       "parent": "n251",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「时间管理」。。"
+      "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
+      "tpl": true
     },
     {
       "id": "n255",
@@ -2415,7 +2651,8 @@
       "stage": "y1",
       "parent": "n255",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。"
+      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
+      "tpl": true
     },
     {
       "id": "n257",
@@ -2424,7 +2661,8 @@
       "stage": "y1",
       "parent": "n255",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。"
+      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
+      "tpl": true
     },
     {
       "id": "n258",
@@ -2433,7 +2671,8 @@
       "stage": "y1",
       "parent": "n255",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。"
+      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
+      "tpl": true
     },
     {
       "id": "n259",
@@ -2442,7 +2681,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "自学能力的核心。Google高级搜索技巧、Stack Overflow提问方法、学术搜索引擎（Google Scholar/知网）使用。"
+      "description": "自学能力的核心。Google高级搜索技巧、Stack Overflow提问方法、学术搜索引擎（Google Scholar/知网）使用。",
+      "tpl": false
     },
     {
       "id": "n260",
@@ -2451,7 +2691,8 @@
       "stage": "y1",
       "parent": "n259",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。"
+      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
+      "tpl": true
     },
     {
       "id": "n261",
@@ -2460,7 +2701,8 @@
       "stage": "y1",
       "parent": "n259",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。"
+      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
+      "tpl": true
     },
     {
       "id": "n262",
@@ -2469,7 +2711,8 @@
       "stage": "y1",
       "parent": "n259",
       "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。"
+      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
+      "tpl": true
     },
     {
       "id": "n263",
@@ -2478,7 +2721,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "六级通过后的进阶。读英文技术文档速度比口语重要。翻译官方文档是很好的学习方式。"
+      "description": "六级通过后的进阶。读英文技术文档速度比口语重要。翻译官方文档是很好的学习方式。",
+      "tpl": false
     },
     {
       "id": "n264",
@@ -2487,7 +2731,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大二大三开始练习。技术分享、答辩都是锻炼机会。建议用结构化的方式组织内容：问题-方案-结果。"
+      "description": "大二大三开始练习。技术分享、答辩都是锻炼机会。建议用结构化的方式组织内容：问题-方案-结果。",
+      "tpl": false
     },
     {
       "id": "n265",
@@ -2496,7 +2741,8 @@
       "stage": "y2",
       "parent": "n264",
       "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。。"
+      "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。。",
+      "tpl": true
     },
     {
       "id": "n266",
@@ -2505,7 +2751,8 @@
       "stage": "y2",
       "parent": "n264",
       "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。。"
+      "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。。",
+      "tpl": true
     },
     {
       "id": "n267",
@@ -2523,7 +2770,8 @@
       "stage": "y2",
       "parent": "n267",
       "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「团队协作」。。"
+      "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
+      "tpl": true
     },
     {
       "id": "n269",
@@ -2532,7 +2780,8 @@
       "stage": "y2",
       "parent": "n267",
       "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「团队协作」。。"
+      "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
+      "tpl": true
     },
     {
       "id": "n270",
@@ -2541,7 +2790,8 @@
       "stage": "y2",
       "parent": "n267",
       "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「团队协作」。。"
+      "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
+      "tpl": true
     },
     {
       "id": "n271",
@@ -2550,7 +2800,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "写技术博客是最好的学习方式也是建立个人品牌的途径。从解决一个小问题开始写。"
+      "description": "写技术博客是最好的学习方式也是建立个人品牌的途径。从解决一个小问题开始写。",
+      "tpl": false
     },
     {
       "id": "n272",
@@ -2559,7 +2810,8 @@
       "stage": "y2",
       "parent": "n271",
       "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「技术写作」。。"
+      "description": "软技能 · 大二阶段 · 属于「技术写作」。。",
+      "tpl": true
     },
     {
       "id": "n273",
@@ -2568,7 +2820,8 @@
       "stage": "y2",
       "parent": "n271",
       "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「技术写作」。。"
+      "description": "软技能 · 大二阶段 · 属于「技术写作」。。",
+      "tpl": true
     },
     {
       "id": "n274",
@@ -2577,7 +2830,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "STAR法则量化成果（Situation Task Action Result），一页纸原则，项目经验写2-3个每个带技术栈。简历命名建议：姓名_学校_岗位_当前应届届别。"
+      "description": "STAR法则量化成果（Situation Task Action Result），一页纸原则，项目经验写2-3个每个带技术栈。简历命名建议：姓名_学校_岗位_当前应届届别。",
+      "tpl": false
     },
     {
       "id": "n275",
@@ -2586,7 +2840,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "技术面考三维度：算法+八股+项目。行为面准备3-5个故事：最有成就感的事/最困难的事/团队冲突。每轮面试后复盘问题，持续迭代。"
+      "description": "技术面考三维度：算法+八股+项目。行为面准备3-5个故事：最有成就感的事/最困难的事/团队冲突。每轮面试后复盘问题，持续迭代。",
+      "tpl": false
     },
     {
       "id": "n276",
@@ -2595,7 +2850,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "短期1-2年选平台>选薪资；中期3-5年定方向（技术线vs管理线）；长期5年+考虑技术积累vs收入。建议应届生先去大厂，2-3年后决定深耕还是去小厂拿高薪。"
+      "description": "短期1-2年选平台>选薪资；中期3-5年定方向（技术线vs管理线）；长期5年+考虑技术积累vs收入。建议应届生先去大厂，2-3年后决定深耕还是去小厂拿高薪。",
+      "tpl": false
     },
     {
       "id": "n277",
@@ -2604,7 +2860,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "大学四年压力最大的时刻：考试周、秋招、考研。建议规律作息+运动+找朋友倾诉。不要一个人硬扛。"
+      "description": "大学四年压力最大的时刻：考试周、秋招、考研。建议规律作息+运动+找朋友倾诉。不要一个人硬扛。",
+      "tpl": false
     },
     {
       "id": "n278",
@@ -2613,7 +2870,8 @@
       "stage": "y4",
       "parent": "n277",
       "marker": false,
-      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。"
+      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
+      "tpl": true
     },
     {
       "id": "n279",
@@ -2622,7 +2880,8 @@
       "stage": "y4",
       "parent": "n277",
       "marker": false,
-      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。"
+      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
+      "tpl": true
     },
     {
       "id": "n280",
@@ -2631,7 +2890,8 @@
       "stage": "y4",
       "parent": "n277",
       "marker": false,
-      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。"
+      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
+      "tpl": true
     },
     {
       "id": "n281",
@@ -2640,7 +2900,8 @@
       "stage": "post",
       "parent": null,
       "marker": false,
-      "description": "主动汇报进度>等别人问。遇到问题先尝试解决再问。Code Review对事不对人。"
+      "description": "主动汇报进度>等别人问。遇到问题先尝试解决再问。Code Review对事不对人。",
+      "tpl": false
     },
     {
       "id": "n282",
@@ -2649,7 +2910,8 @@
       "stage": "post",
       "parent": "n281",
       "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。"
+      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
+      "tpl": true
     },
     {
       "id": "n283",
@@ -2658,7 +2920,8 @@
       "stage": "post",
       "parent": "n281",
       "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。"
+      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
+      "tpl": true
     },
     {
       "id": "n284",
@@ -2667,7 +2930,8 @@
       "stage": "post",
       "parent": "n281",
       "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。"
+      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
+      "tpl": true
     },
     {
       "id": "n285",
@@ -2676,7 +2940,8 @@
       "stage": "post",
       "parent": null,
       "marker": false,
-      "description": "从带1-2个实习生开始，逐步主导模块再到主导项目。技术是基础，项目管理+团队协调是核心。"
+      "description": "从带1-2个实习生开始，逐步主导模块再到主导项目。技术是基础，项目管理+团队协调是核心。",
+      "tpl": false
     },
     {
       "id": "n286",
@@ -2694,7 +2959,8 @@
       "stage": "post",
       "parent": "n286",
       "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。"
+      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
+      "tpl": true
     },
     {
       "id": "n288",
@@ -2703,7 +2969,8 @@
       "stage": "post",
       "parent": "n286",
       "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。"
+      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
+      "tpl": true
     },
     {
       "id": "n289",
@@ -2712,7 +2979,8 @@
       "stage": "post",
       "parent": "n286",
       "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。"
+      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
+      "tpl": true
     },
     {
       "id": "n290",
@@ -2721,7 +2989,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "大二~大三需要了解的行业全貌。后端/前端/AI/客户端/测试/数据/游戏开发等方向的特点、薪资天花板、发展路径。"
+      "description": "大二~大三需要了解的行业全貌。后端/前端/AI/客户端/测试/数据/游戏开发等方向的特点、薪资天花板、发展路径。",
+      "tpl": false
     },
     {
       "id": "n291",
@@ -2730,7 +2999,8 @@
       "stage": "y2",
       "parent": "n290",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。。"
+      "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。。",
+      "tpl": true
     },
     {
       "id": "n292",
@@ -2739,7 +3009,8 @@
       "stage": "y2",
       "parent": "n290",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。。"
+      "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。。",
+      "tpl": true
     },
     {
       "id": "n293",
@@ -2757,7 +3028,8 @@
       "stage": "y2",
       "parent": "n293",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。"
+      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
+      "tpl": true
     },
     {
       "id": "n295",
@@ -2766,7 +3038,8 @@
       "stage": "y2",
       "parent": "n293",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。"
+      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
+      "tpl": true
     },
     {
       "id": "n296",
@@ -2775,7 +3048,8 @@
       "stage": "y2",
       "parent": "n293",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。"
+      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
+      "tpl": true
     },
     {
       "id": "n297",
@@ -2793,7 +3067,8 @@
       "stage": "y2",
       "parent": "n297",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。"
+      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
+      "tpl": true
     },
     {
       "id": "n299",
@@ -2802,7 +3077,8 @@
       "stage": "y2",
       "parent": "n297",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。"
+      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
+      "tpl": true
     },
     {
       "id": "n300",
@@ -2811,7 +3087,8 @@
       "stage": "y2",
       "parent": "n297",
       "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。"
+      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
+      "tpl": true
     },
     {
       "id": "n301",
@@ -2820,7 +3097,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "高薪赛道。大厂FinTech+量化私募+Hedge Fund。需要编程好（C++/Python）+统计能力强+竞赛背景加分。"
+      "description": "高薪赛道。大厂FinTech+量化私募+Hedge Fund。需要编程好（C++/Python）+统计能力强+竞赛背景加分。",
+      "tpl": false
     },
     {
       "id": "n302",
@@ -2829,7 +3107,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "应届生首选大厂（平台+培训+背书）。大厂2-3年后：去中厂拿title或去创业公司赌期权。不要应届直接去创业公司。"
+      "description": "应届生首选大厂（平台+培训+背书）。大厂2-3年后：去中厂拿title或去创业公司赌期权。不要应届直接去创业公司。",
+      "tpl": false
     },
     {
       "id": "n303",
@@ -2838,7 +3117,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "外企：WLB好+年假多+英语环境；国内：晋升快+核心业务+期权。看个人生活目标选择。"
+      "description": "外企：WLB好+年假多+英语环境；国内：晋升快+核心业务+期权。看个人生活目标选择。",
+      "tpl": false
     },
     {
       "id": "n304",
@@ -2847,7 +3127,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "稳定性最高但技术成长慢。建议大厂干2-3年攒资本再考虑。应届生进国企薪资涨幅有限。"
+      "description": "稳定性最高但技术成长慢。建议大厂干2-3年攒资本再考虑。应届生进国企薪资涨幅有限。",
+      "tpl": false
     },
     {
       "id": "n305",
@@ -2865,7 +3146,8 @@
       "stage": "y4",
       "parent": "n305",
       "marker": false,
-      "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。"
+      "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。",
+      "tpl": true
     },
     {
       "id": "n307",
@@ -2874,7 +3156,8 @@
       "stage": "y4",
       "parent": "n305",
       "marker": false,
-      "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。"
+      "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。",
+      "tpl": true
     },
     {
       "id": "n308",
@@ -2883,7 +3166,8 @@
       "stage": "y4",
       "parent": "n305",
       "marker": false,
-      "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。"
+      "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。",
+      "tpl": true
     },
     {
       "id": "n309",
@@ -2892,7 +3176,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "P线（技术）深耕某个方向成为专家。M线（管理）协调团队+推进项目。大厂P线天花板更高（P8/P9薪资超M线）。"
+      "description": "P线（技术）深耕某个方向成为专家。M线（管理）协调团队+推进项目。大厂P线天花板更高（P8/P9薪资超M线）。",
+      "tpl": false
     },
     {
       "id": "n310",
@@ -2901,7 +3186,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "国内远程岗位少但趋势增长。需要极强自驱力和沟通能力。适合资深开发者，不适合应届生。"
+      "description": "国内远程岗位少但趋势增长。需要极强自驱力和沟通能力。适合资深开发者，不适合应届生。",
+      "tpl": false
     },
     {
       "id": "n311",
@@ -2910,7 +3196,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "有想法+有技术+能抗压。从side project开始验证需求。不鼓励应届生直接创业。"
+      "description": "有想法+有技术+能抗压。从side project开始验证需求。不鼓励应届生直接创业。",
+      "tpl": false
     },
     {
       "id": "n312",
@@ -2919,7 +3206,8 @@
       "stage": "post",
       "parent": null,
       "marker": false,
-      "description": "5年以上经验后的职业方向。需要技术深度+沟通能力+商业意识。"
+      "description": "5年以上经验后的职业方向。需要技术深度+沟通能力+商业意识。",
+      "tpl": false
     },
     {
       "id": "n313",
@@ -2928,7 +3216,8 @@
       "stage": "post",
       "parent": null,
       "marker": false,
-      "description": "程序员的副业路径。写博客/做视频/开源项目积累影响力。你的计算机突围正是这个方向。"
+      "description": "程序员的副业路径。写博客/做视频/开源项目积累影响力。你的计算机突围正是这个方向。",
+      "tpl": false
     },
     {
       "id": "n314",
@@ -2937,7 +3226,8 @@
       "stage": "m2",
       "parent": null,
       "marker": false,
-      "description": "学硕一般研二上学期完成开题、研二末中期考核（各校时间不一，以本校培养方案为准）；专硕学制短（多为2年），节奏需提前。开题前确定稳定的小方向、精读本组最新论文；中期考核被预警会直接影响后续进展，务必按节点推进。"
+      "description": "学硕一般研二上学期完成开题、研二末中期考核（各校时间不一，以本校培养方案为准）；专硕学制短（多为2年），节奏需提前。开题前确定稳定的小方向、精读本组最新论文；中期考核被预警会直接影响后续进展，务必按节点推进。",
+      "tpl": false
     },
     {
       "id": "n315",
@@ -2946,7 +3236,8 @@
       "stage": "m2",
       "parent": null,
       "marker": false,
-      "description": "研二暑假实习是多数硕士就业的黄金窗口，但导师是否放实习、科研压力多大各不相同。原则：以顺利毕业为前提排优先级；科研型实习（企业研究院/大模型实验室等）可同时服务论文与求职；科研任务重时，先完成小论文关键实验再出去实习。"
+      "description": "研二暑假实习是多数硕士就业的黄金窗口，但导师是否放实习、科研压力多大各不相同。原则：以顺利毕业为前提排优先级；科研型实习（企业研究院/大模型实验室等）可同时服务论文与求职；科研任务重时，先完成小论文关键实验再出去实习。",
+      "tpl": false
     },
     {
       "id": "n316",
@@ -2955,7 +3246,8 @@
       "stage": "m2",
       "parent": null,
       "marker": true,
-      "description": "硕士应届秋招在研三上学期（与本科秋招同时段）。备战线建议从研二暑假前启动：暑期刷题、整理项目与实习经历；研二暑假的实习最好能争取转正，或作为秋招面试谈资。"
+      "description": "硕士应届秋招在研三上学期（与本科秋招同时段）。备战线建议从研二暑假前启动：暑期刷题、整理项目与实习经历；研二暑假的实习最好能争取转正，或作为秋招面试谈资。",
+      "tpl": false
     },
     {
       "id": "n317",
@@ -2964,7 +3256,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "计科偏理论与底层（操作系统、编译原理），软工偏工程实践（敏捷开发）。就业差距不大，计科在算法岗有优势，软工在开发岗直接对口。选哪个不用纠结。"
+      "description": "计科偏理论与底层（操作系统、编译原理），软工偏工程实践（敏捷开发）。就业差距不大，计科在算法岗有优势，软工在开发岗直接对口。选哪个不用纠结。",
+      "tpl": false
     },
     {
       "id": "n318",
@@ -2973,7 +3266,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "大量成功案例。大二结束前转都来得及，关键是把高数和C语言基础打扎实。大一一学期自学编程+保持GPA，大二转专业成功概率很高。"
+      "description": "大量成功案例。大二结束前转都来得及，关键是把高数和C语言基础打扎实。大一一学期自学编程+保持GPA，大二转专业成功概率很高。",
+      "tpl": false
     },
     {
       "id": "n319",
@@ -2982,7 +3276,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "要。计算机专业大一就需要编程。建议买性能足够的Windows笔记本（i5/R5+16GB+512GB），部分教学软件不兼容Mac。"
+      "description": "要。计算机专业大一就需要编程。建议买性能足够的Windows笔记本（i5/R5+16GB+512GB），部分教学软件不兼容Mac。",
+      "tpl": false
     },
     {
       "id": "n320",
@@ -2991,7 +3286,8 @@
       "stage": "y1",
       "parent": null,
       "marker": false,
-      "description": "能，但要区分方向。前端、Web开发、产品经理对数学要求不高；AI方向必须数学好。数学在及格线附近，建议避开算法岗。"
+      "description": "能，但要区分方向。前端、Web开发、产品经理对数学要求不高；AI方向必须数学好。数学在及格线附近，建议避开算法岗。",
+      "tpl": false
     },
     {
       "id": "n321",
@@ -3000,7 +3296,8 @@
       "stage": "y1",
       "parent": null,
       "marker": true,
-      "description": "有，但需要早规划。双非进大厂的核心路径：大二进实验室做项目→大三暑期实习→秋招拿offer。简历靠项目和实习，不是靠学校。这个产品正是为双非学生设计。"
+      "description": "有，但需要早规划。双非进大厂的核心路径：大二进实验室做项目→大三暑期实习→秋招拿offer。简历靠项目和实习，不是靠学校。这个产品正是为双非学生设计。",
+      "tpl": false
     },
     {
       "id": "n322",
@@ -3009,7 +3306,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "保研GPA>项目，就业项目>=GPA。保研看排名必须刷GPA。就业看面试表现，项目决定你能不能过面试。GPA目标参考值（因校而异）：保研导向3.5+，就业导向3.0+，剩余时间做项目。"
+      "description": "保研GPA>项目，就业项目>=GPA。保研看排名必须刷GPA。就业看面试表现，项目决定你能不能过面试。GPA目标参考值（因校而异）：保研导向3.5+，就业导向3.0+，剩余时间做项目。",
+      "tpl": false
     },
     {
       "id": "n323",
@@ -3018,7 +3316,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "ACM适合两种人：高考数学140+有竞赛底子，或真心热爱算法。ACM获奖是简历核武器，但投入极大（冲击区域赛金牌/总决赛级别的强队通常每天数小时长期集训）。区域赛奖项按参赛队伍比例设置：金约10%、银约20%、铜约30%（合计获奖约60%），奖项能否加分以各校保研/综测政策为准；能拿到银牌以上才是简历亮点，打不出来也不必强求，一个扎实项目同样有竞争力。"
+      "description": "ACM适合两种人：高考数学140+有竞赛底子，或真心热爱算法。ACM获奖是简历核武器，但投入极大（冲击区域赛金牌/总决赛级别的强队通常每天数小时长期集训）。区域赛奖项按参赛队伍比例设置：金约10%、银约20%、铜约30%（合计获奖约60%），奖项能否加分以各校保研/综测政策为准；能拿到银牌以上才是简历亮点，打不出来也不必强求，一个扎实项目同样有竞争力。",
+      "tpl": false
     },
     {
       "id": "n324",
@@ -3027,7 +3326,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "网上经验口径（非官方标准，仅供参考）：小厂100道左右简单+中等题；中厂250道左右（含高频题）；大厂400-500道（含hard专题）。质量>数量，每道题复盘最优解。"
+      "description": "网上经验口径（非官方标准，仅供参考）：小厂100道左右简单+中等题；中厂250道左右（含高频题）；大厂400-500道（含hard专题）。质量>数量，每道题复盘最优解。",
+      "tpl": false
     },
     {
       "id": "n325",
@@ -3036,7 +3336,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "Java就业面广（后端+大数据），C++性能强（引擎+量化+系统）。Java入门曲线平缓；C++面试难度更高但竞争者质量也高。不确定选Java，有余力学C++。"
+      "description": "Java就业面广（后端+大数据），C++性能强（引擎+量化+系统）。Java入门曲线平缓；C++面试难度更高但竞争者质量也高。不确定选Java，有余力学C++。",
+      "tpl": false
     },
     {
       "id": "n326",
@@ -3045,7 +3346,8 @@
       "stage": "y2",
       "parent": null,
       "marker": true,
-      "description": "建议大三再参与。大一打好基础，大二做完项目，大三有余力再参与。从文档、issue回复、小bug入手。开源贡献是亮点不是必需品。"
+      "description": "建议大三再参与。大一打好基础，大二做完项目，大三有余力再参与。从文档、issue回复、小bug入手。开源贡献是亮点不是必需品。",
+      "tpl": false
     },
     {
       "id": "n327",
@@ -3054,7 +3356,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "决策公式：能保研→保；家庭支持读研且数学不差→考；目标大厂算法岗→需要硕博；目标开发岗→本科够用；已经在焦虑时间不够→就业更适合。建议大三上学期初就要做出决定，两线作战大概率两头空。"
+      "description": "决策公式：能保研→保；家庭支持读研且数学不差→考；目标大厂算法岗→需要硕博；目标开发岗→本科够用；已经在焦虑时间不够→就业更适合。建议大三上学期初就要做出决定，两线作战大概率两头空。",
+      "tpl": false
     },
     {
       "id": "n328",
@@ -3063,7 +3366,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "前端入门快（经验上3个月出东西）但天花板低；后端入门慢（经验上6-9个月）但薪资更高、岗位更多。建议学后端为主+前端为辅，全栈是最好选择。"
+      "description": "前端入门快（经验上3个月出东西）但天花板低；后端入门慢（经验上6-9个月）但薪资更高、岗位更多。建议学后端为主+前端为辅，全栈是最好选择。",
+      "tpl": false
     },
     {
       "id": "n329",
@@ -3072,7 +3376,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "做项目填补。一个完整的独立项目（上线可访问）是重要加分项，通常认为一个高质量开源项目/独立产品胜过几份课程设计，但仍建议优先补一段真实实习（实习经历通常是拿到大厂offer的第一要素）。"
+      "description": "做项目填补。一个完整的独立项目（上线可访问）是重要加分项，通常认为一个高质量开源项目/独立产品胜过几份课程设计，但仍建议优先补一段真实实习（实习经历通常是拿到大厂offer的第一要素）。",
+      "tpl": false
     },
     {
       "id": "n330",
@@ -3081,7 +3386,8 @@
       "stage": "y3",
       "parent": null,
       "marker": true,
-      "description": "培训班适合自控力极差或完全零基础且时间紧迫的人。线上资源（B站+MDN+官方文档）足够学会，培训班是捷径不是唯一路径。"
+      "description": "培训班适合自控力极差或完全零基础且时间紧迫的人。线上资源（B站+MDN+官方文档）足够学会，培训班是捷径不是唯一路径。",
+      "tpl": false
     },
     {
       "id": "n331",
@@ -3090,7 +3396,8 @@
       "stage": "y3",
       "parent": null,
       "marker": false,
-      "description": "找不到大厂实习可以去中厂/小厂，或跟老师做项目、参加字节青训营。关键是暑假别闲着。面试官看重你暑假做了什么，不是在哪做。"
+      "description": "找不到大厂实习可以去中厂/小厂，或跟老师做项目、参加字节青训营。关键是暑假别闲着。面试官看重你暑假做了什么，不是在哪做。",
+      "tpl": false
     },
     {
       "id": "n332",
@@ -3099,7 +3406,8 @@
       "stage": "y4",
       "parent": null,
       "marker": true,
-      "description": "四条路：春招找工作（还有机会）；二战（需家庭支持+复盘原因）；留学（有经济条件+已有语言成绩）；考公/选调（符合条件者）。不要同时准备二战和春招，选一条全力以赴。"
+      "description": "四条路：春招找工作（还有机会）；二战（需家庭支持+复盘原因）；留学（有经济条件+已有语言成绩）；考公/选调（符合条件者）。不要同时准备二战和春招，选一条全力以赴。",
+      "tpl": false
     },
     {
       "id": "n333",
@@ -3108,7 +3416,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "保研+考研双线作战。暑假参营+同步复习408和数学。9月确认能保就全力联系导师，9月被告知没名额立即转考研。6-8月不能浪费。"
+      "description": "保研+考研双线作战。暑假参营+同步复习408和数学。9月确认能保就全力联系导师，9月被告知没名额立即转考研。6-8月不能浪费。",
+      "tpl": false
     },
     {
       "id": "n334",
@@ -3117,7 +3426,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "SP需要：项目有深度+LeetCode400+八股文背熟+实习经历。SSP还需要：顶会论文或ACM区域赛奖+两面strong hire。SP是实力，SSP是天时地利。"
+      "description": "SP需要：项目有深度+LeetCode400+八股文背熟+实习经历。SSP还需要：顶会论文或ACM区域赛奖+两面strong hire。SP是实力，SSP是天时地利。",
+      "tpl": false
     },
     {
       "id": "n335",
@@ -3126,7 +3436,8 @@
       "stage": "y4",
       "parent": null,
       "marker": false,
-      "description": "优先做能写在简历上的项目：后端做Web系统+高并发、AI做应用落地+数据展示、前端做交互复杂的产品。毕设答辩看工作量，求职看技术深度。"
+      "description": "优先做能写在简历上的项目：后端做Web系统+高并发、AI做应用落地+数据展示、前端做交互复杂的产品。毕设答辩看工作量，求职看技术深度。",
+      "tpl": false
     },
     {
       "id": "n336",
@@ -3135,7 +3446,8 @@
       "stage": "m1",
       "parent": null,
       "marker": true,
-      "description": "三个匹配度：研究方向 > 导师风格（放养vsPush）> 实验室氛围。找师兄师姐了解真实情况。选了Push型要能抗压，选放养型要自律。"
+      "description": "三个匹配度：研究方向 > 导师风格（放养vsPush）> 实验室氛围。找师兄师姐了解真实情况。选了Push型要能抗压，选放养型要自律。",
+      "tpl": false
     },
     {
       "id": "n337",
@@ -3144,7 +3456,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "想读博→学硕；想就业→专硕。企业招聘时HR普遍不区分学硕专硕，但公务员/选调生/事业编部分岗位按专业代码仅限学硕，报考前须逐岗核对专业目录。"
+      "description": "想读博→学硕；想就业→专硕。企业招聘时HR普遍不区分学硕专硕，但公务员/选调生/事业编部分岗位按专业代码仅限学硕，报考前须逐岗核对专业目录。",
+      "tpl": false
     },
     {
       "id": "n338",
@@ -3153,7 +3466,8 @@
       "stage": "m1",
       "parent": null,
       "marker": false,
-      "description": "读博适合真心热爱研究、或需要博士学位进行业门槛、或家里不急着等你赚钱。国内直博/硕博连读学制一般5年（以各校规定为准），硕士+博士全程约6-7年，是长期承诺。犹豫说明还没准备好，建议先读硕再决定。"
+      "description": "读博适合真心热爱研究、或需要博士学位进行业门槛、或家里不急着等你赚钱。国内直博/硕博连读学制一般5年（以各校规定为准），硕士+博士全程约6-7年，是长期承诺。犹豫说明还没准备好，建议先读硕再决定。",
+      "tpl": false
     },
     {
       "id": "n339",
@@ -3162,7 +3476,8 @@
       "stage": "m2",
       "parent": null,
       "marker": true,
-      "description": "先降低预期：中文核心>EI会议>SCI四区>SCI三区（此为普遍经验排序，非官方标准，且\"破五唯\"后多所高校已取消毕业小论文硬性要求，以本校培养方案为准）。跟导师商量换方向或换实验方法。同时准备Plan B：达到毕业最低要求即可，不要因完美主义延毕。"
+      "description": "先降低预期：中文核心>EI会议>SCI四区>SCI三区（此为普遍经验排序，非官方标准，且\"破五唯\"后多所高校已取消毕业小论文硬性要求，以本校培养方案为准）。跟导师商量换方向或换实验方法。同时准备Plan B：达到毕业最低要求即可，不要因完美主义延毕。",
+      "tpl": false
     },
     {
       "id": "n340",
@@ -3171,7 +3486,8 @@
       "stage": "m2",
       "parent": null,
       "marker": true,
-      "description": "常见困境：想发好论文又想进大厂。建议分主次：以毕业为底线，论文达到毕业要求后把余力投给求职；优先选能兼顾两者的路径（科研型实习、产业界研究岗）。无法两全时先保毕业，求职窗口每年都有。"
+      "description": "常见困境：想发好论文又想进大厂。建议分主次：以毕业为底线，论文达到毕业要求后把余力投给求职；优先选能兼顾两者的路径（科研型实习、产业界研究岗）。无法两全时先保毕业，求职窗口每年都有。",
+      "tpl": false
     },
     {
       "id": "n341",
@@ -3180,7 +3496,8 @@
       "stage": "m3",
       "parent": null,
       "marker": true,
-      "description": "盲审未过一般按学校规定进入复审或延期环节。拿到评阅意见后逐条修改并与导师确认，按流程申请复审；若涉及数据可信度等重大问题，以学校学位管理规定为准。预防：送审前自查格式、逻辑、结论一致性，别赌运气。"
+      "description": "盲审未过一般按学校规定进入复审或延期环节。拿到评阅意见后逐条修改并与导师确认，按流程申请复审；若涉及数据可信度等重大问题，以学校学位管理规定为准。预防：送审前自查格式、逻辑、结论一致性，别赌运气。",
+      "tpl": false
     },
     {
       "id": "n342",
@@ -3189,7 +3506,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "门槛最高的方向之一：大厂算法/研究岗以硕博为主，本科适合AI应用开发/工程岗（大模型应用、RAG/Agent、模型部署）而非算法研究。"
+      "description": "门槛最高的方向之一：大厂算法/研究岗以硕博为主，本科适合AI应用开发/工程岗（大模型应用、RAG/Agent、模型部署）而非算法研究。",
+      "tpl": false
     },
     {
       "id": "n343",
@@ -3198,7 +3516,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "就业面最广、需求最稳定的方向。Java/Go生态成熟，适用于互联网、金融科技、传统企业等多个行业。"
+      "description": "就业面最广、需求最稳定的方向。Java/Go生态成熟，适用于互联网、金融科技、传统企业等多个行业。",
+      "tpl": false
     },
     {
       "id": "n344",
@@ -3207,7 +3526,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "入门门槛最低的方向。适合快速看到开发成果，AI时代建议往全栈或前端工程化发展。"
+      "description": "入门门槛最低的方向。适合快速看到开发成果，AI时代建议往全栈或前端工程化发展。",
+      "tpl": false
     },
     {
       "id": "n345",
@@ -3216,7 +3536,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "金字塔尖的竞技场。适合算法天赋强的学生，不适合作为唯一路径。ACM区域赛奖项是保研/大厂SP的有力筹码。"
+      "description": "金字塔尖的竞技场。适合算法天赋强的学生，不适合作为唯一路径。ACM区域赛奖项是保研/大厂SP的有力筹码。",
+      "tpl": false
     },
     {
       "id": "n346",
@@ -3225,7 +3546,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "改变学历出身的有效路径。一般需要6-12个月高强度备考，408四门课+数学一是核心挑战。"
+      "description": "改变学历出身的有效路径。一般需要6-12个月高强度备考，408四门课+数学一是核心挑战。",
+      "tpl": false
     },
     {
       "id": "n347",
@@ -3234,7 +3556,8 @@
       "stage": "y2",
       "parent": null,
       "marker": false,
-      "description": "岗位少、培养周期长，但竞争者也相对少。适合对C/C++/Rust和计算机底层有浓厚兴趣的学生。"
+      "description": "岗位少、培养周期长，但竞争者也相对少。适合对C/C++/Rust和计算机底层有浓厚兴趣的学生。",
+      "tpl": false
     }
   ],
   "edges": [
