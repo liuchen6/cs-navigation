@@ -886,6 +886,16 @@
     },
     {
       "id": "n78",
+      "label": "AI编程工具入门(Copilot/Cursor)",
+      "category": "skill",
+      "stage": "y1",
+      "parent": null,
+      "marker": false,
+      "description": "AI 编程助手（GitHub Copilot、Cursor 等）已成为一线开发者的日常工具，学会用本身就是一种技能。正确姿势：当老师不当代写——先自己写出思路，再让 AI 补全、讲解、重构；AI 给的代码看不懂就不要用，能讲清楚才属于你。警惕\"AI 依赖病\"：直接复制粘贴会废掉调试能力和基础功，笔试面试都是手写，AI 帮不了你。",
+      "tpl": false
+    },
+    {
+      "id": "n79",
       "label": "NumPy/Pandas/Matplotlib",
       "category": "skill",
       "stage": "y2",
@@ -895,7 +905,7 @@
       "tpl": true
     },
     {
-      "id": "n79",
+      "id": "n80",
       "label": "C/C++深度应用",
       "category": "skill",
       "stage": "y1",
@@ -904,37 +914,37 @@
       "description": "编程技能 · 大一阶段。包含 3 项内容：STL标准模板库、多线程编程、网络编程基础。"
     },
     {
-      "id": "n80",
+      "id": "n81",
       "label": "STL标准模板库",
       "category": "skill",
       "stage": "y2",
-      "parent": "n79",
-      "marker": false,
-      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。",
-      "tpl": true
-    },
-    {
-      "id": "n81",
-      "label": "多线程编程",
-      "category": "skill",
-      "stage": "y2",
-      "parent": "n79",
+      "parent": "n80",
       "marker": false,
       "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。",
       "tpl": true
     },
     {
       "id": "n82",
-      "label": "网络编程基础",
+      "label": "多线程编程",
       "category": "skill",
       "stage": "y2",
-      "parent": "n79",
+      "parent": "n80",
       "marker": false,
       "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。",
       "tpl": true
     },
     {
       "id": "n83",
+      "label": "网络编程基础",
+      "category": "skill",
+      "stage": "y2",
+      "parent": "n80",
+      "marker": false,
+      "description": "编程技能 · 大二阶段 · 属于「C/C++深度应用」。。",
+      "tpl": true
+    },
+    {
+      "id": "n84",
       "label": "Java技术栈",
       "category": "skill",
       "stage": "y2",
@@ -943,37 +953,37 @@
       "description": "编程技能 · 大二阶段。包含 3 项内容：Spring Boot、MyBatis/JPA、Maven/Gradle。"
     },
     {
-      "id": "n84",
+      "id": "n85",
       "label": "Spring Boot",
       "category": "skill",
       "stage": "y3",
-      "parent": "n83",
-      "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。",
-      "tpl": true
-    },
-    {
-      "id": "n85",
-      "label": "MyBatis/JPA",
-      "category": "skill",
-      "stage": "y3",
-      "parent": "n83",
+      "parent": "n84",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。",
       "tpl": true
     },
     {
       "id": "n86",
-      "label": "Maven/Gradle",
+      "label": "MyBatis/JPA",
       "category": "skill",
       "stage": "y3",
-      "parent": "n83",
+      "parent": "n84",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。",
       "tpl": true
     },
     {
       "id": "n87",
+      "label": "Maven/Gradle",
+      "category": "skill",
+      "stage": "y3",
+      "parent": "n84",
+      "marker": false,
+      "description": "编程技能 · 大三阶段 · 属于「Java技术栈」。。",
+      "tpl": true
+    },
+    {
+      "id": "n88",
       "label": "JavaScript/TypeScript",
       "category": "skill",
       "stage": "y2",
@@ -983,7 +993,7 @@
       "tpl": false
     },
     {
-      "id": "n88",
+      "id": "n89",
       "label": "Git & Linux",
       "category": "skill",
       "stage": "y2",
@@ -993,7 +1003,7 @@
       "tpl": false
     },
     {
-      "id": "n89",
+      "id": "n90",
       "label": "SQL与数据库实战",
       "category": "skill",
       "stage": "y2",
@@ -1003,7 +1013,7 @@
       "tpl": false
     },
     {
-      "id": "n90",
+      "id": "n91",
       "label": "前端技术栈",
       "category": "skill",
       "stage": "y3",
@@ -1012,47 +1022,47 @@
       "description": "编程技能 · 大三阶段。包含 4 项内容：HTML/CSS/JavaScript、Vue.js、React、前端工程化(Webpack/Vite)。"
     },
     {
-      "id": "n91",
+      "id": "n92",
       "label": "HTML/CSS/JavaScript",
       "category": "skill",
       "stage": "y3",
-      "parent": "n90",
-      "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
-      "tpl": true
-    },
-    {
-      "id": "n92",
-      "label": "Vue.js",
-      "category": "skill",
-      "stage": "y3",
-      "parent": "n90",
+      "parent": "n91",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
       "tpl": true
     },
     {
       "id": "n93",
-      "label": "React",
+      "label": "Vue.js",
       "category": "skill",
       "stage": "y3",
-      "parent": "n90",
+      "parent": "n91",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
       "tpl": true
     },
     {
       "id": "n94",
-      "label": "前端工程化(Webpack/Vite)",
+      "label": "React",
       "category": "skill",
       "stage": "y3",
-      "parent": "n90",
+      "parent": "n91",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
       "tpl": true
     },
     {
       "id": "n95",
+      "label": "前端工程化(Webpack/Vite)",
+      "category": "skill",
+      "stage": "y3",
+      "parent": "n91",
+      "marker": false,
+      "description": "编程技能 · 大三阶段 · 属于「前端技术栈」。。",
+      "tpl": true
+    },
+    {
+      "id": "n96",
       "label": "后端技术栈",
       "category": "skill",
       "stage": "y3",
@@ -1061,57 +1071,57 @@
       "description": "编程技能 · 大三阶段。包含 5 项内容：Spring Boot生态系统、Django/Flask、Gin/GoFrame、RESTful/GraphQL、微服务架构。"
     },
     {
-      "id": "n96",
+      "id": "n97",
       "label": "Spring Boot生态系统",
       "category": "skill",
       "stage": "y3",
-      "parent": "n95",
-      "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
-      "tpl": true
-    },
-    {
-      "id": "n97",
-      "label": "Django/Flask",
-      "category": "skill",
-      "stage": "y3",
-      "parent": "n95",
+      "parent": "n96",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
       "tpl": true
     },
     {
       "id": "n98",
-      "label": "Gin/GoFrame",
+      "label": "Django/Flask",
       "category": "skill",
       "stage": "y3",
-      "parent": "n95",
+      "parent": "n96",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
       "tpl": true
     },
     {
       "id": "n99",
-      "label": "RESTful/GraphQL",
+      "label": "Gin/GoFrame",
       "category": "skill",
       "stage": "y3",
-      "parent": "n95",
+      "parent": "n96",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
       "tpl": true
     },
     {
       "id": "n100",
-      "label": "微服务架构",
+      "label": "RESTful/GraphQL",
       "category": "skill",
       "stage": "y3",
-      "parent": "n95",
+      "parent": "n96",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
       "tpl": true
     },
     {
       "id": "n101",
+      "label": "微服务架构",
+      "category": "skill",
+      "stage": "y3",
+      "parent": "n96",
+      "marker": false,
+      "description": "编程技能 · 大三阶段 · 属于「后端技术栈」。。",
+      "tpl": true
+    },
+    {
+      "id": "n102",
       "label": "数据库专项",
       "category": "skill",
       "stage": "y3",
@@ -1120,67 +1130,67 @@
       "description": "编程技能 · 大三阶段。包含 6 项内容：MySQL优化、PostgreSQL、Redis缓存、MongoDB、Elasticsearch、消息队列(Kafka/RabbitMQ)。"
     },
     {
-      "id": "n102",
+      "id": "n103",
       "label": "MySQL优化",
       "category": "skill",
       "stage": "y3",
-      "parent": "n101",
-      "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
-      "tpl": true
-    },
-    {
-      "id": "n103",
-      "label": "PostgreSQL",
-      "category": "skill",
-      "stage": "y3",
-      "parent": "n101",
+      "parent": "n102",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
       "tpl": true
     },
     {
       "id": "n104",
-      "label": "Redis缓存",
+      "label": "PostgreSQL",
       "category": "skill",
       "stage": "y3",
-      "parent": "n101",
+      "parent": "n102",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
       "tpl": true
     },
     {
       "id": "n105",
-      "label": "MongoDB",
+      "label": "Redis缓存",
       "category": "skill",
       "stage": "y3",
-      "parent": "n101",
+      "parent": "n102",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
       "tpl": true
     },
     {
       "id": "n106",
-      "label": "Elasticsearch",
+      "label": "MongoDB",
       "category": "skill",
       "stage": "y3",
-      "parent": "n101",
+      "parent": "n102",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
       "tpl": true
     },
     {
       "id": "n107",
-      "label": "消息队列(Kafka/RabbitMQ)",
+      "label": "Elasticsearch",
       "category": "skill",
       "stage": "y3",
-      "parent": "n101",
+      "parent": "n102",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
       "tpl": true
     },
     {
       "id": "n108",
+      "label": "消息队列(Kafka/RabbitMQ)",
+      "category": "skill",
+      "stage": "y3",
+      "parent": "n102",
+      "marker": false,
+      "description": "编程技能 · 大三阶段 · 属于「数据库专项」。。",
+      "tpl": true
+    },
+    {
+      "id": "n109",
       "label": "游戏开发",
       "category": "skill",
       "stage": "y3",
@@ -1190,57 +1200,57 @@
       "tpl": false
     },
     {
-      "id": "n109",
+      "id": "n110",
       "label": "Unity引擎(C#)",
       "category": "skill",
       "stage": "y3",
-      "parent": "n108",
-      "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
-      "tpl": true
-    },
-    {
-      "id": "n110",
-      "label": "Unreal引擎(C++)",
-      "category": "skill",
-      "stage": "y3",
-      "parent": "n108",
+      "parent": "n109",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
       "tpl": true
     },
     {
       "id": "n111",
-      "label": "图形学与渲染管线",
+      "label": "Unreal引擎(C++)",
       "category": "skill",
       "stage": "y3",
-      "parent": "n108",
+      "parent": "n109",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
       "tpl": true
     },
     {
       "id": "n112",
-      "label": "游戏服务器(帧同步/状态同步)",
+      "label": "图形学与渲染管线",
       "category": "skill",
       "stage": "y3",
-      "parent": "n108",
+      "parent": "n109",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
       "tpl": true
     },
     {
       "id": "n113",
-      "label": "技术美术(TA)基础",
+      "label": "游戏服务器(帧同步/状态同步)",
       "category": "skill",
       "stage": "y3",
-      "parent": "n108",
+      "parent": "n109",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
       "tpl": true
     },
     {
       "id": "n114",
+      "label": "技术美术(TA)基础",
+      "category": "skill",
+      "stage": "y3",
+      "parent": "n109",
+      "marker": false,
+      "description": "编程技能 · 大三阶段 · 属于「游戏开发」。。",
+      "tpl": true
+    },
+    {
+      "id": "n115",
       "label": "DevOps工具链",
       "category": "skill",
       "stage": "y3",
@@ -1250,57 +1260,57 @@
       "tpl": false
     },
     {
-      "id": "n115",
+      "id": "n116",
       "label": "Docker容器化",
       "category": "skill",
       "stage": "y3",
-      "parent": "n114",
-      "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
-      "tpl": true
-    },
-    {
-      "id": "n116",
-      "label": "Kubernetes编排",
-      "category": "skill",
-      "stage": "y3",
-      "parent": "n114",
+      "parent": "n115",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
       "tpl": true
     },
     {
       "id": "n117",
-      "label": "Nginx与负载均衡",
+      "label": "Kubernetes编排",
       "category": "skill",
       "stage": "y3",
-      "parent": "n114",
+      "parent": "n115",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
       "tpl": true
     },
     {
       "id": "n118",
-      "label": "CI/CD流水线",
+      "label": "Nginx与负载均衡",
       "category": "skill",
       "stage": "y3",
-      "parent": "n114",
+      "parent": "n115",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
       "tpl": true
     },
     {
       "id": "n119",
-      "label": "监控告警(Prometheus/Grafana)",
+      "label": "CI/CD流水线",
       "category": "skill",
       "stage": "y3",
-      "parent": "n114",
+      "parent": "n115",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
       "tpl": true
     },
     {
       "id": "n120",
+      "label": "监控告警(Prometheus/Grafana)",
+      "category": "skill",
+      "stage": "y3",
+      "parent": "n115",
+      "marker": false,
+      "description": "编程技能 · 大三阶段 · 属于「DevOps工具链」。。",
+      "tpl": true
+    },
+    {
+      "id": "n121",
       "label": "AI/ML工具链",
       "category": "skill",
       "stage": "y3",
@@ -1309,57 +1319,67 @@
       "description": "编程技能 · 大三阶段。包含 5 项内容：PyTorch、TensorFlow、Scikit-learn、HuggingFace、Jupyter/Colab。"
     },
     {
-      "id": "n121",
+      "id": "n122",
       "label": "PyTorch",
       "category": "skill",
       "stage": "y3",
-      "parent": "n120",
-      "marker": false,
-      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
-      "tpl": true
-    },
-    {
-      "id": "n122",
-      "label": "TensorFlow",
-      "category": "skill",
-      "stage": "y3",
-      "parent": "n120",
+      "parent": "n121",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
       "tpl": true
     },
     {
       "id": "n123",
-      "label": "Scikit-learn",
+      "label": "TensorFlow",
       "category": "skill",
       "stage": "y3",
-      "parent": "n120",
+      "parent": "n121",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
       "tpl": true
     },
     {
       "id": "n124",
-      "label": "HuggingFace",
+      "label": "Scikit-learn",
       "category": "skill",
       "stage": "y3",
-      "parent": "n120",
+      "parent": "n121",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
       "tpl": true
     },
     {
       "id": "n125",
-      "label": "Jupyter/Colab",
+      "label": "HuggingFace",
       "category": "skill",
       "stage": "y3",
-      "parent": "n120",
+      "parent": "n121",
       "marker": false,
       "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
       "tpl": true
     },
     {
       "id": "n126",
+      "label": "Jupyter/Colab",
+      "category": "skill",
+      "stage": "y3",
+      "parent": "n121",
+      "marker": false,
+      "description": "编程技能 · 大三阶段 · 属于「AI/ML工具链」。。",
+      "tpl": true
+    },
+    {
+      "id": "n127",
+      "label": "大模型应用开发(RAG/Agent)",
+      "category": "skill",
+      "stage": "y3",
+      "parent": null,
+      "marker": false,
+      "description": "AI 应用开发岗的核心技能，本科就能切入。路径：LLM API 调用（OpenAI 或国产模型）→ Prompt 工程 → 知识库检索 RAG → Agent 工具调用与多轮对话。先做一个能跑的小应用（如文档问答机器人）走通全链路，比看教程有用。",
+      "tpl": false
+    },
+    {
+      "id": "n128",
       "label": "Go语言进阶",
       "category": "skill",
       "stage": "m1",
@@ -1369,7 +1389,7 @@
       "tpl": false
     },
     {
-      "id": "n127",
+      "id": "n129",
       "label": "Rust系统编程",
       "category": "skill",
       "stage": "m1",
@@ -1379,7 +1399,7 @@
       "tpl": false
     },
     {
-      "id": "n128",
+      "id": "n130",
       "label": "大数据技术栈",
       "category": "skill",
       "stage": "m1",
@@ -1388,37 +1408,37 @@
       "description": "编程技能 · 研一阶段。包含 3 项内容：Hadoop/Spark、Flink实时计算、数据仓库与Hive。"
     },
     {
-      "id": "n129",
+      "id": "n131",
       "label": "Hadoop/Spark",
       "category": "skill",
       "stage": "m1",
-      "parent": "n128",
-      "marker": false,
-      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
-      "tpl": true
-    },
-    {
-      "id": "n130",
-      "label": "Flink实时计算",
-      "category": "skill",
-      "stage": "m1",
-      "parent": "n128",
-      "marker": false,
-      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
-      "tpl": true
-    },
-    {
-      "id": "n131",
-      "label": "数据仓库与Hive",
-      "category": "skill",
-      "stage": "m1",
-      "parent": "n128",
+      "parent": "n130",
       "marker": false,
       "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
       "tpl": true
     },
     {
       "id": "n132",
+      "label": "Flink实时计算",
+      "category": "skill",
+      "stage": "m1",
+      "parent": "n130",
+      "marker": false,
+      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
+      "tpl": true
+    },
+    {
+      "id": "n133",
+      "label": "数据仓库与Hive",
+      "category": "skill",
+      "stage": "m1",
+      "parent": "n130",
+      "marker": false,
+      "description": "编程技能 · 研一阶段 · 属于「大数据技术栈」。。",
+      "tpl": true
+    },
+    {
+      "id": "n134",
       "label": "数学建模竞赛(CUMCM/MCM)",
       "category": "competition",
       "stage": "y2",
@@ -1428,7 +1448,7 @@
       "tpl": false
     },
     {
-      "id": "n133",
+      "id": "n135",
       "label": "蓝桥杯程序设计大赛",
       "category": "competition",
       "stage": "y2",
@@ -1438,7 +1458,7 @@
       "tpl": false
     },
     {
-      "id": "n134",
+      "id": "n136",
       "label": "ACM-ICPC国际大学生程序设计竞赛",
       "category": "competition",
       "stage": "y2",
@@ -1448,7 +1468,7 @@
       "tpl": true
     },
     {
-      "id": "n135",
+      "id": "n137",
       "label": "CCPC中国大学生程序设计竞赛",
       "category": "competition",
       "stage": "y2",
@@ -1458,7 +1478,7 @@
       "tpl": false
     },
     {
-      "id": "n136",
+      "id": "n138",
       "label": "百度之星程序设计大赛",
       "category": "competition",
       "stage": "y2",
@@ -1468,7 +1488,7 @@
       "tpl": false
     },
     {
-      "id": "n137",
+      "id": "n139",
       "label": "算法竞赛综合",
       "category": "competition",
       "stage": "y3",
@@ -1477,37 +1497,37 @@
       "description": "竞赛科研 · 大三阶段。包含 3 项内容：LeetCode周赛/双周赛、Codeforces排名提升、牛客网竞赛。"
     },
     {
-      "id": "n138",
+      "id": "n140",
       "label": "LeetCode周赛/双周赛",
       "category": "competition",
       "stage": "y3",
-      "parent": "n137",
-      "marker": false,
-      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
-      "tpl": true
-    },
-    {
-      "id": "n139",
-      "label": "Codeforces排名提升",
-      "category": "competition",
-      "stage": "y3",
-      "parent": "n137",
-      "marker": false,
-      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
-      "tpl": true
-    },
-    {
-      "id": "n140",
-      "label": "牛客网竞赛",
-      "category": "competition",
-      "stage": "y3",
-      "parent": "n137",
+      "parent": "n139",
       "marker": false,
       "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
       "tpl": true
     },
     {
       "id": "n141",
+      "label": "Codeforces排名提升",
+      "category": "competition",
+      "stage": "y3",
+      "parent": "n139",
+      "marker": false,
+      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
+      "tpl": true
+    },
+    {
+      "id": "n142",
+      "label": "牛客网竞赛",
+      "category": "competition",
+      "stage": "y3",
+      "parent": "n139",
+      "marker": false,
+      "description": "竞赛科研 · 大三阶段 · 属于「算法竞赛综合」。。",
+      "tpl": true
+    },
+    {
+      "id": "n143",
       "label": "Kaggle数据科学竞赛",
       "category": "competition",
       "stage": "y3",
@@ -1517,7 +1537,7 @@
       "tpl": false
     },
     {
-      "id": "n142",
+      "id": "n144",
       "label": "天池/AI竞赛",
       "category": "competition",
       "stage": "y3",
@@ -1527,7 +1547,7 @@
       "tpl": false
     },
     {
-      "id": "n143",
+      "id": "n145",
       "label": "华为软件精英挑战赛",
       "category": "competition",
       "stage": "y3",
@@ -1537,7 +1557,7 @@
       "tpl": false
     },
     {
-      "id": "n144",
+      "id": "n146",
       "label": "全国大学生信息安全竞赛(CTF)",
       "category": "competition",
       "stage": "y3",
@@ -1547,7 +1567,7 @@
       "tpl": false
     },
     {
-      "id": "n145",
+      "id": "n147",
       "label": "中国大学生计算机设计大赛",
       "category": "competition",
       "stage": "y3",
@@ -1557,7 +1577,7 @@
       "tpl": false
     },
     {
-      "id": "n146",
+      "id": "n148",
       "label": "挑战杯/互联网+创新创业",
       "category": "competition",
       "stage": "y3",
@@ -1567,7 +1587,7 @@
       "tpl": false
     },
     {
-      "id": "n147",
+      "id": "n149",
       "label": "字节跳动青训营",
       "category": "competition",
       "stage": "y3",
@@ -1577,7 +1597,7 @@
       "tpl": false
     },
     {
-      "id": "n148",
+      "id": "n150",
       "label": "确定研究方向",
       "category": "competition",
       "stage": "m1",
@@ -1586,27 +1606,27 @@
       "description": "竞赛科研 · 研一阶段。包含 2 项内容：CV/NLP/系统/理论、文献综述与调研。"
     },
     {
-      "id": "n149",
+      "id": "n151",
       "label": "CV/NLP/系统/理论",
       "category": "competition",
       "stage": "m1",
-      "parent": "n148",
+      "parent": "n150",
       "marker": false,
       "description": "竞赛科研 · 研一阶段 · 属于「确定研究方向」。。",
       "tpl": true
     },
     {
-      "id": "n150",
+      "id": "n152",
       "label": "文献综述与调研",
       "category": "competition",
       "stage": "m1",
-      "parent": "n148",
+      "parent": "n150",
       "marker": false,
       "description": "竞赛科研 · 研一阶段 · 属于「确定研究方向」。。",
       "tpl": true
     },
     {
-      "id": "n151",
+      "id": "n153",
       "label": "学术论文阅读方法论",
       "category": "competition",
       "stage": "m1",
@@ -1616,7 +1636,7 @@
       "tpl": true
     },
     {
-      "id": "n152",
+      "id": "n154",
       "label": "科研实验与复现",
       "category": "competition",
       "stage": "m1",
@@ -1626,7 +1646,7 @@
       "tpl": true
     },
     {
-      "id": "n153",
+      "id": "n155",
       "label": "发表小论文(会议/期刊)",
       "category": "competition",
       "stage": "m1",
@@ -1636,7 +1656,7 @@
       "tpl": true
     },
     {
-      "id": "n154",
+      "id": "n156",
       "label": "参加顶级学术会议",
       "category": "competition",
       "stage": "m1",
@@ -1646,7 +1666,7 @@
       "tpl": true
     },
     {
-      "id": "n155",
+      "id": "n157",
       "label": "CCF推荐会议分级",
       "category": "competition",
       "stage": "m1",
@@ -1656,7 +1676,7 @@
       "tpl": true
     },
     {
-      "id": "n156",
+      "id": "n158",
       "label": "大厂研究型实习",
       "category": "competition",
       "stage": "m1",
@@ -1666,7 +1686,7 @@
       "tpl": true
     },
     {
-      "id": "n157",
+      "id": "n159",
       "label": "求职准备启动",
       "category": "career",
       "stage": "y3",
@@ -1676,47 +1696,47 @@
       "tpl": false
     },
     {
-      "id": "n158",
+      "id": "n160",
       "label": "简历撰写STAR法则",
       "category": "career",
       "stage": "y3",
-      "parent": "n157",
-      "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
-      "tpl": true
-    },
-    {
-      "id": "n159",
-      "label": "LeetCode刷题规划",
-      "category": "career",
-      "stage": "y3",
-      "parent": "n157",
-      "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
-      "tpl": true
-    },
-    {
-      "id": "n160",
-      "label": "八股文整理",
-      "category": "career",
-      "stage": "y3",
-      "parent": "n157",
+      "parent": "n159",
       "marker": false,
       "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
       "tpl": true
     },
     {
       "id": "n161",
-      "label": "项目复盘打磨",
+      "label": "LeetCode刷题规划",
       "category": "career",
       "stage": "y3",
-      "parent": "n157",
+      "parent": "n159",
       "marker": false,
       "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
       "tpl": true
     },
     {
       "id": "n162",
+      "label": "八股文整理",
+      "category": "career",
+      "stage": "y3",
+      "parent": "n159",
+      "marker": false,
+      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
+      "tpl": true
+    },
+    {
+      "id": "n163",
+      "label": "项目复盘打磨",
+      "category": "career",
+      "stage": "y3",
+      "parent": "n159",
+      "marker": false,
+      "description": "实习就业 · 大三阶段 · 属于「求职准备启动」。。",
+      "tpl": true
+    },
+    {
+      "id": "n164",
       "label": "暑期实习投递",
       "category": "career",
       "stage": "y3",
@@ -1726,37 +1746,37 @@
       "tpl": false
     },
     {
-      "id": "n163",
+      "id": "n165",
       "label": "目标公司清单",
       "category": "career",
       "stage": "y3",
-      "parent": "n162",
-      "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
-      "tpl": true
-    },
-    {
-      "id": "n164",
-      "label": "内推渠道获取",
-      "category": "career",
-      "stage": "y3",
-      "parent": "n162",
-      "marker": false,
-      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
-      "tpl": true
-    },
-    {
-      "id": "n165",
-      "label": "笔试面试准备",
-      "category": "career",
-      "stage": "y3",
-      "parent": "n162",
+      "parent": "n164",
       "marker": false,
       "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
       "tpl": true
     },
     {
       "id": "n166",
+      "label": "内推渠道获取",
+      "category": "career",
+      "stage": "y3",
+      "parent": "n164",
+      "marker": false,
+      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
+      "tpl": true
+    },
+    {
+      "id": "n167",
+      "label": "笔试面试准备",
+      "category": "career",
+      "stage": "y3",
+      "parent": "n164",
+      "marker": false,
+      "description": "实习就业 · 大三阶段 · 属于「暑期实习投递」。。",
+      "tpl": true
+    },
+    {
+      "id": "n168",
       "label": "暑期实习",
       "category": "career",
       "stage": "y3",
@@ -1766,27 +1786,27 @@
       "tpl": false
     },
     {
-      "id": "n167",
+      "id": "n169",
       "label": "团队融入与产出",
       "category": "career",
       "stage": "y3",
-      "parent": "n166",
+      "parent": "n168",
       "marker": false,
       "description": "实习就业 · 大三阶段 · 属于「暑期实习」。。",
       "tpl": true
     },
     {
-      "id": "n168",
+      "id": "n170",
       "label": "争取转正机会",
       "category": "career",
       "stage": "y3",
-      "parent": "n166",
+      "parent": "n168",
       "marker": false,
       "description": "实习就业 · 大三阶段 · 属于「暑期实习」。。",
       "tpl": true
     },
     {
-      "id": "n169",
+      "id": "n171",
       "label": "秋招提前批(6-8月)",
       "category": "career",
       "stage": "y4",
@@ -1796,7 +1816,7 @@
       "tpl": false
     },
     {
-      "id": "n170",
+      "id": "n172",
       "label": "秋招正式批(8-10月)",
       "category": "career",
       "stage": "y4",
@@ -1806,7 +1826,7 @@
       "tpl": false
     },
     {
-      "id": "n171",
+      "id": "n173",
       "label": "秋招补录(11-12月)",
       "category": "career",
       "stage": "y4",
@@ -1816,7 +1836,7 @@
       "tpl": false
     },
     {
-      "id": "n172",
+      "id": "n174",
       "label": "春招提前批(1-2月)",
       "category": "career",
       "stage": "y4",
@@ -1826,7 +1846,7 @@
       "tpl": false
     },
     {
-      "id": "n173",
+      "id": "n175",
       "label": "春招正式批(3-5月)",
       "category": "career",
       "stage": "y4",
@@ -1836,7 +1856,7 @@
       "tpl": false
     },
     {
-      "id": "n174",
+      "id": "n176",
       "label": "研究型/大厂实习",
       "category": "career",
       "stage": "m1",
@@ -1846,7 +1866,7 @@
       "tpl": false
     },
     {
-      "id": "n175",
+      "id": "n177",
       "label": "校招Offer选择",
       "category": "career",
       "stage": "m1",
@@ -1855,37 +1875,37 @@
       "description": "实习就业 · 研一阶段。包含 3 项内容：薪资结构与谈判、平台vs薪资vs方向、城市与户口考量。"
     },
     {
-      "id": "n176",
+      "id": "n178",
       "label": "薪资结构与谈判",
       "category": "career",
       "stage": "m1",
-      "parent": "n175",
-      "marker": false,
-      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
-      "tpl": true
-    },
-    {
-      "id": "n177",
-      "label": "平台vs薪资vs方向",
-      "category": "career",
-      "stage": "m1",
-      "parent": "n175",
-      "marker": false,
-      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
-      "tpl": true
-    },
-    {
-      "id": "n178",
-      "label": "城市与户口考量",
-      "category": "career",
-      "stage": "m1",
-      "parent": "n175",
+      "parent": "n177",
       "marker": false,
       "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
       "tpl": true
     },
     {
       "id": "n179",
+      "label": "平台vs薪资vs方向",
+      "category": "career",
+      "stage": "m1",
+      "parent": "n177",
+      "marker": false,
+      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
+      "tpl": true
+    },
+    {
+      "id": "n180",
+      "label": "城市与户口考量",
+      "category": "career",
+      "stage": "m1",
+      "parent": "n177",
+      "marker": false,
+      "description": "实习就业 · 研一阶段 · 属于「校招Offer选择」。。",
+      "tpl": true
+    },
+    {
+      "id": "n181",
       "label": "入职与试用期",
       "category": "career",
       "stage": "post",
@@ -1894,37 +1914,37 @@
       "description": "实习就业 · 毕业后阶段。包含 3 项内容：新人融入与存活、技术债理解与偿还、导师制度利用。"
     },
     {
-      "id": "n180",
+      "id": "n182",
       "label": "新人融入与存活",
       "category": "career",
       "stage": "post",
-      "parent": "n179",
-      "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
-      "tpl": true
-    },
-    {
-      "id": "n181",
-      "label": "技术债理解与偿还",
-      "category": "career",
-      "stage": "post",
-      "parent": "n179",
-      "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
-      "tpl": true
-    },
-    {
-      "id": "n182",
-      "label": "导师制度利用",
-      "category": "career",
-      "stage": "post",
-      "parent": "n179",
+      "parent": "n181",
       "marker": false,
       "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
       "tpl": true
     },
     {
       "id": "n183",
+      "label": "技术债理解与偿还",
+      "category": "career",
+      "stage": "post",
+      "parent": "n181",
+      "marker": false,
+      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
+      "tpl": true
+    },
+    {
+      "id": "n184",
+      "label": "导师制度利用",
+      "category": "career",
+      "stage": "post",
+      "parent": "n181",
+      "marker": false,
+      "description": "实习就业 · 毕业后阶段 · 属于「入职与试用期」。。",
+      "tpl": true
+    },
+    {
+      "id": "n185",
       "label": "职业早期晋升",
       "category": "career",
       "stage": "post",
@@ -1933,37 +1953,37 @@
       "description": "实习就业 · 毕业后阶段。包含 3 项内容：技术评级与晋升、跳槽时机与准备、技术深度vs广度。"
     },
     {
-      "id": "n184",
+      "id": "n186",
       "label": "技术评级与晋升",
       "category": "career",
       "stage": "post",
-      "parent": "n183",
-      "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
-      "tpl": true
-    },
-    {
-      "id": "n185",
-      "label": "跳槽时机与准备",
-      "category": "career",
-      "stage": "post",
-      "parent": "n183",
-      "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
-      "tpl": true
-    },
-    {
-      "id": "n186",
-      "label": "技术深度vs广度",
-      "category": "career",
-      "stage": "post",
-      "parent": "n183",
+      "parent": "n185",
       "marker": false,
       "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
       "tpl": true
     },
     {
       "id": "n187",
+      "label": "跳槽时机与准备",
+      "category": "career",
+      "stage": "post",
+      "parent": "n185",
+      "marker": false,
+      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
+      "tpl": true
+    },
+    {
+      "id": "n188",
+      "label": "技术深度vs广度",
+      "category": "career",
+      "stage": "post",
+      "parent": "n185",
+      "marker": false,
+      "description": "实习就业 · 毕业后阶段 · 属于「职业早期晋升」。。",
+      "tpl": true
+    },
+    {
+      "id": "n189",
       "label": "面试方法论",
       "category": "career",
       "stage": "post",
@@ -1972,37 +1992,37 @@
       "description": "实习就业 · 毕业后阶段。包含 3 项内容：算法题系统备战、系统设计面试、行为面试STAR。"
     },
     {
-      "id": "n188",
+      "id": "n190",
       "label": "算法题系统备战",
       "category": "career",
       "stage": "post",
-      "parent": "n187",
-      "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
-      "tpl": true
-    },
-    {
-      "id": "n189",
-      "label": "系统设计面试",
-      "category": "career",
-      "stage": "post",
-      "parent": "n187",
-      "marker": false,
-      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
-      "tpl": true
-    },
-    {
-      "id": "n190",
-      "label": "行为面试STAR",
-      "category": "career",
-      "stage": "post",
-      "parent": "n187",
+      "parent": "n189",
       "marker": false,
       "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
       "tpl": true
     },
     {
       "id": "n191",
+      "label": "系统设计面试",
+      "category": "career",
+      "stage": "post",
+      "parent": "n189",
+      "marker": false,
+      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
+      "tpl": true
+    },
+    {
+      "id": "n192",
+      "label": "行为面试STAR",
+      "category": "career",
+      "stage": "post",
+      "parent": "n189",
+      "marker": false,
+      "description": "实习就业 · 毕业后阶段 · 属于「面试方法论」。。",
+      "tpl": true
+    },
+    {
+      "id": "n193",
       "label": "考研/就业决策评估",
       "category": "education",
       "stage": "y3",
@@ -2012,7 +2032,7 @@
       "tpl": false
     },
     {
-      "id": "n192",
+      "id": "n194",
       "label": "考研数学基础复习(3-6月)",
       "category": "education",
       "stage": "y3",
@@ -2022,7 +2042,7 @@
       "tpl": false
     },
     {
-      "id": "n193",
+      "id": "n195",
       "label": "考研英语启动(3-6月)",
       "category": "education",
       "stage": "y3",
@@ -2032,7 +2052,7 @@
       "tpl": false
     },
     {
-      "id": "n194",
+      "id": "n196",
       "label": "保研夏令营(5-8月)",
       "category": "education",
       "stage": "y3",
@@ -2042,7 +2062,7 @@
       "tpl": false
     },
     {
-      "id": "n195",
+      "id": "n197",
       "label": "考研强化阶段(7-8月暑假)",
       "category": "education",
       "stage": "y4",
@@ -2052,7 +2072,7 @@
       "tpl": false
     },
     {
-      "id": "n196",
+      "id": "n198",
       "label": "考研冲刺(9-10月)",
       "category": "education",
       "stage": "y4",
@@ -2062,27 +2082,27 @@
       "tpl": false
     },
     {
-      "id": "n197",
+      "id": "n199",
       "label": "408专业课四轮复习",
       "category": "education",
       "stage": "y4",
-      "parent": "n196",
+      "parent": "n198",
       "marker": false,
       "description": "408计算机学科专业基础综合，教育部统一命题。考四门：数据结构、计算机组成原理、操作系统、计算机网络。满分150分/180分钟：数据结构45分、组成原理45分、操作系统35分、计算机网络25分，题型为40道单选（80分）+综合应用题（70分）。四门分值近年稳定，是复习时间分配的重要依据。",
       "tpl": false
     },
     {
-      "id": "n198",
+      "id": "n200",
       "label": "政治背诵启动",
       "category": "education",
       "stage": "y4",
-      "parent": "n196",
+      "parent": "n198",
       "marker": false,
       "description": "考研升学 · 大四阶段 · 属于「考研冲刺(9-10月)」。。",
       "tpl": true
     },
     {
-      "id": "n199",
+      "id": "n201",
       "label": "考研最后冲刺(11-12月)",
       "category": "education",
       "stage": "y4",
@@ -2092,7 +2112,7 @@
       "tpl": false
     },
     {
-      "id": "n200",
+      "id": "n202",
       "label": "考研报名(预报名9月下旬/正式10月上旬)",
       "category": "education",
       "stage": "y4",
@@ -2102,7 +2122,7 @@
       "tpl": false
     },
     {
-      "id": "n201",
+      "id": "n203",
       "label": "考研初试(12月)",
       "category": "education",
       "stage": "y4",
@@ -2112,7 +2132,7 @@
       "tpl": false
     },
     {
-      "id": "n202",
+      "id": "n204",
       "label": "考研成绩与复试(次年2-4月)",
       "category": "education",
       "stage": "y4",
@@ -2122,7 +2142,7 @@
       "tpl": false
     },
     {
-      "id": "n203",
+      "id": "n205",
       "label": "考研调剂(3-5月)",
       "category": "education",
       "stage": "y4",
@@ -2132,7 +2152,7 @@
       "tpl": false
     },
     {
-      "id": "n204",
+      "id": "n206",
       "label": "保研预推免/九推(9-10月)",
       "category": "education",
       "stage": "y4",
@@ -2142,7 +2162,7 @@
       "tpl": false
     },
     {
-      "id": "n205",
+      "id": "n207",
       "label": "研究生复试准备",
       "category": "education",
       "stage": "y4",
@@ -2151,37 +2171,37 @@
       "description": "考研升学 · 大四阶段。包含 3 项内容：机试练习、项目/竞赛经历梳理、导师选择策略。"
     },
     {
-      "id": "n206",
+      "id": "n208",
       "label": "机试练习",
       "category": "education",
       "stage": "y4",
-      "parent": "n205",
-      "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
-      "tpl": true
-    },
-    {
-      "id": "n207",
-      "label": "项目/竞赛经历梳理",
-      "category": "education",
-      "stage": "y4",
-      "parent": "n205",
-      "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
-      "tpl": true
-    },
-    {
-      "id": "n208",
-      "label": "导师选择策略",
-      "category": "education",
-      "stage": "y4",
-      "parent": "n205",
+      "parent": "n207",
       "marker": false,
       "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
       "tpl": true
     },
     {
       "id": "n209",
+      "label": "项目/竞赛经历梳理",
+      "category": "education",
+      "stage": "y4",
+      "parent": "n207",
+      "marker": false,
+      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
+      "tpl": true
+    },
+    {
+      "id": "n210",
+      "label": "导师选择策略",
+      "category": "education",
+      "stage": "y4",
+      "parent": "n207",
+      "marker": false,
+      "description": "考研升学 · 大四阶段 · 属于「研究生复试准备」。。",
+      "tpl": true
+    },
+    {
+      "id": "n211",
       "label": "导师选择与实验室融入",
       "category": "education",
       "stage": "m1",
@@ -2191,27 +2211,27 @@
       "tpl": false
     },
     {
-      "id": "n210",
+      "id": "n212",
       "label": "研究方向匹配",
       "category": "education",
       "stage": "m1",
-      "parent": "n209",
+      "parent": "n211",
       "marker": false,
       "description": "考研升学 · 研一阶段 · 属于「导师选择与实验室融入」。。",
       "tpl": true
     },
     {
-      "id": "n211",
+      "id": "n213",
       "label": "师兄师姐网络",
       "category": "education",
       "stage": "m1",
-      "parent": "n209",
+      "parent": "n211",
       "marker": false,
       "description": "考研升学 · 研一阶段 · 属于「导师选择与实验室融入」。。",
       "tpl": true
     },
     {
-      "id": "n212",
+      "id": "n214",
       "label": "学硕vs专硕规划",
       "category": "education",
       "stage": "m1",
@@ -2221,7 +2241,7 @@
       "tpl": false
     },
     {
-      "id": "n213",
+      "id": "n215",
       "label": "硕博连读/转博决策",
       "category": "education",
       "stage": "m1",
@@ -2231,7 +2251,7 @@
       "tpl": false
     },
     {
-      "id": "n214",
+      "id": "n216",
       "label": "申博准备",
       "category": "education",
       "stage": "m3",
@@ -2240,37 +2260,37 @@
       "description": "考研升学 · 研三阶段。包含 3 项内容：论文成果积累、导师推荐与套磁、海外PhD申请。"
     },
     {
-      "id": "n215",
+      "id": "n217",
       "label": "论文成果积累",
       "category": "education",
       "stage": "m3",
-      "parent": "n214",
-      "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
-      "tpl": true
-    },
-    {
-      "id": "n216",
-      "label": "导师推荐与套磁",
-      "category": "education",
-      "stage": "m3",
-      "parent": "n214",
-      "marker": false,
-      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
-      "tpl": true
-    },
-    {
-      "id": "n217",
-      "label": "海外PhD申请",
-      "category": "education",
-      "stage": "m3",
-      "parent": "n214",
+      "parent": "n216",
       "marker": false,
       "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
       "tpl": true
     },
     {
       "id": "n218",
+      "label": "导师推荐与套磁",
+      "category": "education",
+      "stage": "m3",
+      "parent": "n216",
+      "marker": false,
+      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
+      "tpl": true
+    },
+    {
+      "id": "n219",
+      "label": "海外PhD申请",
+      "category": "education",
+      "stage": "m3",
+      "parent": "n216",
+      "marker": false,
+      "description": "考研升学 · 研三阶段 · 属于「申博准备」。。",
+      "tpl": true
+    },
+    {
+      "id": "n220",
       "label": "本科留学申请",
       "category": "education",
       "stage": "y4",
@@ -2280,37 +2300,37 @@
       "tpl": false
     },
     {
-      "id": "n219",
+      "id": "n221",
       "label": "托福/雅思",
       "category": "education",
       "stage": "y4",
-      "parent": "n218",
-      "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「本科留学申请」。。",
-      "tpl": true
-    },
-    {
-      "id": "n220",
-      "label": "GRE",
-      "category": "education",
-      "stage": "y4",
-      "parent": "n218",
-      "marker": false,
-      "description": "考研升学 · 大四阶段 · 属于「本科留学申请」。。",
-      "tpl": true
-    },
-    {
-      "id": "n221",
-      "label": "文书与推荐信",
-      "category": "education",
-      "stage": "y4",
-      "parent": "n218",
+      "parent": "n220",
       "marker": false,
       "description": "考研升学 · 大四阶段 · 属于「本科留学申请」。。",
       "tpl": true
     },
     {
       "id": "n222",
+      "label": "GRE",
+      "category": "education",
+      "stage": "y4",
+      "parent": "n220",
+      "marker": false,
+      "description": "考研升学 · 大四阶段 · 属于「本科留学申请」。。",
+      "tpl": true
+    },
+    {
+      "id": "n223",
+      "label": "文书与推荐信",
+      "category": "education",
+      "stage": "y4",
+      "parent": "n220",
+      "marker": false,
+      "description": "考研升学 · 大四阶段 · 属于「本科留学申请」。。",
+      "tpl": true
+    },
+    {
+      "id": "n224",
       "label": "海外读博申请",
       "category": "education",
       "stage": "m3",
@@ -2320,7 +2340,7 @@
       "tpl": false
     },
     {
-      "id": "n223",
+      "id": "n225",
       "label": "硕士秋招与春招",
       "category": "career",
       "stage": "m3",
@@ -2330,7 +2350,7 @@
       "tpl": false
     },
     {
-      "id": "n224",
+      "id": "n226",
       "label": "硕士学位论文盲审",
       "category": "education",
       "stage": "m3",
@@ -2340,7 +2360,7 @@
       "tpl": false
     },
     {
-      "id": "n225",
+      "id": "n227",
       "label": "毕业答辩与学位申请",
       "category": "education",
       "stage": "m3",
@@ -2350,7 +2370,7 @@
       "tpl": false
     },
     {
-      "id": "n226",
+      "id": "n228",
       "label": "课程大作业",
       "category": "project",
       "stage": "y1",
@@ -2360,7 +2380,7 @@
       "tpl": false
     },
     {
-      "id": "n227",
+      "id": "n229",
       "label": "个人博客/网站",
       "category": "project",
       "stage": "y1",
@@ -2370,7 +2390,7 @@
       "tpl": false
     },
     {
-      "id": "n228",
+      "id": "n230",
       "label": "简单全栈应用(Todo/记事本)",
       "category": "project",
       "stage": "y2",
@@ -2380,7 +2400,7 @@
       "tpl": false
     },
     {
-      "id": "n229",
+      "id": "n231",
       "label": "在线商城系统",
       "category": "project",
       "stage": "y2",
@@ -2390,7 +2410,7 @@
       "tpl": false
     },
     {
-      "id": "n230",
+      "id": "n232",
       "label": "实时聊天室",
       "category": "project",
       "stage": "y2",
@@ -2400,7 +2420,7 @@
       "tpl": false
     },
     {
-      "id": "n231",
+      "id": "n233",
       "label": "数据分析可视化项目",
       "category": "project",
       "stage": "y2",
@@ -2410,7 +2430,7 @@
       "tpl": false
     },
     {
-      "id": "n232",
+      "id": "n234",
       "label": "AI/ML实战项目",
       "category": "project",
       "stage": "y3",
@@ -2419,37 +2439,37 @@
       "description": "项目实战 · 大三阶段。包含 3 项内容：图像分类器、文本生成/对话系统、推荐系统实现。"
     },
     {
-      "id": "n233",
+      "id": "n235",
       "label": "图像分类器",
       "category": "project",
       "stage": "y3",
-      "parent": "n232",
-      "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
-      "tpl": true
-    },
-    {
-      "id": "n234",
-      "label": "文本生成/对话系统",
-      "category": "project",
-      "stage": "y3",
-      "parent": "n232",
-      "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
-      "tpl": true
-    },
-    {
-      "id": "n235",
-      "label": "推荐系统实现",
-      "category": "project",
-      "stage": "y3",
-      "parent": "n232",
+      "parent": "n234",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
       "tpl": true
     },
     {
       "id": "n236",
+      "label": "文本生成/对话系统",
+      "category": "project",
+      "stage": "y3",
+      "parent": "n234",
+      "marker": false,
+      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
+      "tpl": true
+    },
+    {
+      "id": "n237",
+      "label": "推荐系统实现",
+      "category": "project",
+      "stage": "y3",
+      "parent": "n234",
+      "marker": false,
+      "description": "项目实战 · 大三阶段 · 属于「AI/ML实战项目」。。",
+      "tpl": true
+    },
+    {
+      "id": "n238",
       "label": "开源项目贡献",
       "category": "project",
       "stage": "y3",
@@ -2459,37 +2479,37 @@
       "tpl": false
     },
     {
-      "id": "n237",
+      "id": "n239",
       "label": "GitHub Issue响应",
       "category": "project",
       "stage": "y3",
-      "parent": "n236",
-      "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
-      "tpl": true
-    },
-    {
-      "id": "n238",
-      "label": "Pull Request提交流程",
-      "category": "project",
-      "stage": "y3",
-      "parent": "n236",
-      "marker": false,
-      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
-      "tpl": true
-    },
-    {
-      "id": "n239",
-      "label": "文档完善",
-      "category": "project",
-      "stage": "y3",
-      "parent": "n236",
+      "parent": "n238",
       "marker": false,
       "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
       "tpl": true
     },
     {
       "id": "n240",
+      "label": "Pull Request提交流程",
+      "category": "project",
+      "stage": "y3",
+      "parent": "n238",
+      "marker": false,
+      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
+      "tpl": true
+    },
+    {
+      "id": "n241",
+      "label": "文档完善",
+      "category": "project",
+      "stage": "y3",
+      "parent": "n238",
+      "marker": false,
+      "description": "项目实战 · 大三阶段 · 属于「开源项目贡献」。。",
+      "tpl": true
+    },
+    {
+      "id": "n242",
       "label": "独立产品开发",
       "category": "project",
       "stage": "y3",
@@ -2499,7 +2519,7 @@
       "tpl": false
     },
     {
-      "id": "n241",
+      "id": "n243",
       "label": "毕业设计",
       "category": "project",
       "stage": "y4",
@@ -2509,37 +2529,37 @@
       "tpl": false
     },
     {
-      "id": "n242",
+      "id": "n244",
       "label": "开题报告",
       "category": "project",
       "stage": "y4",
-      "parent": "n241",
-      "marker": false,
-      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
-      "tpl": true
-    },
-    {
-      "id": "n243",
-      "label": "系统设计与实现",
-      "category": "project",
-      "stage": "y4",
-      "parent": "n241",
-      "marker": false,
-      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
-      "tpl": true
-    },
-    {
-      "id": "n244",
-      "label": "论文撰写",
-      "category": "project",
-      "stage": "y4",
-      "parent": "n241",
+      "parent": "n243",
       "marker": false,
       "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
       "tpl": true
     },
     {
       "id": "n245",
+      "label": "系统设计与实现",
+      "category": "project",
+      "stage": "y4",
+      "parent": "n243",
+      "marker": false,
+      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
+      "tpl": true
+    },
+    {
+      "id": "n246",
+      "label": "论文撰写",
+      "category": "project",
+      "stage": "y4",
+      "parent": "n243",
+      "marker": false,
+      "description": "项目实战 · 大四阶段 · 属于「毕业设计」。。",
+      "tpl": true
+    },
+    {
+      "id": "n247",
       "label": "实验室科研项目",
       "category": "project",
       "stage": "m1",
@@ -2549,7 +2569,7 @@
       "tpl": true
     },
     {
-      "id": "n246",
+      "id": "n248",
       "label": "企业合作项目",
       "category": "project",
       "stage": "m1",
@@ -2559,7 +2579,7 @@
       "tpl": true
     },
     {
-      "id": "n247",
+      "id": "n249",
       "label": "毕业设计(硕士论文)",
       "category": "project",
       "stage": "m1",
@@ -2569,7 +2589,7 @@
       "tpl": true
     },
     {
-      "id": "n248",
+      "id": "n250",
       "label": "工作中的项目",
       "category": "project",
       "stage": "post",
@@ -2578,37 +2598,37 @@
       "description": "项目实战 · 毕业后阶段。包含 3 项内容：业务需求理解、技术方案设计、上线与运维。"
     },
     {
-      "id": "n249",
+      "id": "n251",
       "label": "业务需求理解",
       "category": "project",
       "stage": "post",
-      "parent": "n248",
-      "marker": false,
-      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
-      "tpl": true
-    },
-    {
-      "id": "n250",
-      "label": "技术方案设计",
-      "category": "project",
-      "stage": "post",
-      "parent": "n248",
-      "marker": false,
-      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
-      "tpl": true
-    },
-    {
-      "id": "n251",
-      "label": "上线与运维",
-      "category": "project",
-      "stage": "post",
-      "parent": "n248",
+      "parent": "n250",
       "marker": false,
       "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
       "tpl": true
     },
     {
       "id": "n252",
+      "label": "技术方案设计",
+      "category": "project",
+      "stage": "post",
+      "parent": "n250",
+      "marker": false,
+      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
+      "tpl": true
+    },
+    {
+      "id": "n253",
+      "label": "上线与运维",
+      "category": "project",
+      "stage": "post",
+      "parent": "n250",
+      "marker": false,
+      "description": "项目实战 · 毕业后阶段 · 属于「工作中的项目」。。",
+      "tpl": true
+    },
+    {
+      "id": "n254",
       "label": "时间管理",
       "category": "softskill",
       "stage": "y1",
@@ -2618,37 +2638,37 @@
       "tpl": false
     },
     {
-      "id": "n253",
+      "id": "n255",
       "label": "四象限法则",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n252",
-      "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
-      "tpl": true
-    },
-    {
-      "id": "n254",
-      "label": "番茄工作法",
-      "category": "softskill",
-      "stage": "y1",
-      "parent": "n252",
-      "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
-      "tpl": true
-    },
-    {
-      "id": "n255",
-      "label": "GTD工作流",
-      "category": "softskill",
-      "stage": "y1",
-      "parent": "n252",
+      "parent": "n254",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
       "tpl": true
     },
     {
       "id": "n256",
+      "label": "番茄工作法",
+      "category": "softskill",
+      "stage": "y1",
+      "parent": "n254",
+      "marker": false,
+      "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
+      "tpl": true
+    },
+    {
+      "id": "n257",
+      "label": "GTD工作流",
+      "category": "softskill",
+      "stage": "y1",
+      "parent": "n254",
+      "marker": false,
+      "description": "软技能 · 大一阶段 · 属于「时间管理」。。",
+      "tpl": true
+    },
+    {
+      "id": "n258",
       "label": "高效学习方法",
       "category": "softskill",
       "stage": "y1",
@@ -2657,37 +2677,37 @@
       "description": "软技能 · 大一阶段。包含 3 项内容：费曼学习法、主动回忆与间隔重复、思维导图与知识体系构建。"
     },
     {
-      "id": "n257",
+      "id": "n259",
       "label": "费曼学习法",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n256",
-      "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
-      "tpl": true
-    },
-    {
-      "id": "n258",
-      "label": "主动回忆与间隔重复",
-      "category": "softskill",
-      "stage": "y1",
-      "parent": "n256",
-      "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
-      "tpl": true
-    },
-    {
-      "id": "n259",
-      "label": "思维导图与知识体系构建",
-      "category": "softskill",
-      "stage": "y1",
-      "parent": "n256",
+      "parent": "n258",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
       "tpl": true
     },
     {
       "id": "n260",
+      "label": "主动回忆与间隔重复",
+      "category": "softskill",
+      "stage": "y1",
+      "parent": "n258",
+      "marker": false,
+      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
+      "tpl": true
+    },
+    {
+      "id": "n261",
+      "label": "思维导图与知识体系构建",
+      "category": "softskill",
+      "stage": "y1",
+      "parent": "n258",
+      "marker": false,
+      "description": "软技能 · 大一阶段 · 属于「高效学习方法」。。",
+      "tpl": true
+    },
+    {
+      "id": "n262",
       "label": "信息检索能力",
       "category": "softskill",
       "stage": "y1",
@@ -2697,37 +2717,37 @@
       "tpl": false
     },
     {
-      "id": "n261",
+      "id": "n263",
       "label": "Google高级搜索",
       "category": "softskill",
       "stage": "y1",
-      "parent": "n260",
-      "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
-      "tpl": true
-    },
-    {
-      "id": "n262",
-      "label": "Stack Overflow/Official Docs",
-      "category": "softskill",
-      "stage": "y1",
-      "parent": "n260",
-      "marker": false,
-      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
-      "tpl": true
-    },
-    {
-      "id": "n263",
-      "label": "学术搜索引擎",
-      "category": "softskill",
-      "stage": "y1",
-      "parent": "n260",
+      "parent": "n262",
       "marker": false,
       "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
       "tpl": true
     },
     {
       "id": "n264",
+      "label": "Stack Overflow/Official Docs",
+      "category": "softskill",
+      "stage": "y1",
+      "parent": "n262",
+      "marker": false,
+      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
+      "tpl": true
+    },
+    {
+      "id": "n265",
+      "label": "学术搜索引擎",
+      "category": "softskill",
+      "stage": "y1",
+      "parent": "n262",
+      "marker": false,
+      "description": "软技能 · 大一阶段 · 属于「信息检索能力」。。",
+      "tpl": true
+    },
+    {
+      "id": "n266",
       "label": "英语听说读写进阶",
       "category": "softskill",
       "stage": "y2",
@@ -2737,7 +2757,7 @@
       "tpl": false
     },
     {
-      "id": "n265",
+      "id": "n267",
       "label": "演讲与技术汇报",
       "category": "softskill",
       "stage": "y2",
@@ -2747,27 +2767,27 @@
       "tpl": false
     },
     {
-      "id": "n266",
+      "id": "n268",
       "label": "PPT设计与表达",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n265",
+      "parent": "n267",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。。",
       "tpl": true
     },
     {
-      "id": "n267",
+      "id": "n269",
       "label": "技术分享技巧",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n265",
+      "parent": "n267",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「演讲与技术汇报」。。",
       "tpl": true
     },
     {
-      "id": "n268",
+      "id": "n270",
       "label": "团队协作",
       "category": "softskill",
       "stage": "y2",
@@ -2776,37 +2796,37 @@
       "description": "软技能 · 大二阶段。包含 3 项内容：Git工作流(Feature Branch)、Code Review文化、Scrum敏捷协作。"
     },
     {
-      "id": "n269",
+      "id": "n271",
       "label": "Git工作流(Feature Branch)",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n268",
-      "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
-      "tpl": true
-    },
-    {
-      "id": "n270",
-      "label": "Code Review文化",
-      "category": "softskill",
-      "stage": "y2",
-      "parent": "n268",
-      "marker": false,
-      "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
-      "tpl": true
-    },
-    {
-      "id": "n271",
-      "label": "Scrum敏捷协作",
-      "category": "softskill",
-      "stage": "y2",
-      "parent": "n268",
+      "parent": "n270",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
       "tpl": true
     },
     {
       "id": "n272",
+      "label": "Code Review文化",
+      "category": "softskill",
+      "stage": "y2",
+      "parent": "n270",
+      "marker": false,
+      "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
+      "tpl": true
+    },
+    {
+      "id": "n273",
+      "label": "Scrum敏捷协作",
+      "category": "softskill",
+      "stage": "y2",
+      "parent": "n270",
+      "marker": false,
+      "description": "软技能 · 大二阶段 · 属于「团队协作」。。",
+      "tpl": true
+    },
+    {
+      "id": "n274",
       "label": "技术写作",
       "category": "softskill",
       "stage": "y2",
@@ -2816,27 +2836,27 @@
       "tpl": false
     },
     {
-      "id": "n273",
+      "id": "n275",
       "label": "博客/技术文章",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n272",
+      "parent": "n274",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「技术写作」。。",
       "tpl": true
     },
     {
-      "id": "n274",
+      "id": "n276",
       "label": "API文档撰写",
       "category": "softskill",
       "stage": "y2",
-      "parent": "n272",
+      "parent": "n274",
       "marker": false,
       "description": "软技能 · 大二阶段 · 属于「技术写作」。。",
       "tpl": true
     },
     {
-      "id": "n275",
+      "id": "n277",
       "label": "简历撰写",
       "category": "softskill",
       "stage": "y4",
@@ -2846,7 +2866,7 @@
       "tpl": false
     },
     {
-      "id": "n276",
+      "id": "n278",
       "label": "面试技巧",
       "category": "softskill",
       "stage": "y4",
@@ -2856,7 +2876,7 @@
       "tpl": false
     },
     {
-      "id": "n277",
+      "id": "n279",
       "label": "职业规划(短期vs长期)",
       "category": "softskill",
       "stage": "y4",
@@ -2866,7 +2886,7 @@
       "tpl": false
     },
     {
-      "id": "n278",
+      "id": "n280",
       "label": "心理调适与抗压",
       "category": "softskill",
       "stage": "y4",
@@ -2876,37 +2896,37 @@
       "tpl": false
     },
     {
-      "id": "n279",
+      "id": "n281",
       "label": "焦虑管理",
       "category": "softskill",
       "stage": "y4",
-      "parent": "n278",
-      "marker": false,
-      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
-      "tpl": true
-    },
-    {
-      "id": "n280",
-      "label": "成长型思维",
-      "category": "softskill",
-      "stage": "y4",
-      "parent": "n278",
-      "marker": false,
-      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
-      "tpl": true
-    },
-    {
-      "id": "n281",
-      "label": "工作生活平衡",
-      "category": "softskill",
-      "stage": "y4",
-      "parent": "n278",
+      "parent": "n280",
       "marker": false,
       "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
       "tpl": true
     },
     {
       "id": "n282",
+      "label": "成长型思维",
+      "category": "softskill",
+      "stage": "y4",
+      "parent": "n280",
+      "marker": false,
+      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
+      "tpl": true
+    },
+    {
+      "id": "n283",
+      "label": "工作生活平衡",
+      "category": "softskill",
+      "stage": "y4",
+      "parent": "n280",
+      "marker": false,
+      "description": "软技能 · 大四阶段 · 属于「心理调适与抗压」。。",
+      "tpl": true
+    },
+    {
+      "id": "n284",
       "label": "职场沟通",
       "category": "softskill",
       "stage": "post",
@@ -2916,37 +2936,37 @@
       "tpl": false
     },
     {
-      "id": "n283",
+      "id": "n285",
       "label": "向上汇报",
       "category": "softskill",
       "stage": "post",
-      "parent": "n282",
-      "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
-      "tpl": true
-    },
-    {
-      "id": "n284",
-      "label": "跨团队协作",
-      "category": "softskill",
-      "stage": "post",
-      "parent": "n282",
-      "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
-      "tpl": true
-    },
-    {
-      "id": "n285",
-      "label": "冲突处理",
-      "category": "softskill",
-      "stage": "post",
-      "parent": "n282",
+      "parent": "n284",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
       "tpl": true
     },
     {
       "id": "n286",
+      "label": "跨团队协作",
+      "category": "softskill",
+      "stage": "post",
+      "parent": "n284",
+      "marker": false,
+      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
+      "tpl": true
+    },
+    {
+      "id": "n287",
+      "label": "冲突处理",
+      "category": "softskill",
+      "stage": "post",
+      "parent": "n284",
+      "marker": false,
+      "description": "软技能 · 毕业后阶段 · 属于「职场沟通」。。",
+      "tpl": true
+    },
+    {
+      "id": "n288",
       "label": "领导力培养",
       "category": "softskill",
       "stage": "post",
@@ -2956,7 +2976,7 @@
       "tpl": false
     },
     {
-      "id": "n287",
+      "id": "n289",
       "label": "个人品牌建设",
       "category": "softskill",
       "stage": "post",
@@ -2965,37 +2985,37 @@
       "description": "软技能 · 毕业后阶段。包含 3 项内容：GitHub活跃度、技术社区影响力、自媒体运营。"
     },
     {
-      "id": "n288",
+      "id": "n290",
       "label": "GitHub活跃度",
       "category": "softskill",
       "stage": "post",
-      "parent": "n287",
-      "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
-      "tpl": true
-    },
-    {
-      "id": "n289",
-      "label": "技术社区影响力",
-      "category": "softskill",
-      "stage": "post",
-      "parent": "n287",
-      "marker": false,
-      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
-      "tpl": true
-    },
-    {
-      "id": "n290",
-      "label": "自媒体运营",
-      "category": "softskill",
-      "stage": "post",
-      "parent": "n287",
+      "parent": "n289",
       "marker": false,
       "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
       "tpl": true
     },
     {
       "id": "n291",
+      "label": "技术社区影响力",
+      "category": "softskill",
+      "stage": "post",
+      "parent": "n289",
+      "marker": false,
+      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
+      "tpl": true
+    },
+    {
+      "id": "n292",
+      "label": "自媒体运营",
+      "category": "softskill",
+      "stage": "post",
+      "parent": "n289",
+      "marker": false,
+      "description": "软技能 · 毕业后阶段 · 属于「个人品牌建设」。。",
+      "tpl": true
+    },
+    {
+      "id": "n293",
       "label": "技术方向全景认知",
       "category": "industry",
       "stage": "y2",
@@ -3005,27 +3025,27 @@
       "tpl": false
     },
     {
-      "id": "n292",
+      "id": "n294",
       "label": "后端/前端/AI/客户端/测试/数据/游戏开发",
       "category": "industry",
       "stage": "y2",
-      "parent": "n291",
+      "parent": "n293",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。。",
       "tpl": true
     },
     {
-      "id": "n293",
+      "id": "n295",
       "label": "技术趋势判断",
       "category": "industry",
       "stage": "y2",
-      "parent": "n291",
+      "parent": "n293",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「技术方向全景认知」。。",
       "tpl": true
     },
     {
-      "id": "n294",
+      "id": "n296",
       "label": "互联网行业格局",
       "category": "industry",
       "stage": "y2",
@@ -3034,37 +3054,37 @@
       "description": "行业认知 · 大二阶段。包含 3 项内容：BAT字节美团拼多多等、外企微软Google亚马逊、独角兽与初创公司。"
     },
     {
-      "id": "n295",
+      "id": "n297",
       "label": "BAT字节美团拼多多等",
       "category": "industry",
       "stage": "y2",
-      "parent": "n294",
-      "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
-      "tpl": true
-    },
-    {
-      "id": "n296",
-      "label": "外企微软Google亚马逊",
-      "category": "industry",
-      "stage": "y2",
-      "parent": "n294",
-      "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
-      "tpl": true
-    },
-    {
-      "id": "n297",
-      "label": "独角兽与初创公司",
-      "category": "industry",
-      "stage": "y2",
-      "parent": "n294",
+      "parent": "n296",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
       "tpl": true
     },
     {
       "id": "n298",
+      "label": "外企微软Google亚马逊",
+      "category": "industry",
+      "stage": "y2",
+      "parent": "n296",
+      "marker": false,
+      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
+      "tpl": true
+    },
+    {
+      "id": "n299",
+      "label": "独角兽与初创公司",
+      "category": "industry",
+      "stage": "y2",
+      "parent": "n296",
+      "marker": false,
+      "description": "行业认知 · 大二阶段 · 属于「互联网行业格局」。。",
+      "tpl": true
+    },
+    {
+      "id": "n300",
       "label": "游戏行业格局",
       "category": "industry",
       "stage": "y2",
@@ -3073,37 +3093,37 @@
       "description": "行业认知 · 大二阶段。包含 3 项内容：腾讯游戏/网易/米哈游、中型厂商(莉莉丝/叠纸/鹰角/完美世界)、游戏引擎(Unity中国/Epic Games)。"
     },
     {
-      "id": "n299",
+      "id": "n301",
       "label": "腾讯游戏/网易/米哈游",
       "category": "industry",
       "stage": "y2",
-      "parent": "n298",
-      "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
-      "tpl": true
-    },
-    {
-      "id": "n300",
-      "label": "中型厂商(莉莉丝/叠纸/鹰角/完美世界)",
-      "category": "industry",
-      "stage": "y2",
-      "parent": "n298",
-      "marker": false,
-      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
-      "tpl": true
-    },
-    {
-      "id": "n301",
-      "label": "游戏引擎(Unity中国/Epic Games)",
-      "category": "industry",
-      "stage": "y2",
-      "parent": "n298",
+      "parent": "n300",
       "marker": false,
       "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
       "tpl": true
     },
     {
       "id": "n302",
+      "label": "中型厂商(莉莉丝/叠纸/鹰角/完美世界)",
+      "category": "industry",
+      "stage": "y2",
+      "parent": "n300",
+      "marker": false,
+      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
+      "tpl": true
+    },
+    {
+      "id": "n303",
+      "label": "游戏引擎(Unity中国/Epic Games)",
+      "category": "industry",
+      "stage": "y2",
+      "parent": "n300",
+      "marker": false,
+      "description": "行业认知 · 大二阶段 · 属于「游戏行业格局」。。",
+      "tpl": true
+    },
+    {
+      "id": "n304",
       "label": "金融科技与量化",
       "category": "industry",
       "stage": "y4",
@@ -3113,7 +3133,17 @@
       "tpl": false
     },
     {
-      "id": "n303",
+      "id": "n305",
+      "label": "AI对程序员就业的影响",
+      "category": "industry",
+      "stage": "y2",
+      "parent": null,
+      "marker": false,
+      "description": "判断：AI 正在重构初级岗位——重复性编码需求减少，但\"会用 AI 把事做成\"正变成基本功，AI 应用开发类岗位在增长。对学生的含义：基础（数据结构/网络/系统）反而更重要了，AI 时代稀缺的是能判断代码对错、能拆任务的人；不会用 AI 的应届生会被会用 AI 的竞争者挤掉。别被\"AI 取代程序员\"的焦虑带着走，应对比替代的路径清晰：把 AI 当工具、把基础打牢。",
+      "tpl": false
+    },
+    {
+      "id": "n306",
       "label": "大厂vs中厂vs创业公司",
       "category": "industry",
       "stage": "y4",
@@ -3123,7 +3153,7 @@
       "tpl": false
     },
     {
-      "id": "n304",
+      "id": "n307",
       "label": "外企vs国内企业",
       "category": "industry",
       "stage": "y4",
@@ -3133,7 +3163,7 @@
       "tpl": false
     },
     {
-      "id": "n305",
+      "id": "n308",
       "label": "国企/银行/选调生",
       "category": "industry",
       "stage": "y4",
@@ -3143,7 +3173,7 @@
       "tpl": false
     },
     {
-      "id": "n306",
+      "id": "n309",
       "label": "城市选择分析",
       "category": "industry",
       "stage": "y4",
@@ -3152,37 +3182,37 @@
       "description": "行业认知 · 大四阶段。包含 3 项内容：北京/上海/深圳/杭州、成都/武汉/南京/广州、户口政策与生活成本。"
     },
     {
-      "id": "n307",
+      "id": "n310",
       "label": "北京/上海/深圳/杭州",
       "category": "industry",
       "stage": "y4",
-      "parent": "n306",
+      "parent": "n309",
       "marker": false,
       "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。",
       "tpl": true
     },
     {
-      "id": "n308",
+      "id": "n311",
       "label": "成都/武汉/南京/广州",
       "category": "industry",
       "stage": "y4",
-      "parent": "n306",
+      "parent": "n309",
       "marker": false,
       "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。",
       "tpl": true
     },
     {
-      "id": "n309",
+      "id": "n312",
       "label": "户口政策与生活成本",
       "category": "industry",
       "stage": "y4",
-      "parent": "n306",
+      "parent": "n309",
       "marker": false,
       "description": "行业认知 · 大四阶段 · 属于「城市选择分析」。。",
       "tpl": true
     },
     {
-      "id": "n310",
+      "id": "n313",
       "label": "IC技术路线vs技术管理",
       "category": "industry",
       "stage": "m1",
@@ -3192,7 +3222,7 @@
       "tpl": false
     },
     {
-      "id": "n311",
+      "id": "n314",
       "label": "远程办公与数字游民",
       "category": "industry",
       "stage": "m1",
@@ -3202,7 +3232,7 @@
       "tpl": false
     },
     {
-      "id": "n312",
+      "id": "n315",
       "label": "独立开发者与创业",
       "category": "industry",
       "stage": "m1",
@@ -3212,7 +3242,7 @@
       "tpl": false
     },
     {
-      "id": "n313",
+      "id": "n316",
       "label": "技术咨询/Tech Lead",
       "category": "industry",
       "stage": "post",
@@ -3222,7 +3252,7 @@
       "tpl": false
     },
     {
-      "id": "n314",
+      "id": "n317",
       "label": "技术社区KOL/自媒体",
       "category": "industry",
       "stage": "post",
@@ -3232,7 +3262,7 @@
       "tpl": false
     },
     {
-      "id": "n315",
+      "id": "n318",
       "label": "论文开题与中期考核",
       "category": "education",
       "stage": "m2",
@@ -3242,7 +3272,7 @@
       "tpl": false
     },
     {
-      "id": "n316",
+      "id": "n319",
       "label": "硕士实习与科研的取舍",
       "category": "career",
       "stage": "m2",
@@ -3252,7 +3282,7 @@
       "tpl": false
     },
     {
-      "id": "n317",
+      "id": "n320",
       "label": "秋招备战启动(研究生)",
       "category": "career",
       "stage": "m2",
@@ -3262,7 +3292,7 @@
       "tpl": false
     },
     {
-      "id": "n318",
+      "id": "n321",
       "label": "计科和软工有什么区别？",
       "category": "faq",
       "stage": "y1",
@@ -3272,7 +3302,27 @@
       "tpl": false
     },
     {
-      "id": "n319",
+      "id": "n322",
+      "label": "用AI学编程会不会废掉基础？",
+      "category": "faq",
+      "stage": "y1",
+      "parent": null,
+      "marker": false,
+      "description": "会，如果直接拿来抄作业的话。正确用法：把 AI 当随时在线的助教——让它解释报错、出练习题、审查你的代码；核心代码自己动手写。自测标准：不用 AI 能独立写出课设核心代码吗？不能就是依赖过头了。",
+      "tpl": false
+    },
+    {
+      "id": "n323",
+      "label": "家长能帮什么？别做什么？",
+      "category": "faq",
+      "stage": "y1",
+      "parent": null,
+      "marker": false,
+      "description": "能帮的：把经济预算提前算清楚（学费/生活费/考研报班/留学，各环节开销差异大，别临时抓瞎）；帮孩子收集政策信息（保研/选调/落户等要求家长查起来更有时间）；孩子压力大时当情绪出口，不评判。别做的：别拿\"别人家孩子\"比较；别替孩子决定考研/考公/就业（信息变化快，孩子的判断未必错）；别给\"学技术没用不如考公\"这类拍脑袋建议。",
+      "tpl": false
+    },
+    {
+      "id": "n324",
       "label": "转专业学计算机来得及吗？",
       "category": "faq",
       "stage": "y1",
@@ -3282,7 +3332,7 @@
       "tpl": false
     },
     {
-      "id": "n320",
+      "id": "n325",
       "label": "要不要大一就买电脑？",
       "category": "faq",
       "stage": "y1",
@@ -3292,7 +3342,7 @@
       "tpl": false
     },
     {
-      "id": "n321",
+      "id": "n326",
       "label": "数学不好能学计算机吗？",
       "category": "faq",
       "stage": "y1",
@@ -3302,7 +3352,7 @@
       "tpl": false
     },
     {
-      "id": "n322",
+      "id": "n327",
       "label": "双非院校有出路吗？",
       "category": "faq",
       "stage": "y1",
@@ -3312,7 +3362,7 @@
       "tpl": false
     },
     {
-      "id": "n323",
+      "id": "n328",
       "label": "GPA重要还是项目重要？",
       "category": "faq",
       "stage": "y2",
@@ -3322,7 +3372,7 @@
       "tpl": false
     },
     {
-      "id": "n324",
+      "id": "n329",
       "label": "ACM要不要打？",
       "category": "faq",
       "stage": "y2",
@@ -3332,7 +3382,7 @@
       "tpl": false
     },
     {
-      "id": "n325",
+      "id": "n330",
       "label": "LeetCode刷多少够面试？",
       "category": "faq",
       "stage": "y2",
@@ -3342,7 +3392,7 @@
       "tpl": false
     },
     {
-      "id": "n326",
+      "id": "n331",
       "label": "Java和C++选哪个？",
       "category": "faq",
       "stage": "y2",
@@ -3352,7 +3402,7 @@
       "tpl": false
     },
     {
-      "id": "n327",
+      "id": "n332",
       "label": "要不要参与开源？",
       "category": "faq",
       "stage": "y2",
@@ -3362,7 +3412,7 @@
       "tpl": false
     },
     {
-      "id": "n328",
+      "id": "n333",
       "label": "考研还是就业？",
       "category": "faq",
       "stage": "y3",
@@ -3372,7 +3422,7 @@
       "tpl": false
     },
     {
-      "id": "n329",
+      "id": "n334",
       "label": "学前端还是后端？",
       "category": "faq",
       "stage": "y3",
@@ -3382,7 +3432,7 @@
       "tpl": false
     },
     {
-      "id": "n330",
+      "id": "n335",
       "label": "没有实习怎么办？",
       "category": "faq",
       "stage": "y3",
@@ -3392,7 +3442,7 @@
       "tpl": false
     },
     {
-      "id": "n331",
+      "id": "n336",
       "label": "要不要报培训班？",
       "category": "faq",
       "stage": "y3",
@@ -3402,7 +3452,7 @@
       "tpl": false
     },
     {
-      "id": "n332",
+      "id": "n337",
       "label": "暑期实习找不到怎么办？",
       "category": "faq",
       "stage": "y3",
@@ -3412,7 +3462,27 @@
       "tpl": false
     },
     {
-      "id": "n333",
+      "id": "n338",
+      "label": "付费内推/实习收费靠谱吗？",
+      "category": "faq",
+      "stage": "y3",
+      "parent": null,
+      "marker": true,
+      "description": "不靠谱。正规公司招聘（包括实习）不向求职者收费，收钱的全是中介割韭菜：付费内推、付费实习、付费入职培训，从几百到几万不等，甚至诱导求职贷。正规渠道：公司官网/牛客/学校就业中心/学长内推（都免费）。\"保 offer\"\"内定名额\"是骗局特征，遇到直接拉黑。",
+      "tpl": false
+    },
+    {
+      "id": "n339",
+      "label": "考研保过班/高价辅导班值得买吗？",
+      "category": "faq",
+      "stage": "y3",
+      "parent": null,
+      "marker": false,
+      "description": "不值得为\"保过/押题\"买单——考研没有保过，宣传保过的都是概率生意（收你一万，考不上退八千，赌的就是大多数人考不上）。免费/低价资源（B站完整课程、真题、上岸学长笔记）覆盖九成需求，报班买的是陪伴和监督，不是分数。决定前先问：往届上岸的同学里，报班的和不报班的分数差异在哪？",
+      "tpl": false
+    },
+    {
+      "id": "n340",
       "label": "考研失败怎么办？",
       "category": "faq",
       "stage": "y4",
@@ -3422,7 +3492,17 @@
       "tpl": false
     },
     {
-      "id": "n334",
+      "id": "n341",
+      "label": "offer签约要注意什么？",
+      "category": "faq",
+      "stage": "y4",
+      "parent": null,
+      "marker": false,
+      "description": "口头 offer 不算数，以书面 offer 和劳动合同为准。签约前问清：薪资构成（base/绩效/年终比例）、五险一金基数、试用期时长与工资、违约金条款（应届三方普遍有毁约金，签前想清楚）、工作地点与加班制度。手里 offer 都留着，别急着签三方断了后续更好的机会。",
+      "tpl": false
+    },
+    {
+      "id": "n342",
       "label": "保研边缘人怎么办？",
       "category": "faq",
       "stage": "y4",
@@ -3432,7 +3512,7 @@
       "tpl": false
     },
     {
-      "id": "n335",
+      "id": "n343",
       "label": "大厂SP/SSP怎么拿？",
       "category": "faq",
       "stage": "y4",
@@ -3442,7 +3522,7 @@
       "tpl": false
     },
     {
-      "id": "n336",
+      "id": "n344",
       "label": "毕业设计做什么好？",
       "category": "faq",
       "stage": "y4",
@@ -3452,7 +3532,7 @@
       "tpl": false
     },
     {
-      "id": "n337",
+      "id": "n345",
       "label": "选导师要注意什么？",
       "category": "faq",
       "stage": "m1",
@@ -3462,7 +3542,17 @@
       "tpl": false
     },
     {
-      "id": "n338",
+      "id": "n346",
+      "label": "导师压榨/不放实习怎么办？",
+      "category": "faq",
+      "stage": "m1",
+      "parent": null,
+      "marker": false,
+      "description": "先区分\"要求严\"和\"压榨\"（不合理的重复劳动、人身攻击、拿毕业威胁）。第一步是沟通：带着方案和导师谈，多数情况能谈拢；谈不拢依次找学院研究生辅导员、分管副院长，再往上学校研究生院有申诉渠道。硬刚或忍到底都不可取；沟通留记录，不发实名小作文。",
+      "tpl": false
+    },
+    {
+      "id": "n347",
       "label": "硕士学硕还是专硕？",
       "category": "faq",
       "stage": "m1",
@@ -3472,7 +3562,7 @@
       "tpl": false
     },
     {
-      "id": "n339",
+      "id": "n348",
       "label": "要不要读博？",
       "category": "faq",
       "stage": "m1",
@@ -3482,7 +3572,7 @@
       "tpl": false
     },
     {
-      "id": "n340",
+      "id": "n349",
       "label": "小论文发不出来怎么办？",
       "category": "faq",
       "stage": "m2",
@@ -3492,7 +3582,7 @@
       "tpl": false
     },
     {
-      "id": "n341",
+      "id": "n350",
       "label": "科研和就业两手抓不过来怎么办？",
       "category": "faq",
       "stage": "m2",
@@ -3502,7 +3592,7 @@
       "tpl": false
     },
     {
-      "id": "n342",
+      "id": "n351",
       "label": "盲审不过怎么办？",
       "category": "faq",
       "stage": "m3",
@@ -3512,7 +3602,7 @@
       "tpl": false
     },
     {
-      "id": "n343",
+      "id": "n352",
       "label": "AI/机器学习路线",
       "category": "industry",
       "stage": "y2",
@@ -3522,7 +3612,7 @@
       "tpl": false
     },
     {
-      "id": "n344",
+      "id": "n353",
       "label": "后端/架构路线",
       "category": "industry",
       "stage": "y2",
@@ -3532,7 +3622,7 @@
       "tpl": false
     },
     {
-      "id": "n345",
+      "id": "n354",
       "label": "前端/全栈路线",
       "category": "industry",
       "stage": "y2",
@@ -3542,7 +3632,7 @@
       "tpl": false
     },
     {
-      "id": "n346",
+      "id": "n355",
       "label": "竞赛/保研路线",
       "category": "industry",
       "stage": "y2",
@@ -3552,7 +3642,7 @@
       "tpl": false
     },
     {
-      "id": "n347",
+      "id": "n356",
       "label": "考研/学术路线",
       "category": "industry",
       "stage": "y2",
@@ -3562,7 +3652,7 @@
       "tpl": false
     },
     {
-      "id": "n348",
+      "id": "n357",
       "label": "系统/底层路线",
       "category": "industry",
       "stage": "y2",
@@ -3653,13 +3743,13 @@
     },
     {
       "source": "n35",
-      "target": "n83",
+      "target": "n84",
       "type": "application",
       "label": "应用"
     },
     {
-      "source": "n87",
-      "target": "n90",
+      "source": "n88",
+      "target": "n91",
       "type": "application",
       "label": "应用"
     },
@@ -3670,92 +3760,80 @@
       "label": "应用"
     },
     {
-      "source": "n83",
-      "target": "n84",
+      "source": "n84",
+      "target": "n85",
       "type": "application",
       "label": "应用"
     },
     {
-      "source": "n90",
-      "target": "n92",
-      "type": "application",
-      "label": "应用"
-    },
-    {
-      "source": "n90",
+      "source": "n91",
       "target": "n93",
       "type": "application",
       "label": "应用"
     },
     {
-      "source": "n43",
-      "target": "n89",
+      "source": "n91",
+      "target": "n94",
       "type": "application",
       "label": "应用"
     },
     {
       "source": "n43",
-      "target": "n102",
+      "target": "n90",
+      "type": "application",
+      "label": "应用"
+    },
+    {
+      "source": "n43",
+      "target": "n103",
       "type": "application",
       "label": "应用"
     },
     {
       "source": "n77",
-      "target": "n120",
+      "target": "n121",
       "type": "application",
       "label": "应用"
     },
     {
-      "source": "n115",
-      "target": "n116",
+      "source": "n116",
+      "target": "n117",
       "type": "advance",
       "label": "进阶"
     },
     {
-      "source": "n79",
-      "target": "n108",
+      "source": "n80",
+      "target": "n109",
       "type": "related",
       "label": "相关"
     },
     {
-      "source": "n111",
-      "target": "n108",
+      "source": "n112",
+      "target": "n109",
       "type": "related",
       "label": "相关"
     },
     {
       "source": "n25",
-      "target": "n79",
+      "target": "n80",
       "type": "advance",
       "label": "进阶"
     },
     {
-      "source": "n157",
-      "target": "n162",
+      "source": "n159",
+      "target": "n164",
       "type": "flow",
       "label": "准备"
     },
     {
-      "source": "n162",
-      "target": "n166",
+      "source": "n164",
+      "target": "n168",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n166",
-      "target": "n170",
-      "type": "flow",
-      "label": "流程"
-    },
-    {
-      "source": "n169",
-      "target": "n170",
-      "type": "flow",
-      "label": "流程"
-    },
-    {
-      "source": "n170",
-      "target": "n171",
+      "source": "n168",
+      "target": "n172",
       "type": "flow",
       "label": "流程"
     },
@@ -3773,97 +3851,109 @@
     },
     {
       "source": "n173",
-      "target": "n179",
+      "target": "n174",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n192",
-      "target": "n195",
+      "source": "n174",
+      "target": "n175",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n195",
-      "target": "n196",
+      "source": "n175",
+      "target": "n181",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n196",
-      "target": "n199",
+      "source": "n194",
+      "target": "n197",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n196",
-      "target": "n200",
+      "source": "n197",
+      "target": "n198",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n200",
-      "target": "n199",
-      "type": "flow",
-      "label": "流程"
-    },
-    {
-      "source": "n199",
+      "source": "n198",
       "target": "n201",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n201",
+      "source": "n198",
       "target": "n202",
       "type": "flow",
       "label": "流程"
     },
     {
       "source": "n202",
+      "target": "n201",
+      "type": "flow",
+      "label": "流程"
+    },
+    {
+      "source": "n201",
       "target": "n203",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n194",
+      "source": "n203",
       "target": "n204",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n315",
-      "target": "n224",
+      "source": "n204",
+      "target": "n205",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n224",
+      "source": "n196",
+      "target": "n206",
+      "type": "flow",
+      "label": "流程"
+    },
+    {
+      "source": "n318",
+      "target": "n226",
+      "type": "flow",
+      "label": "流程"
+    },
+    {
+      "source": "n226",
+      "target": "n227",
+      "type": "flow",
+      "label": "流程"
+    },
+    {
+      "source": "n319",
       "target": "n225",
       "type": "flow",
       "label": "流程"
     },
     {
-      "source": "n316",
-      "target": "n223",
-      "type": "flow",
-      "label": "流程"
-    },
-    {
-      "source": "n317",
-      "target": "n223",
-      "type": "flow",
-      "label": "流程"
-    },
-    {
-      "source": "n223",
-      "target": "n179",
+      "source": "n320",
+      "target": "n225",
       "type": "flow",
       "label": "流程"
     },
     {
       "source": "n225",
-      "target": "n179",
+      "target": "n181",
+      "type": "flow",
+      "label": "流程"
+    },
+    {
+      "source": "n227",
+      "target": "n181",
       "type": "flow",
       "label": "流程"
     },
@@ -3881,27 +3971,15 @@
     },
     {
       "source": "n60",
-      "target": "n88",
+      "target": "n89",
       "type": "tool",
       "label": "工具"
     },
     {
-      "source": "n88",
-      "target": "n236",
+      "source": "n89",
+      "target": "n238",
       "type": "tool",
       "label": "工具"
-    },
-    {
-      "source": "n226",
-      "target": "n227",
-      "type": "advance",
-      "label": "进阶"
-    },
-    {
-      "source": "n227",
-      "target": "n228",
-      "type": "advance",
-      "label": "进阶"
     },
     {
       "source": "n228",
@@ -3911,82 +3989,113 @@
     },
     {
       "source": "n229",
-      "target": "n232",
+      "target": "n230",
       "type": "advance",
       "label": "进阶"
     },
     {
-      "source": "n232",
-      "target": "n240",
+      "source": "n230",
+      "target": "n231",
       "type": "advance",
       "label": "进阶"
     },
     {
-      "source": "n240",
-      "target": "n236",
+      "source": "n231",
+      "target": "n234",
       "type": "advance",
       "label": "进阶"
     },
     {
-      "source": "n291",
-      "target": "n344",
+      "source": "n234",
+      "target": "n242",
+      "type": "advance",
+      "label": "进阶"
+    },
+    {
+      "source": "n242",
+      "target": "n238",
+      "type": "advance",
+      "label": "进阶"
+    },
+    {
+      "source": "n293",
+      "target": "n353",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n291",
-      "target": "n345",
+      "source": "n293",
+      "target": "n354",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n291",
-      "target": "n343",
+      "source": "n293",
+      "target": "n352",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n291",
-      "target": "n346",
+      "source": "n293",
+      "target": "n355",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n291",
-      "target": "n347",
+      "source": "n293",
+      "target": "n356",
       "type": "related",
       "label": "路径"
     },
     {
-      "source": "n291",
-      "target": "n348",
+      "source": "n293",
+      "target": "n357",
       "type": "related",
       "label": "路径"
+    },
+    {
+      "source": "n293",
+      "target": "n305",
+      "type": "related",
+      "label": "相关"
+    },
+    {
+      "source": "n127",
+      "target": "n352",
+      "type": "related",
+      "label": "路径"
+    },
+    {
+      "source": "n121",
+      "target": "n127",
+      "type": "advance",
+      "label": "进阶"
     }
   ],
   "markerNodes": [
     "n0",
     "n25",
-    "n133",
-    "n157",
-    "n162",
-    "n170",
-    "n183",
-    "n191",
-    "n194",
-    "n223",
-    "n236",
-    "n240",
-    "n317",
-    "n322",
+    "n135",
+    "n159",
+    "n164",
+    "n172",
+    "n185",
+    "n193",
+    "n196",
+    "n225",
+    "n238",
+    "n242",
+    "n320",
     "n327",
-    "n328",
-    "n330",
-    "n331",
+    "n332",
     "n333",
-    "n337",
+    "n335",
+    "n336",
+    "n338",
     "n340",
-    "n341",
-    "n342"
+    "n345",
+    "n349",
+    "n350",
+    "n351"
   ]
 }
