@@ -173,6 +173,18 @@ input { font: inherit; }
 .modal-marker { background: #fdf6ee; border: 1px solid #f0e2d0; border-radius: 8px; padding: 8px 12px; font-size: 12px; color: #8a6a3a; margin-bottom: 12px; }
 .modal-star { display: block; margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: linear-gradient(135deg, #ffb64d, #ff8f3c); color: #fff; font-size: 13px; font-weight: 600; text-align: center; text-decoration: none; box-shadow: 0 2px 8px rgba(255,143,60,.3); }
 .modal-star:active { transform: scale(.98); }
+.home-footer { margin-top: 18px; text-align: center; font-size: 11px; color: var(--text3); line-height: 1.8; }
+
+/* ===== HERO PLAN CARD ===== */
+.plan-card { position: relative; display: flex; align-items: center; gap: 12px; margin: 2px 0 10px; padding: 16px; border-radius: 14px; overflow: hidden; cursor: pointer; background: linear-gradient(135deg, #1c2333 0%, #2b3560 55%, #3d2e63 100%); box-shadow: 0 6px 18px rgba(30,40,80,.25); }
+.plan-card::after { content:''; position: absolute; right: -28px; top: -28px; width: 110px; height: 110px; border-radius: 50%; background: radial-gradient(circle, rgba(255,170,70,.28), transparent 70%); pointer-events: none; }
+.plan-card:active { transform: scale(.985); }
+.plan-emoji { font-size: 34px; flex-shrink: 0; filter: drop-shadow(0 2px 6px rgba(0,0,0,.3)); }
+.plan-body { flex: 1; min-width: 0; }
+.plan-tag { display: inline-block; font-size: 10px; color: #ffd9a0; background: rgba(255,170,70,.15); border: 1px solid rgba(255,170,70,.4); border-radius: 10px; padding: 1px 8px; margin-bottom: 5px; }
+.plan-title { font-size: 16px; font-weight: 700; color: #fff; line-height: 1.3; }
+.plan-sub { font-size: 11.5px; color: rgba(255,255,255,.72); margin-top: 3px; line-height: 1.5; }
+.plan-cta { display: inline-block; margin-top: 7px; font-size: 12px; font-weight: 600; color: #1c2333; background: linear-gradient(135deg, #ffb64d, #ff8f3c); border-radius: 14px; padding: 4px 12px; }
 
 /* ===== BOTTOM NAV ===== */
 .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: var(--card); border-top: 1px solid var(--border); display: flex; z-index: 50; padding-bottom: env(safe-area-inset-bottom); }
@@ -223,6 +235,8 @@ input { font: inherit; }
         <div class="quick-section-title">🔥 热门必看</div>
         <div class="hot-list" id="hotList"></div>
       </div>
+
+      <div class="home-footer" id="homeFooter"></div>
     </div>
   </div>
 
@@ -416,6 +430,10 @@ function renderHome() {
       <span class="tag">${x.tag}</span>
     </button>
   `).join('');
+
+  // Footer: data version
+  document.getElementById('homeFooter').innerHTML =
+    `${DATA.nodes.length} 个知识点 · 更新于 ${DATA.meta.updated} · 内容仅供参考，具体政策以官方公告为准`;
 }
 
 function stageEmoji(code) {
@@ -449,6 +467,10 @@ function renderStageContent() {
   // Traps for this stage (if any)
   const traps = TRAPS[stage] || [];
 
+  // Hero nodes（专属大卡，双非模式下也展示，不进课程列表）
+  const heroNodes = DATA.nodes.filter(n => n.hero && n.stage === stage);
+  nodes = nodes.filter(n => !n.hero);
+
   // 双非 mode: only show marker nodes
   if (state.shuangfeiMode) {
     nodes = nodes.filter(n => n.marker);
@@ -463,6 +485,21 @@ function renderStageContent() {
     <div class="stage-section-header"><span class="icon">🎯</span><span class="stitle">${state.shuangfeiMode ? sname+'·双非专属' : sname+'的核心任务'}</span></div>
     <div class="mission-card"><div class="mtext">${state.shuangfeiMode ? '双非学生重点关注以下📌标记内容，这些是竞争差异点：' : getMission(stage)}</div></div>
   </div>`;
+
+  // Hero cards（引流位，如新生助跑计划）
+  if (heroNodes.length) {
+    html += heroNodes.map(n => `
+      <div class="plan-card" data-node="${n.id}">
+        <div class="plan-emoji">🚀</div>
+        <div class="plan-body">
+          <div class="plan-tag">免费 · 面向零基础新生</div>
+          <div class="plan-title">${n.label}</div>
+          <div class="plan-sub">不教一门语言的全部，用 21 步带你亲手写出第一个程序</div>
+          <div class="plan-cta">查看计划详情 ›</div>
+        </div>
+      </div>
+    `).join('');
+  }
 
   // Traps
   if (traps.length) {
@@ -754,6 +791,8 @@ function bindEvents() {
 
   // Stage: course chips → modal
   document.getElementById('stageContent').addEventListener('click', e => {
+    const plan = e.target.closest('.plan-card');
+    if (plan && plan.dataset.node) { showNodeDetail(plan.dataset.node); return; }
     const chip = e.target.closest('.course-chip');
     if (chip && chip.dataset.node) { showNodeDetail(chip.dataset.node); return; }
     const faq = e.target.closest('.stage-faq-item');
