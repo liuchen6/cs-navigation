@@ -278,12 +278,13 @@ const CAT = {
   project:{l:'项目实战',c:'#d4a832',e:'🛠️'}, softskill:{l:'软技能',c:'#c8922a',e:'🧠'},
   industry:{l:'行业认知',c:'#7a5ccf',e:'🔭'}, faq:{l:'常见问题',c:'#c95a8a',e:'❓'},
 };
-const STAGE = { pre:'大学前', y1:'大一', y2:'大二', y3:'大三', y4:'大四', m1:'研一', m2:'研二', m3:'研三', post:'毕业后' };
-const STAGES = ['pre','y1','y2','y3','y4','m1','m2','m3','post'];
+const STAGE = { pre:'大学前', y1:'大一', y2:'大二', y3:'大三', y4:'大四', r0:'研0', m1:'研一', m2:'研二', m3:'研三', post:'毕业后' };
+const STAGES = ['pre','y1','y2','y3','y4','r0','m1','m2','m3','post'];
 const STAGE_RANGE = { '深度学习进阶':'y2-y3', '自然语言处理':'y3', '计算机视觉':'y2-y3', '计算机组成原理':'y2-y3', '操作系统':'y2-y3', '人工智能导论':'y1-y3', '计算机网络':'y2-y3', '数据库系统原理':'y2-y3', '机器学习基础':'y2-y3', '离散数学':'y1-y2' };
 
-// 知识星球引流：label → 星球链接（无链接节点不渲染按钮；短链由运营提供）
+// 知识星球引流：label → 链接（字符串）或 {url, text}（定制按钮文案）；无链接节点不渲染按钮；短链由运营提供
 const STARLINK = {
+  '新生助跑计划（21步）': { url: 'https://t.zsxq.com/IFdsR', text: '📮 加入星球，提交作业获得反馈' },
   '双非院校有出路吗？':'https://t.zsxq.com/UfeHK',
   '考研还是就业？':'https://t.zsxq.com/UfeHK',
   '没有实习怎么办？':'https://t.zsxq.com/UfeHK',
@@ -317,8 +318,13 @@ const TRAPS = {
     {t:'跟风考研逃避就业',d:'→ 考上也读得很痛苦 → 毕业发现市场又变了'},
   ],
   m1:[
+    {t:'论文全靠导师喂',d:'→ 毕业时没有独立科研能力 → 就业/申博都吃亏'},
     {t:'选了坑导师',d:'→ 放养/压榨/方向不喜欢 → 没有产出 → 毕业困难'},
     {t:'研究生只做项目不思考',d:'→ 简历上是"高级执行者" → 面试没有深度思考可展示'},
+  ],
+  r0:[
+    {t:'拟录取后彻底躺平',d:'→ 开学发现同学已提前进组、基础补完 → 研一起跑就落后'},
+    {t:'被导师口头承诺冲昏头',d:'→ 开学发现组里节奏和承诺完全不符 → 再想换导师成本极高'},
   ],
 };
 
@@ -373,7 +379,7 @@ function renderHome() {
     <button class="stage-grid-btn ${state.stage===s.code?'active':''}" data-stage="${s.code}">
       <span class="emoji">${stageEmoji(s.code)}</span>
       <span class="label">${s.label}</span>
-      <span class="sub">${s.code==='pre'?'入学前':s.code.startsWith('m')?'硕士':'本科'}</span>
+      <span class="sub">${s.code==='pre'?'入学前':(s.code==='r0'||s.code.startsWith('m'))?'硕士':'本科'}</span>
     </button>
   `).join('');
 
@@ -413,7 +419,7 @@ function renderHome() {
 }
 
 function stageEmoji(code) {
-  const m = { pre:'🎯', y1:'📚', y2:'💻', y3:'🚀', y4:'💼', m1:'🎓', m2:'🔬', m3:'🏁', post:'🌟' };
+  const m = { pre:'🎯', y1:'📚', y2:'💻', y3:'🚀', y4:'💼', r0:'🎓', m1:'🎓', m2:'🔬', m3:'🏁', post:'🌟' };
   return m[code]||'📌';
 }
 
@@ -529,6 +535,7 @@ function getMission(stage) {
     y2:'深入学习数据结构与算法、面向对象编程、计算机组成原理等核心课。开始刷LeetCode，探索技术方向（后端/前端/AI），尝试做第一个完整项目。',
     y3:'确定主攻方向。准备暑期实习投递或考研复习。这是最关键的一年——实习经历或考研结果将直接影响毕业去向。',
     y4:'完成毕业设计，全力冲刺秋招/春招或考研复试。如果考研失败，立刻转向校招，不要空窗。',
+    r0:'拟录取后别躺平也别焦虑：先联系导师、争取进组，按导师要求补基础，把开学前的时间用在刀刃上。',
     m1:'适应研究生节奏，选定研究方向，跟导师和实验室建立良好关系。明确自己是就业导向还是学术导向。',
     m2:'积累论文成果或实习经历。如果是就业导向，研二暑假是关键的实习窗口。',
     m3:'完成毕业论文，冲刺大厂校招或申博/留学申请。这是学生生涯的最后一关。',
@@ -673,7 +680,7 @@ function showNodeDetail(nodeId) {
         </div>
       `).join('')}
     </div>` : ''}
-    ${STARLINK[node.label] ? `<a class="modal-star" href="${STARLINK[node.label]}" target="_blank" rel="noopener">📮 想看更多深度内容与真实案例？来知识星球</a>` : ''}
+    ${STARLINK[node.label] ? `<a class="modal-star" href="${typeof STARLINK[node.label] === 'object' ? STARLINK[node.label].url : STARLINK[node.label]}" target="_blank" rel="noopener">${typeof STARLINK[node.label] === 'object' ? STARLINK[node.label].text : '📮 想看更多深度内容与真实案例？来知识星球'}</a>` : ''}
   `;
   document.getElementById('modal').classList.add('show');
 }
@@ -722,7 +729,7 @@ function bindEvents() {
     if (!item) return;
     const target = item.dataset.target;
     if (target === 'routes') { switchTab('tabRoutes'); return; }
-    if (['y1','y2','y3','y4','m1'].includes(target)) {
+    if (['y1','y2','y3','y4','r0','m1'].includes(target)) {
       state.stage = target;
       switchTab('tabStage');
     }
