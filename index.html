@@ -174,6 +174,8 @@ input { font: inherit; }
 .modal-child .mc-label { font-size: 12px; color: var(--text1); font-weight: 500; }
 .modal-child .mc-desc { font-size: 11px; color: var(--text2); margin-top: 2px; line-height: 1.5; }
 .modal-marker { background: #fdf6ee; border: 1px solid #f0e2d0; border-radius: 8px; padding: 8px 12px; font-size: 12px; color: #8a6a3a; margin-bottom: 12px; }
+.modal-star { display: block; margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: linear-gradient(135deg, #ffb64d, #ff8f3c); color: #fff; font-size: 13px; font-weight: 600; text-align: center; text-decoration: none; box-shadow: 0 2px 8px rgba(255,143,60,.3); }
+.modal-star:active { transform: scale(.98); }
 
 /* ===== BOTTOM NAV ===== */
 .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: var(--card); border-top: 1px solid var(--border); display: flex; z-index: 50; padding-bottom: env(safe-area-inset-bottom); }
@@ -288,6 +290,18 @@ const GOALS = {
 const STAGE = { pre:'大学前', y1:'大一', y2:'大二', y3:'大三', y4:'大四', m1:'研一', m2:'研二', m3:'研三', post:'毕业后' };
 const STAGES = ['pre','y1','y2','y3','y4','m1','m2','m3','post'];
 const STAGE_RANGE = { '深度学习进阶':'y2-y3', '自然语言处理':'y3', '计算机视觉':'y2-y3', '计算机组成原理':'y2-y3', '操作系统':'y2-y3', '人工智能导论':'y1-y3', '计算机网络':'y2-y3', '数据库系统原理':'y2-y3', '机器学习基础':'y2-y3', '离散数学':'y1-y2' };
+
+// 知识星球引流：label → 星球链接（无链接节点不渲染按钮；短链由运营提供）
+const STARLINK = {
+  '双非院校有出路吗？':'https://t.zsxq.com/UfeHK',
+  '考研还是就业？':'https://t.zsxq.com/UfeHK',
+  '没有实习怎么办？':'https://t.zsxq.com/UfeHK',
+  '要不要报培训班？':'https://t.zsxq.com/UfeHK',
+  '付费内推/实习收费靠谱吗？':'https://t.zsxq.com/UfeHK',
+  '保研边缘人怎么办？':'https://t.zsxq.com/UfeHK',
+  '大厂SP/SSP怎么拿？':'https://t.zsxq.com/UfeHK',
+  '选导师要注意什么？':'https://t.zsxq.com/UfeHK',
+};
 
 const TRAPS = {
   y1:[
@@ -683,6 +697,7 @@ function showNodeDetail(nodeId) {
         </div>
       `).join('')}
     </div>` : ''}
+    ${STARLINK[node.label] ? `<a class="modal-star" href="${STARLINK[node.label]}" target="_blank" rel="noopener">📮 这个问题的深度拆解，见知识星球</a>` : ''}
   `;
   document.getElementById('modal').classList.add('show');
 }
