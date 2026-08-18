@@ -800,7 +800,11 @@ function bindEvents() {
     if (!item) return;
     const id = item.dataset.id;
     const type = item.dataset.type;
-    if (type === 'node' && id) showNodeDetail(id);
+    if (type === 'node' && id) {
+      const nd = getNode(id);
+      if (nd && nd.tpl) { state.stage = nd.stage; switchTab('tabStage'); return; }
+      showNodeDetail(id);
+    }
     else if (type === 'route') switchTab('tabRoutes');
     else if (type === 'trap') {
       const s = item.dataset.stage;
@@ -810,7 +814,10 @@ function bindEvents() {
 
   // Modal close + child drill-down
   document.getElementById('modal').addEventListener('click', e => {
-    if (e.target === e.currentTarget) document.getElementById('modal').classList.remove('show');
+    if (e.target === e.currentTarget) {
+      document.getElementById('modal').classList.remove('show');
+      document.getElementById('modalBody').innerHTML = '';
+    }
   });
   document.getElementById('modalBody').addEventListener('click', e => {
     const child = e.target.closest('.modal-child');
