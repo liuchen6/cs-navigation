@@ -186,6 +186,21 @@ input { font: inherit; }
 .plan-sub { font-size: 11.5px; color: rgba(255,255,255,.72); margin-top: 3px; line-height: 1.5; }
 .plan-cta { display: inline-block; margin-top: 7px; font-size: 12px; font-weight: 600; color: #1c2333; background: linear-gradient(135deg, #ffb64d, #ff8f3c); border-radius: 14px; padding: 4px 12px; }
 
+/* ===== HERO MODAL (如新生助跑计划) ===== */
+.mh-hero { margin: 0 -16px 0; padding: 18px 16px 16px; background: linear-gradient(135deg, #1c2333 0%, #2b3560 55%, #3d2e63 100%); position: relative; overflow: hidden; }
+.mh-hero::after { content:''; position: absolute; right: -30px; top: -30px; width: 130px; height: 130px; border-radius: 50%; background: radial-gradient(circle, rgba(255,170,70,.28), transparent 70%); }
+.mh-rocket { font-size: 30px; margin-bottom: 6px; filter: drop-shadow(0 2px 6px rgba(0,0,0,.3)); }
+.mh-title { font-size: 17px; font-weight: 700; color: #fff; }
+.mh-sub { font-size: 12px; color: rgba(255,255,255,.75); margin-top: 4px; line-height: 1.6; }
+.mh-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 2px; }
+.mh-tags span { font-size: 10.5px; color: #8a6a3a; background: #fdf3e4; border: 1px solid #f0dfc2; border-radius: 10px; padding: 2px 9px; }
+.mh-block { margin-top: 12px; }
+.mh-h { font-size: 13px; font-weight: 700; color: var(--text1); margin-bottom: 5px; padding-left: 9px; border-left: 3px solid var(--accent); line-height: 1.4; }
+.mh-p { font-size: 12.5px; color: var(--text2); line-height: 1.75; }
+.mh-items { display: flex; flex-direction: column; gap: 5px; }
+.mh-item { font-size: 12.5px; color: var(--text2); line-height: 1.6; display: flex; gap: 7px; }
+.mh-check { color: #3aa67a; font-weight: 700; flex-shrink: 0; }
+
 /* ===== BOTTOM NAV ===== */
 .bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 480px; background: var(--card); border-top: 1px solid var(--border); display: flex; z-index: 50; padding-bottom: env(safe-area-inset-bottom); }
 .bottom-nav button { flex: 1; padding: 6px 0 8px; font-size: 10px; color: var(--text3); text-align: center; transition: color .15s; }
@@ -298,7 +313,7 @@ const STAGE_RANGE = { '深度学习进阶':'y2-y3', '自然语言处理':'y3', '
 
 // 知识星球引流：label → 链接（字符串）或 {url, text}（定制按钮文案）；无链接节点不渲染按钮；短链由运营提供
 const STARLINK = {
-  '新生助跑计划（21步）': { url: 'https://t.zsxq.com/IFdsR', text: '📮 加入星球，提交作业获得反馈' },
+  '新生助跑计划（21步）': { url: 'https://t.zsxq.com/IFdsR', text: '📮 加入星球，走完 21 步，提交作业获得反馈' },
   '双非院校有出路吗？':'https://t.zsxq.com/UfeHK',
   '考研还是就业？':'https://t.zsxq.com/UfeHK',
   '没有实习怎么办？':'https://t.zsxq.com/UfeHK',
@@ -492,9 +507,9 @@ function renderStageContent() {
       <div class="plan-card" data-node="${n.id}">
         <div class="plan-emoji">🚀</div>
         <div class="plan-body">
-          <div class="plan-tag">免费 · 面向零基础新生</div>
+          <div class="plan-tag">面向零基础新生 · 每天 1-2 小时</div>
           <div class="plan-title">${n.label}</div>
-          <div class="plan-sub">不教一门语言的全部，用 21 步带你亲手写出第一个程序</div>
+          <div class="plan-sub">网上教程很多，缺的是路径：不追求知识完整，追求体感完整——21 步走完从 0 到 1，每步看得见结果</div>
           <div class="plan-cta">查看计划详情 ›</div>
         </div>
       </div>
@@ -703,8 +718,28 @@ function showNodeDetail(nodeId) {
   if (!node) return;
   const ci = catInfo(node.category);
   const children = getChildren(nodeId);
+  const sl = STARLINK[node.label];
+  const star = sl ? `<a class="modal-star" href="${typeof sl === 'object' ? sl.url : sl}" target="_blank" rel="noopener">${typeof sl === 'object' ? sl.text : '📮 想看更多深度内容与真实案例？来知识星球'}</a>` : '';
 
-  document.getElementById('modalBody').innerHTML = `
+  let body;
+  if (node.hero) {
+    body = `
+    <div class="mh-hero">
+      <div class="mh-rocket">🚀</div>
+      <div class="mh-title">${node.label}</div>
+      <div class="mh-sub">给零基础新生的第一条路：21 步走完从 0 到 1，每一步都看得见结果</div>
+    </div>
+    <div class="mh-tags"><span>面向零基础新生</span><span>每天 1-2 小时</span><span>2-4 周走完</span></div>
+    ${(node.blocks || []).map(b => `
+      <div class="mh-block">
+        <div class="mh-h">${b.h}</div>
+        ${b.p ? `<div class="mh-p">${b.p}</div>` : ''}
+        ${b.items ? `<div class="mh-items">${b.items.map(i => `<div class="mh-item"><span class="mh-check">✓</span>${i}</div>`).join('')}</div>` : ''}
+      </div>
+    `).join('')}
+    ${star}`;
+  } else {
+    body = `
     <div class="modal-title">${ci.e} ${node.label}</div>
     <div class="modal-tag" style="background:${ci.c}15;color:${ci.c}">${ci.l} · ${stageNameOf(node)}</div>
     ${node.marker ? '<div class="modal-marker">📌 双非学生在此节点有差异化策略</div>' : ''}
@@ -717,8 +752,9 @@ function showNodeDetail(nodeId) {
         </div>
       `).join('')}
     </div>` : ''}
-    ${STARLINK[node.label] ? `<a class="modal-star" href="${typeof STARLINK[node.label] === 'object' ? STARLINK[node.label].url : STARLINK[node.label]}" target="_blank" rel="noopener">${typeof STARLINK[node.label] === 'object' ? STARLINK[node.label].text : '📮 想看更多深度内容与真实案例？来知识星球'}</a>` : ''}
-  `;
+    ${star}`;
+  }
+  document.getElementById('modalBody').innerHTML = body;
   document.getElementById('modal').classList.add('show');
 }
 
