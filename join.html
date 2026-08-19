@@ -28,6 +28,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI
 .linkbox { margin-top: 14px; font-size: 11px; color: var(--text2); text-align: center; word-break: break-all; line-height: 1.6; }
 .foot { margin-top: 18px; font-size: 11px; color: #9ca3af; text-align: center; line-height: 1.7; }
 #copiedTip { display: none; font-size: 12px; color: #3aa67a; font-weight: 600; text-align: center; margin-top: 10px; }
+.qr-or { display: flex; align-items: center; gap: 10px; color: var(--text2); font-size: 12px; margin: 18px 0 12px; }
+.qr-or::before, .qr-or::after { content: ''; flex: 1; height: 1px; background: #eee; }
+.qrwrap { text-align: center; }
+.qrwrap img { width: 150px; height: auto; border-radius: 10px; border: 1px solid #f0e2d0; }
+.qrtip { margin-top: 10px; font-size: 12px; color: var(--text2); text-align: center; line-height: 1.7; }
 </style>
 </head>
 <body>
@@ -40,7 +45,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI
     </div>
   </div>
 
-  <div class="note">📌 手机浏览器打开星球链接会被拦截到「下载 APP」页。没装 APP 也别急，用下面任意一种方式即可：</div>
+  <div class="note">📌 手机浏览器打开星球链接会被拦截到「下载 APP」页。没装 APP 也别急，用下面任一种方式即可，或直接扫码加入：</div>
 
   <div class="btns">
     <a class="btn btn-primary" id="openBtn" target="_blank" rel="noopener">
@@ -54,6 +59,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI
   </div>
   <div id="copiedTip">✅ 已复制，去微信粘贴打开吧</div>
   <div class="linkbox" id="linkText"></div>
+
+  <div class="qr-or"><span>或扫码加入</span></div>
+  <div class="qrwrap"><img src="qr.png" alt="扫码加入知识星球「计算机突围」"></div>
+  <div class="qrtip">微信扫一扫，或长按识别二维码<br>直接加入「计算机突围」</div>
 </div>
 <div class="foot">计算机突围 · CS 全周期导航<br>内容仅供参考，具体以官方为准</div>
 

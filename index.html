@@ -189,6 +189,8 @@ input { font: inherit; }
 /* ===== HERO MODAL (如新生助跑计划) ===== */
 .mh-hero { margin: 0 -16px 0; padding: 18px 16px 16px; background: linear-gradient(135deg, #1c2333 0%, #2b3560 55%, #3d2e63 100%); position: relative; overflow: hidden; }
 .mh-hero::after { content:''; position: absolute; right: -30px; top: -30px; width: 130px; height: 130px; border-radius: 50%; background: radial-gradient(circle, rgba(255,170,70,.28), transparent 70%); }
+.mh-poster { margin-bottom: 14px; }
+.mh-poster img { width: 100%; display: block; border-radius: 12px; border: 1px solid rgba(255,255,255,.6); box-shadow: 0 4px 14px rgba(30,40,80,.08); }
 .mh-rocket { font-size: 30px; margin-bottom: 6px; filter: drop-shadow(0 2px 6px rgba(0,0,0,.3)); }
 .mh-title { font-size: 17px; font-weight: 700; color: #fff; }
 .mh-sub { font-size: 12px; color: rgba(255,255,255,.75); margin-top: 4px; line-height: 1.6; }
@@ -731,6 +733,7 @@ function showNodeDetail(nodeId) {
       <div class="mh-sub">给零基础新生的第一条路：21 步走完从 0 到 1，每一步都看得见结果</div>
     </div>
     <div class="mh-tags"><span>面向零基础新生</span><span>每天 1-2 小时</span><span>2-4 周走完</span></div>
+    ${node.poster ? `<div class="mh-poster"><img src="poster.png" alt="${node.label}"></div>` : ''}
     ${(node.blocks || []).map(b => `
       <div class="mh-block">
         <div class="mh-h">${b.h}</div>
