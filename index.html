@@ -719,7 +719,8 @@ function showNodeDetail(nodeId) {
   const ci = catInfo(node.category);
   const children = getChildren(nodeId);
   const sl = STARLINK[node.label];
-  const star = sl ? `<a class="modal-star" href="${typeof sl === 'object' ? sl.url : sl}" target="_blank" rel="noopener">${typeof sl === 'object' ? sl.text : '📮 想看更多深度内容与真实案例？来知识星球'}</a>` : '';
+  const isMobile = /Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
+  const star = sl ? `<a class="modal-star" href="${isMobile ? 'join.html?u=' + encodeURIComponent(typeof sl === 'object' ? sl.url : sl) : (typeof sl === 'object' ? sl.url : sl)}" target="_blank" rel="noopener">${typeof sl === 'object' ? sl.text : '📮 想看更多深度内容与真实案例？来知识星球'}</a>` : '';
 
   let body;
   if (node.hero) {

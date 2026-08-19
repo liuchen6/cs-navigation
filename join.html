@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>打开知识星球 · 计算机突围</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --bg:#f6f7f9; --card:#fff; --text:#1f2937; --text2:#6b7280; --accent:#ff8f3c; --radius:14px; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 20px; -webkit-font-smoothing: antialiased; }
+.card { width: 100%; max-width: 420px; background: var(--card); border-radius: 18px; box-shadow: 0 8px 30px rgba(30,40,80,.08); padding: 24px 20px 20px; }
+.hero { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.hero .logo { width: 54px; height: 54px; border-radius: 14px; background: linear-gradient(135deg, #ffb64d, #ff8f3c); display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
+.hero .t1 { font-size: 18px; font-weight: 700; }
+.hero .t2 { font-size: 12px; color: var(--text2); margin-top: 3px; }
+.note { font-size: 13px; color: var(--text2); line-height: 1.7; background: #fdf6ee; border: 1px solid #f0e2d0; border-radius: 10px; padding: 10px 12px; margin-bottom: 16px; }
+.note b { color: #8a6a3a; }
+.btns { display: flex; flex-direction: column; gap: 10px; }
+.btn { display: flex; align-items: center; gap: 10px; width: 100%; padding: 14px; border: none; border-radius: 12px; font-size: 15px; font-weight: 600; cursor: pointer; text-decoration: none; text-align: left; }
+.btn:active { transform: scale(.98); }
+.btn-primary { background: linear-gradient(135deg, #ffb64d, #ff8f3c); color: #fff; box-shadow: 0 4px 14px rgba(255,143,60,.3); }
+.btn-ghost { background: #f3f4f6; color: var(--text); }
+.btn span.e { font-size: 20px; }
+.btn .bt { flex: 1; }
+.btn .bt .bs { display: block; font-size: 11px; font-weight: 400; color: rgba(0,0,0,.45); margin-top: 2px; }
+.btn-ghost .bt .bs { color: var(--text2); }
+.linkbox { margin-top: 14px; font-size: 11px; color: var(--text2); text-align: center; word-break: break-all; line-height: 1.6; }
+.foot { margin-top: 18px; font-size: 11px; color: #9ca3af; text-align: center; line-height: 1.7; }
+#copiedTip { display: none; font-size: 12px; color: #3aa67a; font-weight: 600; text-align: center; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="hero">
+    <div class="logo">🪐</div>
+    <div>
+      <div class="t1">打开知识星球</div>
+      <div class="t2">知识星球「计算机突围」</div>
+    </div>
+  </div>
+
+  <div class="note">📌 手机浏览器打开星球链接会被拦截到「下载 APP」页。没装 APP 也别急，用下面任意一种方式即可：</div>
+
+  <div class="btns">
+    <a class="btn btn-primary" id="openBtn" target="_blank" rel="noopener">
+      <span class="e">📱</span>
+      <span class="bt">已安装知识星球，直接打开<span class="bs">装过 APP 的同学走这里</span></span>
+    </a>
+    <button class="btn btn-ghost" id="copyBtn">
+      <span class="e">📋</span>
+      <span class="bt">复制链接，去微信里打开<span class="bs">复制后粘贴给「文件传输助手」，点开即可</span></span>
+    </button>
+  </div>
+  <div id="copiedTip">✅ 已复制，去微信粘贴打开吧</div>
+  <div class="linkbox" id="linkText"></div>
+</div>
+<div class="foot">计算机突围 · CS 全周期导航<br>内容仅供参考，具体以官方为准</div>
+
+<script>
+(function(){
+  var u = new URLSearchParams(location.search).get('u');
+  var target = u && /^https:\/\//.test(u) ? u : 'https://t.zsxq.com/UfeHK';
+  document.getElementById('openBtn').href = target;
+  document.getElementById('linkText').textContent = target;
+
+  function copy(text, done) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function(){ legacy(text, done); });
+    } else { legacy(text, done); }
+  }
+  function legacy(text, done) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); done(); } catch(e) {}
+    ta.remove();
+  }
+  document.getElementById('copyBtn').addEventListener('click', function(){
+    copy(target, function(){
+      document.getElementById('copiedTip').style.display = 'block';
+      setTimeout(function(){ document.getElementById('copiedTip').style.display = 'none'; }, 2200);
+    });
+  });
+})();
+</script>
+</body>
+</html>
