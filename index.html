@@ -174,6 +174,8 @@ input { font: inherit; }
 .modal-star { display: block; margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: linear-gradient(135deg, #ffb64d, #ff8f3c); color: #fff; font-size: 13px; font-weight: 600; text-align: center; text-decoration: none; box-shadow: 0 2px 8px rgba(255,143,60,.3); }
 .modal-star:active { transform: scale(.98); }
 .home-footer { margin-top: 18px; text-align: center; font-size: 11px; color: var(--text3); line-height: 1.8; }
+.executed { margin-top: 4px; text-align: center; font-size: 10px; color: var(--text3); }
+.executed .uv-num { font-weight: 700; color: #f472b6; }
 
 /* ===== HERO PLAN CARD ===== */
 .plan-card { position: relative; display: flex; align-items: center; gap: 12px; margin: 2px 0 10px; padding: 16px; border-radius: 14px; overflow: hidden; cursor: pointer; background: linear-gradient(135deg, #1c2333 0%, #2b3560 55%, #3d2e63 100%); box-shadow: 0 6px 18px rgba(30,40,80,.25); }
@@ -254,6 +256,7 @@ input { font: inherit; }
       </div>
 
       <div class="home-footer" id="homeFooter"></div>
+      <div class="executed" id="uvWrap"></div>
     </div>
   </div>
 
@@ -935,6 +938,17 @@ async function init() {
   renderRoutes();
   renderSearchCats();
   bindEvents();
+  loadUv();
+}
+
+async function loadUv() {
+  try {
+    const res = await fetch('/count', { headers: { accept: 'application/json' } });
+    const data = await res.json();
+    if (data && typeof data.uv === 'number') {
+      document.getElementById('uvWrap').innerHTML = `<span class="uv-num">${data.uv.toLocaleString()}</span> 次访问 · 数据实时统计中`;
+    }
+  } catch (e) { /* 计数不可用时静默隐藏 */ }
 }
 
 init().catch(e => {
